@@ -6,8 +6,8 @@ templateClass: tmpl-home
   <div class="container">
     <div class="col-5">
       <h1 class="mt-5">
-        <a href="/" class="w-100 d-block">
-          <img class="w-100" src="/img/logo.svg" alt="Cameo">
+        <a href="{{ '/' | url }}" class="w-100 d-block">
+          <img class="w-100" src="{{ '/img/logo.svg' | url }}" alt="Cameo">
         </a>
       <h1>
       <h2 class="fs-5 text-center">Révéler les talents. Libérer la performance.</h2>
@@ -49,10 +49,10 @@ templateClass: tmpl-home
     <div class="col-5 p-5 my-5">
       <h2 class="indent--2">Notre offre <br/><strong>en quelques mots</strong></h2>
       <p>Lorem ipsumsneoatu oashusnteoa husnumsu bneoahub oanuboasnuoau snusn shsnoa ubsnoabu roau snoa husnsanub oasnuh snusrcu oetbu nhmuseon movntu moezn eosn mvatmu oaum soa monebneom voaubvn vb nhurh.ibntheobvm vt mznteoak nutbkvtokbeoa snu antmsrbo kwobknauv., ubvn..</p>
-      <a class="btn btn-primary rounded-pill" href="/offres">Let's go</a>
+      <a class="btn btn-primary rounded-pill" href="{{ '/offres' | url }}">Let's go</a>
     </div>
     <div class="col-6 bkg-yellow-blue d-flex">
-      <img class="w-50 py-5 my-5" src="/img/offre_illustration.jpg" alt="Notre offre">
+      <img class="w-50 py-5 my-5" src="{{ '/img/offre_illustration.jpg' | url }}" alt="Notre offre">
     </div>
   </div>
 </section>
@@ -60,7 +60,7 @@ templateClass: tmpl-home
 <section class="bg-light pt-5">
   <div class="row">
     <div class="col-5 bkg-yellow-blue d-flex">
-      <img class="w-50 py-5 my-5" src="/img/offre_illustration.jpg" alt="Notre offre">
+      <img class="w-50 py-5 my-5" src="{{ '/img/offre_illustration.jpg' | url }}" alt="Notre offre">
     </div>
     <div class="col-7 p-5 my-5">
       <h2>Comment créons-nous <strong>de la valeur ?</strong></h2>
@@ -91,7 +91,7 @@ templateClass: tmpl-home
     <div class="col-6 p-5">
       <h2>Envie de commencer <strong>l'aventure ?</strong></h2>
       <p>Lorem ipsumsneoatu oashusnteoa husnumsu bneoahub oanuboasnuoau snusn shsnoa ubsnoabu roau snoa husnsanub oasnuh snusrcu oetbu nhmuseon movntu moezn eosn mvatmu oaum soa monebneom voaubvn vb nhurh.ibntheobvm vt mznteoak nutbkvtokbeoa snu antmsrbo kwobknauv., ubvn..</p>
-      <a class="btn btn-primary rounded-pill" href="/partenaires">Let's go</a>
+      <a class="btn btn-primary rounded-pill" href="{{ '/partenaires' | url }}">Let's go</a>
   </div>
 </section>
 <section class="bg-light p-5 blog">
@@ -112,7 +112,7 @@ templateClass: tmpl-home
       </div>
     </div>
     <div class="col-7">
-      <img class="img-fluid" src="/img/offre_illustration.jpg">
+      <img class="img-fluid" src="{{ '/img/offre_illustration.jpg' | url }}">
     </div>
   </div>
 </section>
@@ -123,7 +123,7 @@ templateClass: tmpl-home
     <div class="col-4">
       <div class="py-4">
         <h2 class="w-50 mx-auto">
-          <img class="img-fluid" src="/img/logo.svg" alt="logo">
+          <img class="img-fluid" src="{{ '/img/logo.svg' | url }}" alt="logo">
         </h2>
         <h3 class="text-center fs-6">Révéler les talents<br/>Libérer la performance</h3>
       </div>
@@ -136,11 +136,11 @@ templateClass: tmpl-home
       </div>
     </div>
     <div class="col-6 text-center">
-      <h3><a href="/a-propos">À propos</a></h3>
-      <h3><a href="/a-propos">À propos</a></h3>
-      <h3><a href="/a-propos">À propos</a></h3>
-      <h3><a href="/a-propos">À propos</a></h3>
-      <h3><a href="/a-propos">À propos</a></h3>
+      <h3><a href="{{ '/a-propos' | url }}">À propos</a></h3>
+      <h3><a href="{{ '/a-propos' | url }}">À propos</a></h3>
+      <h3><a href="{{ '/a-propos' | url }}">À propos</a></h3>
+      <h3><a href="{{ '/a-propos' | url }}">À propos</a></h3>
+      <h3><a href="{{ '/a-propos' | url }}">À propos</a></h3>
     </div>
   </div>
 </footer>
