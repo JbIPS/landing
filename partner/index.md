@@ -1,9 +1,9 @@
 ---
 layout: layouts/base.njk
-title: À propos
+title: Ils nous font confiance
 eleventyNavigation:
-  key: À propos
-  order: 1
+  key: Ils nous font confiance
+  order: 4
 ---
 
 I am a person that writes stuff.

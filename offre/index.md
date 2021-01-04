@@ -1,9 +1,9 @@
 ---
 layout: layouts/base.njk
-title: À propos
+title: Notre offre
 eleventyNavigation:
-  key: À propos
-  order: 1
+  key: Notre offre
+  order: 2
 ---
 
 I am a person that writes stuff.

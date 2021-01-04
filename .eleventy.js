@@ -68,6 +68,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("js");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -80,6 +81,9 @@ module.exports = function(eleventyConfig) {
     permalinkSymbol: "#"
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
+  eleventyConfig.addFilter('markdown', (string) => {
+    return markdownLibrary.render(string);
+  });
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({

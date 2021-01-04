@@ -1,0 +1,49 @@
+{
+  "summary": [
+    {
+      "title": "Immerger **des salariés en startup**"
+    },
+    {
+      "title": "Révéler **les talents**"
+    },
+    {
+      "title": "Libérer **la performance**"
+    }
+  ],
+  "usecases": [
+    {
+      "text": "Je recherche un expert en analyse des risques pour continuer à faire grandir ma startup.",
+      "image": "/img/forme1.svg"
+    },
+    {
+      "text": "Je recherche un expert en analyse des risques pour continuer à faire grandir ma startup.",
+      "image": "/img/forme1.svg"
+    },
+    {
+      "text": "Je recherche un expert en analyse des risques pour continuer à faire grandir ma startup.",
+      "image": "/img/forme1.svg"
+    }
+  ],
+  "numbers": [
+    {
+      "number": 200,
+      "text": "salariés ayant fait une immersion"
+    },
+    {
+      "number": 200,
+      "text": "salariés ayant fait une immersion"
+    },
+    {
+      "number": 200,
+      "text": "salariés ayant fait une immersion"
+    },
+    {
+      "number": 200,
+      "text": "salariés ayant fait une immersion"
+    },
+    {
+      "number": 200,
+      "text": "salariés ayant fait une immersion"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 ---
 layout: layouts/base.njk
-title: À propos
+title: Les + Cameo
 eleventyNavigation:
-  key: À propos
-  order: 1
+  key: Les + Cameo
+  order: 3
 ---
 
 I am a person that writes stuff.

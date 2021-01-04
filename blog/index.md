@@ -1,9 +1,9 @@
 ---
 layout: layouts/base.njk
-title: À propos
+title: Le blog
 eleventyNavigation:
-  key: À propos
-  order: 1
+  key: Le blog
+  order: 5
 ---
 
 I am a person that writes stuff.
