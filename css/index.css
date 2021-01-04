@@ -1,0 +1,146 @@
+:root {
+  --primary-color: #3B64FF;
+  --secondary-color: #FFF75F;
+  --tertiary-color: #FF5C55;
+  --white: #EAF5FB;
+  --black: #1D1D1D;
+  --grey: #EAF5FB;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+section {
+  overflow-x: hidden;
+  background-color: var(--primary-color);
+}
+
+section.bg-secondary-color {
+  background-color: var(--secondary-color);
+}
+
+section#placeholder {
+  background-color: transparent;
+}
+
+.bg-secondary-color p {
+  color: var(--primary-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+}
+
+h3 {
+  color: var(--black);
+}
+
+h3 a {
+  color: var(--white);
+}
+
+footer {
+  z-index: -1;
+}
+
+footer input.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  color: var(--white);
+}
+
+footer input.form-control::placeholder {
+  color: var(--grey);
+  opacity: 0.6;
+}
+
+footer h3 {
+  color: var(--white);
+}
+
+.blog h3 {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.blog div.post {
+  opacity: 0.5;
+}
+
+.blog div.post.active {
+  opacity: 1;
+}
+
+.indent--2 {
+  text-indent: -1.5em;
+}
+
+.pad-2 {
+  padding-left: 2em;
+}
+
+.nav-link {
+  color: var(--white);
+}
+
+strong {
+  color: var(--secondary-color);
+}
+
+a.btn.btn-primary {
+  color: var(--primary-color);
+  min-width: 8em;
+  background-color: var(--white);
+}
+
+.col:nth-child(n+2) {
+  border-left: 1px solid var(--white);
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.bg-light h2 {
+  color: var(--primary-color);
+}
+
+.bg-light p {
+  color: var(--black);
+}
+
+.bg-light strong {
+  color: var(--tertiary-color);
+}
+
+.bg-light a.btn.btn-primary {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.bkg-yellow-blue {
+  background-image: url(/img/fond_jaune_bleu.png);
+  background-size: cover;
+}
+
+p.number {
+  font-size: 6rem;
+  font-weight: bolder;
+}
+
+/* Glider */
+.controls {
+  position: absolute;
+  top: -5rem;
+  right: 0;
+}
+
+.controls button {
+  position: static;
+}
