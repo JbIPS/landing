@@ -19,7 +19,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               {%- for entry in collections.all | eleventyNavigation %}
-                <li class="nav-item">
+                <li class="nav-item{% if loop.last %} rounded-pill border px-5 ms-3{% endif %}">
                   <a class="nav-link{% if entry.url == page.url %} active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
                 </li>
               {%- endfor %}
@@ -63,9 +63,10 @@
         </div>
       </div>
       <ul class="text-center list-inline">
-        <li class="list-inline-item">© Cameo 2020. Tous droits réservés.</li>
+        <li class="list-inline-item">© Cameo 2021. Tous droits réservés.</li>
         <li class="list-inline-item"><a href="{{ '/mentions-legales' | url }}">Mentions légales</a></li>
       </ul>
+      <p class="text-center">Pas de cookies sur notre site. La meilleure façon de protéger vos données, c'est de ne pas les garder.</p>
     </footer>
     <!-- Current page: {{ page.url | url }} -->
     <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>-->

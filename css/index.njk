@@ -15,7 +15,7 @@ body {
   color: var(--white);
 }
 
-header, main {
+main {
   z-index: 10;
   position: relative;
 }
@@ -37,12 +37,29 @@ section#placeholder {
   color: var(--primary-color);
 }
 
-nav {
-  background-color: var(--primary-color);
+header {
+  position: fixed;
+  z-index: 15;
+  width: 100vw;
+  background: var(--primary-color);
+  padding: 15px 10px;
+  transition: all .5s ease-out;
+}
+
+header.shrinked {
+  transform: translateY(-100%);
+}
+
+nav.navbar-dark .nav-item .nav-link {
+  color: var(--white);
 }
 
 h3 {
   color: var(--black);
+}
+
+.hero {
+  height: 100vh;
 }
 
 .hero h3 {
@@ -110,6 +127,40 @@ a.btn.btn-primary {
 
 .col:nth-child(n+2) {
   border-left: 1px solid var(--white);
+}
+
+.panel {
+  transition: background .2s ease-out;
+}
+
+.panel.hover {
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.panel > div {
+  background-image: url({{ '/img/fond_jaune_bleu.png' | url }});
+  background-size: cover;
+  color: var(--black);
+  height: 0;
+  overflow: hidden;
+  transition: height .1s linear;
+}
+
+.panel > div.details {
+  z-index: 30;
+}
+
+.panel > div strong {
+  color: var(--black);
+}
+
+.panel span {
+  transition: all .4s linear;
+}
+
+.panel .details span {
+  transform: rotate(45deg);
 }
 
 .circle {
