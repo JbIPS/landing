@@ -1,6 +1,5 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-home
 ---
 <section class="pt-4 hero">
   <div class="container">
@@ -37,7 +36,7 @@ templateClass: tmpl-home
       {% for case in usecases %}
         <div class="col-5">
           <p>{{ case.text }}</p>
-          <img class="img-fluid" src="{{case.image}}" alt="Illustration abstraite">
+          <img class="img-fluid" src="{{ case.image | url }}" alt="Illustration abstraite">
         </div>
       {% endfor %}
       </div>
@@ -116,31 +115,3 @@ templateClass: tmpl-home
     </div>
   </div>
 </section>
-<section id="placeholder">
-</section>
-<footer class="position-fixed bottom-0 p-5 w-100">
-  <div class="row justify-content-evenly">
-    <div class="col-4">
-      <div class="py-4">
-        <h2 class="w-50 mx-auto">
-          <img class="img-fluid" src="{{ '/img/logo.svg' | url }}" alt="logo">
-        </h2>
-        <h3 class="text-center fs-6">Révéler les talents<br/>Libérer la performance</h3>
-      </div>
-      <div class="py-4">
-        <p class="indent--2 pad-2">Je m'inscris <br/><strong>à la newsletter</strong><p>
-        <input type="email" class="form-control" placeholder="Votre adresse e-mail">
-      </div>
-      <div class="py-4">
-        <p>Suivez-nous</p>
-      </div>
-    </div>
-    <div class="col-6 text-center">
-      <h3><a href="{{ '/a-propos' | url }}">À propos</a></h3>
-      <h3><a href="{{ '/a-propos' | url }}">À propos</a></h3>
-      <h3><a href="{{ '/a-propos' | url }}">À propos</a></h3>
-      <h3><a href="{{ '/a-propos' | url }}">À propos</a></h3>
-      <h3><a href="{{ '/a-propos' | url }}">À propos</a></h3>
-    </div>
-  </div>
-</footer>
