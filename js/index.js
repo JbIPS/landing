@@ -10,6 +10,41 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 	});
 
+  // Header stick shrink
+  let lastScroll = window.pageYOffset;
+  window.addEventListener('scroll', (e) => {
+    const sy = window.pageYOffset;
+    const header = document.querySelector('header');
+    if(sy < lastScroll || sy < 100) {
+      header.classList.remove('shrinked');
+    } else {
+      header.classList.add('shrinked')
+    }
+    lastScroll = sy;
+  })
+
+  // Panels
+  const summaries = document.querySelectorAll('.summary');
+  const panel = document.querySelector('.panel');
+  const hide = (panel, target) => {
+    panel.classList.remove('hover');
+    target.classList.remove('details', 'vh-100');
+  }
+  summaries.forEach((sum) => {
+    sum.addEventListener('mouseenter', (e) => {
+      const target = document.getElementById(e.target.getAttribute('data-target'));
+      panel.classList.add('hover');
+      target.classList.add('details', 'vh-100');
+      document.querySelector('header').classList.add('shrinked');
+      target.addEventListener('mouseleave', () => {
+        hide(panel, target);
+      });
+      window.addEventListener('scroll', () => {
+        hide(panel, target);
+      });
+    })
+  });
+
 	// Footer parallax
 	const placeholder = document.getElementById('placeholder')
 	const footer = document.querySelector('footer')
