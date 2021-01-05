@@ -1,3 +1,6 @@
+---
+permalink: css/index.css
+---
 :root {
   --primary-color: #3B64FF;
   --secondary-color: #FFF75F;
@@ -35,6 +38,10 @@ nav {
 
 h3 {
   color: var(--black);
+}
+
+.hero h3 {
+  color: var(--white);
 }
 
 h3 a {
@@ -125,7 +132,7 @@ a.btn.btn-primary {
 }
 
 .bkg-yellow-blue {
-  background-image: url(/img/fond_jaune_bleu.png);
+  background-image: url({{ '/img/fond_jaune_bleu.png' | url }});
   background-size: cover;
 }
 
