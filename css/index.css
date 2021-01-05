@@ -12,6 +12,11 @@ body {
   color: var(--white);
 }
 
+header, main {
+  z-index: 10;
+  position: relative;
+}
+
 section {
   overflow-x: hidden;
   background-color: var(--primary-color);
@@ -46,7 +51,7 @@ h3 a {
 }
 
 footer {
-  z-index: -1;
+  z-index: 5;
 }
 
 footer input.form-control {
@@ -61,7 +66,7 @@ footer input.form-control::placeholder {
   opacity: 0.6;
 }
 
-footer h3 {
+footer ul a, footer h3 {
   color: var(--white);
 }
 
