@@ -6,7 +6,7 @@ layout: layouts/base.njk
   <div id="panel{{ loop.index }}" class="float-start col px-5 d-flex my-auto">
     <div class="my-auto">
       <p class="fs-3">0{{ loop.index}}</p>
-      <h3>{{ sum.title | markdown | replace("<p>", "") | replace("</p>", "") | safe }}</h3>
+      {{ sum.title | markdown | safe }}
       <div class="details">{{ sum.text | markdown | safe }}</div>
       <span class="fs-3 border rounded-circle d-inline-block circle">+</span>
     </div>
@@ -15,20 +15,20 @@ layout: layouts/base.njk
 </div>
 <section class="hero d-flex position-relative">
   <div class="my-auto">
-    <div class="col-5">
-      <h1 class="m-5">
-        <a href="{{ '/' | url }}" class="w-100 d-block">
+    <div class="col-6 ms-5">
+      <h1 class="">
+        <a href="{{ '/' | url }}" class="w-100">
           <img class="w-100" src="{{ '/img/logo.svg' | url }}" alt="Cameo">
         </a>
-      <h1>
-      <h2 class="ms-5 fs-5 text-center">Révéler les talents. Libérer la performance.</h2>
+      </h1>
+      <h2 class="fs-5 text-center">Révéler les talents. Libérer la performance.</h2>
     </div>
     <h2 class="p-5">Laissez-nous nous présenter en 3 points</h2>
     <div class="row">
       {% for sum in summary %}
         <div class="col px-5 summary" data-target="panel{{ loop.index }}">
         <p class="fs-3">0{{ loop.index}}</p>
-        <h3>{{ sum.title | markdown | replace("<p>", "") | replace("</p>", "") | safe }}</h3>
+        {{ sum.title | markdown | safe }}
         <span class="fs-3 border rounded-circle d-inline-block circle">+</span>
       </div>
       {% endfor %}
@@ -63,7 +63,7 @@ layout: layouts/base.njk
   <div class="row justify-content-end">
     <div class="col-5 p-5 my-5">
       <h2 class="indent--2">Notre offre <br/><strong>en quelques mots</strong></h2>
-      <p>Lorem ipsumsneoatu oashusnteoa husnumsu bneoahub oanuboasnuoau snusn shsnoa ubsnoabu roau snoa husnsanub oasnuh snusrcu oetbu nhmuseon movntu moezn eosn mvatmu oaum soa monebneom voaubvn vb nhurh.ibntheobvm vt mznteoak nutbkvtokbeoa snu antmsrbo kwobknauv., ubvn..</p>
+      <p>{{ presentation_offre | markdown | safe }}</p>
       <a class="btn btn-primary rounded-pill" href="{{ '/offres' | url }}">Let's go</a>
     </div>
     <div class="col-6 bkg-yellow-blue d-flex">
@@ -79,12 +79,10 @@ layout: layouts/base.njk
     </div>
     <div class="col-7 p-5 my-5">
       <h2>Comment créons-nous <strong>de la valeur ?</strong></h2>
-      <h3>Pour les entreprises</h3>
-      <p>Lorem ipsumsneoatu oashusnteoa husnumsu bneoahub oanuboasnuoau snusn shsnoa ubsnoabu roau snoa husnsanub oasnuh snusrcu oetbu nhmuseon movntu moezn eosn mvatmu oaum soa monebneom voaubvn vb nhurh.ibntheobvm vt mznteoak nutbkvtokbeoa snu antmsrbo kwobknauv., ubvn..</p>
-      <h3>Pour les startups</h3>
-      <p>Lorem ipsumsneoatu oashusnteoa husnumsu bneoahub oanuboasnuoau snusn shsnoa ubsnoabu roau snoa husnsanub oasnuh snusrcu oetbu nhmuseon movntu moezn eosn mvatmu oaum soa monebneom voaubvn vb nhurh.ibntheobvm vt mznteoak nutbkvtokbeoa snu antmsrbo kwobknauv., ubvn..</p>
-      <h3>Pour les apprenants</h3>
-      <p>Lorem ipsumsneoatu oashusnteoa husnumsu bneoahub oanuboasnuoau snusn shsnoa ubsnoabu roau snoa husnsanub oasnuh snusrcu oetbu nhmuseon movntu moezn eosn mvatmu oaum soa monebneom voaubvn vb nhurh.ibntheobvm vt mznteoak nutbkvtokbeoa snu antmsrbo kwobknauv., ubvn..</p>
+      {% for value in values %}
+        <h3>{{ value.title }}</h3>
+        {{ value.text | markdown | safe }}
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -105,7 +103,7 @@ layout: layouts/base.njk
     </div>
     <div class="col-6 p-5">
       <h2>Envie de commencer <strong>l'aventure ?</strong></h2>
-      <p>Lorem ipsumsneoatu oashusnteoa husnumsu bneoahub oanuboasnuoau snusn shsnoa ubsnoabu roau snoa husnsanub oasnuh snusrcu oetbu nhmuseon movntu moezn eosn mvatmu oaum soa monebneom voaubvn vb nhurh.ibntheobvm vt mznteoak nutbkvtokbeoa snu antmsrbo kwobknauv., ubvn..</p>
+      {{ start | markdown | safe }}
       <a class="btn btn-primary rounded-pill" href="{{ '/partenaires' | url }}">Let's go</a>
   </div>
 </section>
