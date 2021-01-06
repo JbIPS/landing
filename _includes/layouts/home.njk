@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-<div class="row position-absolute panel vh-100">
+<div class="d-flex position-absolute panel vh-100">
 {% for sum in summary %}
   <div id="panel{{ loop.index }}" class="float-start col px-5 d-flex my-auto">
     <div class="my-auto">
@@ -33,7 +33,10 @@ layout: layouts/base.njk
       </div>
       {% endfor %}
     </div>
-    <p class="text-center mt-5">Scrollez</p>
+    <div class="position-absolute bottom-0 w-100 mb-2">
+      <p class="text-center m-0">Scrollez</p>
+      <p class="text-center fs-1 lh-0 arrow">&#8964;</p>
+    </div>
   </div>
 </section>
 <section class="bg-light">
@@ -48,7 +51,7 @@ layout: layouts/base.njk
       {% for case in usecases %}
         <div class="px-5 pt-5 pb-3 d-flex flex-column justify-content-between usecase">
           <h3 class="fs-4">{{ case.text }}</h3>
-          <img class="img-fluid" src="{{ case.image | url }}" alt="Illustration abstraite">
+          <img class="img-fluid mt-4" src="{{ case.image | url }}" alt="Illustration abstraite">
           <div class="details">
             <p class="">{{ case.details }}</p>
             <a class="btn btn-outline-light px-4 rounded-pill" href="{{ '/partenaires' | url }}">Let's go!</a>
