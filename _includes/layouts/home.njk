@@ -38,7 +38,7 @@ layout: layouts/base.njk
 </section>
 <section class="bg-light">
   <div class="container pt-5">
-    <h2 class="my-5">Pourquoi et quand faire appel <strong>à nos services ?</strong></h2>
+    <h2 class="my-5 fs-1">Pourquoi et quand faire appel <strong>à nos services ?</strong></h2>
     <div class="glider-contain">
       <div class="controls">
         <button aria-label="Previous" class="glider-prev">←</button>
@@ -46,9 +46,13 @@ layout: layouts/base.njk
       </div>
       <div class="glider">
       {% for case in usecases %}
-        <div class="col-5">
-          <p>{{ case.text }}</p>
+        <div class="px-5 pt-5 pb-3 d-flex flex-column justify-content-between usecase">
+          <h3 class="fs-4">{{ case.text }}</h3>
           <img class="img-fluid" src="{{ case.image | url }}" alt="Illustration abstraite">
+          <div class="details">
+            <p class="">{{ case.details }}</p>
+            <a class="btn btn-outline-light px-4 rounded-pill" href="{{ '/partenaires' | url }}">Let's go!</a>
+          </div>
         </div>
       {% endfor %}
       </div>

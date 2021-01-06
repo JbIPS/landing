@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	// Slideshow
 	new Glider(document.querySelector('.glider'), {
 		draggable: true,
-		slidesToShow: 2.5,
+    slidesToShow: 2.5,
 		slidesToScroll: 1,
 		arrows: {
 			prev: '.glider-prev',

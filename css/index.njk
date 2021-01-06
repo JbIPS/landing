@@ -1,6 +1,17 @@
 ---
 permalink: css/index.css
 ---
+@font-face {
+  font-family: TTNorms;
+  src: url({{ '/fonts/TTNormsPro-Medium.otf' | url }}) format('opentype');
+}
+
+@font-face {
+  font-family: TTNorms;
+  src: url({{ '/fonts/TTNormsPro-Bold.otf' | url }}) format('opentype');
+  font-weight: bold;
+}
+
 :root {
   --primary-color: #3B64FF;
   --secondary-color: #FFF75F;
@@ -13,6 +24,7 @@ permalink: css/index.css
 body {
   background-color: var(--primary-color);
   color: var(--white);
+  font-family: TTNorms;
 }
 
 main {
@@ -195,6 +207,36 @@ a.btn.btn-primary {
 p.number {
   font-size: 6rem;
   font-weight: bolder;
+}
+
+.usecase {
+  transition: background .8s ease-out;
+}
+
+.usecase:hover {
+  background: var(--primary-color);
+  padding-bottom: 2rem !important;
+  margin: 0 !important;
+}
+
+.usecase .details {
+  display: none;
+}
+
+.usecase:hover p, .usecase:hover h3 {
+  color: var(--white);
+}
+
+.usecase:hover p {
+  font-size: 0.8rem;
+}
+
+.usecase:hover .details {
+  display: block;
+}
+
+.usecase:hover img {
+  display: none;
 }
 
 /* Glider */
