@@ -46,6 +46,10 @@ section#placeholder {
   color: var(--primary-color);
 }
 
+.bg-light {
+  background-color: var(--white) !important;
+}
+
 header {
   position: fixed;
   z-index: 15;
@@ -56,7 +60,32 @@ header {
 }
 
 header.shrinked {
+  background: var(--white);
+  color: var(--black);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.shrinked nav.navbar-dark .nav-item .nav-link {
+  color: var(--black);
+}
+
+header.shrinked .border {
+  border-color: var(--black) !important;
+}
+
+header.hidden {
   transform: translateY(-100%);
+}
+
+.navbar-brand img {
+  display: none;
+}
+
+.shrinked .navbar-brand img {
+  display: block;
+  max-width: 100px;
 }
 
 nav.navbar-dark .nav-item .nav-link {
@@ -126,6 +155,10 @@ footer ul a, footer h3 {
 
 strong {
   color: var(--secondary-color);
+}
+
+.lh-0 {
+  line-height: 0;
 }
 
 a.btn.btn-primary {
@@ -214,6 +247,7 @@ p.number {
   background: var(--primary-color);
   padding-bottom: 2rem !important;
   margin: 0 !important;
+  justify-content: space-evenly !important;
 }
 
 .usecase .details {
@@ -236,6 +270,19 @@ p.number {
   display: none;
 }
 
+.arrow {
+  animation: bounce .8s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
+
 /* Glider */
 .controls {
   position: absolute;
@@ -246,3 +293,5 @@ p.number {
 .controls button {
   position: static;
 }
+
+/* Glider */

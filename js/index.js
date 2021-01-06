@@ -15,10 +15,13 @@ window.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('scroll', (e) => {
     const sy = window.pageYOffset;
     const header = document.querySelector('header');
-    if(sy < lastScroll || sy < 100) {
+    if(sy < 20) {
       header.classList.remove('shrinked');
+    }
+    if(sy < lastScroll || sy < 100) {
+      header.classList.remove('hidden');
     } else {
-      header.classList.add('shrinked')
+      header.classList.add('shrinked', 'hidden');
     }
     lastScroll = sy;
   })
