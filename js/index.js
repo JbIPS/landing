@@ -2,12 +2,18 @@ window.addEventListener("DOMContentLoaded", function() {
 	// Slideshow
 	new Glider(document.querySelector('.glider'), {
 		draggable: true,
-    slidesToShow: 2.5,
+    slidesToShow: 1.4,
 		slidesToScroll: 1,
 		arrows: {
 			prev: '.glider-prev',
 			next: '.glider-next'
-		}
+		},
+    responsive: [{
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2.5
+      }
+    }]
 	});
 
   // Header stick shrink
@@ -29,10 +35,6 @@ window.addEventListener("DOMContentLoaded", function() {
     } else {
       header.classList.add('slide-up');
       header.classList.remove('slide-down');
-      //header.onanimationend = () => {
-        //header.classList.remove('slide-up');
-        //header.onanimationend = null;
-      //};
     }
     lastScroll = sy;
   })
