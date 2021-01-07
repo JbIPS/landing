@@ -1,14 +1,16 @@
 <section class="bg-light py-5">
   <div class="container">
     <div class="row justify-content-center">
-      <img class="col-2" src="/img/offre_illustration.jpg" alt="Portrait">
+      <div class="col-2">
+        <img class="img-fluid" src="{{ testimonial.image }}" alt="Portrait de {{ testimonial.name }}">
+      </div>
       <div class="col-6">
         <figure>
-          <blockquote class="blockquote fs-2">
-            <p>La négociation, c'est moi&nbsp;!</p>
+          <blockquote class="blockquote">
+            <p>{{ testimonial.citation }}</p>
           </blockquote>
           <figcaption class="blockquote-footer indent--2 pad-2">
-            Jérémy Marlin<br/> Le négociateur
+            {{ testimonial.name }} <br/> {{ testimonial.job }}
           </figcaption>
         </figure>
         <a class="btn btn-primary rounded-pill" href="/partenaires">Ils nous font confiance</a>

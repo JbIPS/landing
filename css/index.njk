@@ -19,6 +19,7 @@ permalink: css/index.css
   --white: #EAF5FB;
   --black: #1D1D1D;
   --grey: #EAF5FB;
+  --red: #FF5C55;
 }
 
 body {
@@ -184,12 +185,24 @@ a.btn.btn-primary {
 }
 
 .panel > div {
-  background-image: url({{ '/img/fond_jaune_bleu.png' | url }});
+  background-color: white;
   background-size: cover;
   color: var(--black);
   height: 0;
   overflow: hidden;
   transition: height .1s linear;
+}
+
+.panel > div:nth-child(1) {
+  background-image: url({{ '/img/red_blue/red_panel.svg' | url }});
+}
+
+.panel > div:nth-child(2) {
+  background-image: url({{ '/img/red_blue/red_panel.svg' | url }});
+}
+
+.panel > div:nth-child(3) {
+  background-image: url({{ '/img/red_blue/red_panel.svg' | url }});
 }
 
 .panel > div.details {
@@ -232,9 +245,9 @@ a.btn.btn-primary {
   background-color: var(--primary-color);
 }
 
-.bkg-yellow-blue {
-  background-image: url({{ '/img/fond_jaune_bleu.png' | url }});
+.svg-bkg {
   background-size: cover;
+  background-position: bottom;
 }
 
 p.number {

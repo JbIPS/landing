@@ -17,17 +17,30 @@
     {
       "text": "J’accompagne la création et déploiement d’une offre partenariale avec une startup",
       "details": "La collaboration avec une start-up peut être compliquée mais elle peut rapporter gros. En envoyant vos salariés au cœur de l'action, vous assurez la réussite du projet.",
-      "image": "/img/forme1.svg"
+      "image": "/img/red_blue/Asset 15.svg"
     },
     {
       "text": "Je cherche à développer la posture entrepreneuriale des collaborateurs",
       "details": "Oubliez les projets saucissonnés, où chacun ne s'occupe que de sa petite partie. Donnez à vos équipes une vision d'ensemble, d'un bout à l'autre de la chaine. Vous serez surpris.",
-      "image": "/img/forme1.svg"
+      "image": "/img/yellow_blue/Asset 23.svg"
     },
     {
       "text": "Je veux booster les mobilités internes",
       "details": "Marre du cloisonnement entre les BU ? Sortez vos salariés de leur bocal pour leur redonner le goût de la découverte et de l'aventure",
-      "image": "/img/forme1.svg"
+      "image": "/img/yellow_red/Asset 9.svg"
+    }
+  ],
+  "testimonials": [{
+      "name": "Audrey Amiot",
+      "job": "Early Career Program Manager EMEA, Medtronic",
+      "citation": "Les retours des start up & salariés sont incroyables. Je recommande vivement Cameo dans vos projets de développement de compétences, de transformation d'état d'esprit pour développer vos managers ou salariés sur l'entrepreneuriat et la gestion de projet innovant",
+      "image": "/img/audrey_amiot.webp"
+    },
+    {
+      "name": "Laurence Ricard",
+      "job": "Directrice Marketing et Communication, Synlab France",
+      "citation": "Ce parcours a été formidablement formateur pour moi. Une aventure professionnelle et humaine qui stimule le goût d'entreprendre, la confiance en soi et le partage de compétences",
+      "image": "/img/laurence_ricard.webp"
     }
   ],
   "presentation_offre": "Nous **coordonnons des parcours de formation** pour des salariés de grandes entreprises, en les plaçant en **situation active** au sein de start-ups. Ainsi, nous renforçons **l’employabilité des apprenants** et accélérons le **développement des start-ups**.De nouvelles perspectives s’ouvrent, de **nouvelles pratiques** émergent et la transformation s’opère.",
@@ -45,24 +58,24 @@
   ],
   "numbers": [
     {
-      "number": 200,
-      "text": "salariés ayant fait une immersion"
+      "number": "12M€",
+      "text": "de chiffre d'affaire généré entre start-ups et grands groupes"
+    },
+    {
+      "number": "50%",
+      "text": "de nos apprenants ont réalisé une mobilité interne"
     },
     {
       "number": 200,
-      "text": "salariés ayant fait une immersion"
+      "text": "start-ups partenaires"
     },
     {
-      "number": 200,
-      "text": "salariés ayant fait une immersion"
+      "number": "100%",
+      "text": "des actes administratifs automatisés par notre robot STAN"
     },
     {
-      "number": 200,
-      "text": "salariés ayant fait une immersion"
-    },
-    {
-      "number": 200,
-      "text": "salariés ayant fait une immersion"
+      "number": "45",
+      "text": "ans, c'est la moyenno d'âge de nos apprenants"
     }
   ],
   "start": "Nos parcours de formation s’inscrivent dans une démarche **d’accompagnement** et une approche **pragmatique** et concrète. Cette exigence fait de chaque expérience Cameo un véritable apprentissage personnalisé, une initiation par l’expérience, approuvée par une **certification** reconnue."

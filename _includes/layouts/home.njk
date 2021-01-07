@@ -69,16 +69,21 @@ layout: layouts/base.njk
       <p>{{ presentation_offre | markdown | safe }}</p>
       <a class="btn btn-primary rounded-pill" href="{{ '/offres' | url }}">Let's go</a>
     </div>
-    <div class="col-6 bkg-yellow-blue d-flex">
-      <img class="w-50 py-5 my-5" src="{{ '/img/offre_illustration.jpg' | url }}" alt="Notre offre">
+    <div class="col-6 svg-bkg d-flex ps-0" style="background-image: url({{ '/img/yellow_blue/Asset 11.svg' | url | urlencode }});">
+      <div class="col-6 ps-0 my-auto">
+        <img class="img-fluid" src="{{ '/img/lab1.webp' | url }}" alt="Notre offre">
+      </div>
     </div>
   </div>
 </section>
+{% set testimonial = testimonials | first %}
 {% include 'quote.njk' %}
 <section class="bg-light pt-5">
   <div class="row">
-    <div class="col-5 bkg-yellow-blue d-flex">
-      <img class="w-50 py-5 my-5" src="{{ '/img/offre_illustration.jpg' | url }}" alt="Notre offre">
+    <div class="col-5 svg-bkg d-flex ps-0" style="background-image: url({{ '/img/red_blue/Asset 25.svg' | url | urlencode }});">
+      {#<div class="col-6 ps-0 my-auto">#}
+        {#<img class="img-fluid" src="{{ '/img/lab2.webp' | url }}" alt="Notre offre">#}
+      {#</div>#}
     </div>
     <div class="col-7 p-5 my-5">
       <h2>Comment créons-nous <strong>de la valeur ?</strong></h2>
@@ -99,11 +104,10 @@ layout: layouts/base.njk
     {% endfor %}
   </div>
 </section>
+{% set testimonial = testimonials | last %}
 {% include 'quote.njk' %}
 <section class="">
-  <div class="row">
-    <div class="col-6 bkg-yellow-blue d-flex">
-    </div>
+  <div class="row justify-content-end" style="background: url({{ '/img/red_blue/Asset 7b.svg' | url | urlencode }}) no-repeat center;">
     <div class="col-6 p-5">
       <h2>Envie de commencer <strong>l'aventure ?</strong></h2>
       {{ start | markdown | safe }}
@@ -128,7 +132,7 @@ layout: layouts/base.njk
       </div>
     </div>
     <div class="col-7">
-      <img class="img-fluid" src="{{ '/img/offre_illustration.jpg' | url }}">
+      <img class="img-fluid" src="{{ '/img/lab3.webp' | url }}">
     </div>
   </div>
 </section>
