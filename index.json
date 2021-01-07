@@ -66,7 +66,7 @@
       "text": "de nos apprenants ont réalisé une mobilité interne"
     },
     {
-      "number": 200,
+      "number": "200",
       "text": "start-ups partenaires"
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "number": "45",
-      "text": "ans, c'est la moyenno d'âge de nos apprenants"
+      "text": "ans, c'est la moyenne d'âge de nos apprenants"
     }
   ],
   "start": "Nos parcours de formation s’inscrivent dans une démarche **d’accompagnement** et une approche **pragmatique** et concrète. Cette exigence fait de chaque expérience Cameo un véritable apprentissage personnalisé, une initiation par l’expérience, approuvée par une **certification** reconnue."

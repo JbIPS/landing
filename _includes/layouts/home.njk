@@ -94,15 +94,13 @@ layout: layouts/base.njk
     </div>
   </div>
 </section>
-<section class="bg-secondary-color">
-  <div class="row justify-content-center">
-    {% for number in numbers %}
-    <div class="col-4 d-flex">
+<section class="bg-secondary-color d-flex flex-wrap justify-content-evenly">
+  {% for number in numbers %}
+    <div class="d-flex align-items-center">
       <p class="number">{{ number.number }}</p>
-      <p class="d-flex align-items-center">{{ number.text }}</p>
+      <p class="">{{ number.text }}</p>
     </div>
-    {% endfor %}
-  </div>
+  {% endfor %}
 </section>
 {% set testimonial = testimonials | last %}
 {% include 'quote.njk' %}
