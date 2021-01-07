@@ -16,6 +16,7 @@
   --white: #EAF5FB;
   --black: #1D1D1D;
   --grey: #EAF5FB;
+  --red: #FF5C55;
 }
 
 body {
@@ -181,12 +182,24 @@ a.btn.btn-primary {
 }
 
 .panel > div {
-  background-image: url(/landing/img/fond_jaune_bleu.png);
+  background-color: white;
   background-size: cover;
   color: var(--black);
   height: 0;
   overflow: hidden;
   transition: height .1s linear;
+}
+
+.panel > div:nth-child(1) {
+  background-image: url(/landing/img/red_blue/red_panel.svg);
+}
+
+.panel > div:nth-child(2) {
+  background-image: url(/landing/img/red_blue/red_panel.svg);
+}
+
+.panel > div:nth-child(3) {
+  background-image: url(/landing/img/red_blue/red_panel.svg);
 }
 
 .panel > div.details {
@@ -229,9 +242,9 @@ a.btn.btn-primary {
   background-color: var(--primary-color);
 }
 
-.bkg-yellow-blue {
-  background-image: url(/landing/img/fond_jaune_bleu.png);
+.svg-bkg {
   background-size: cover;
+  background-position: bottom;
 }
 
 p.number {
