@@ -15,13 +15,24 @@ window.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('scroll', (e) => {
     const sy = window.pageYOffset;
     const header = document.querySelector('header');
-    if(sy < 20) {
+    // Don't show on small scroll
+    if((sy - lastScroll) < 50 && (sy - lastScroll) > -50) return;
+
+    if(sy < lastScroll && sy < 20) {
       header.classList.remove('shrinked');
+      header.classList.remove('slide-up');
+      header.onanimationend = null;
     }
-    if(sy < lastScroll || sy < 100) {
-      header.classList.remove('hidden');
+    else if(sy < lastScroll) {
+      header.classList.add('shrinked', 'slide-down');
+      header.classList.remove('slide-up');
     } else {
-      header.classList.add('shrinked', 'hidden');
+      header.classList.add('slide-up');
+      header.classList.remove('slide-down');
+      //header.onanimationend = () => {
+        //header.classList.remove('slide-up');
+        //header.onanimationend = null;
+      //};
     }
     lastScroll = sy;
   })
@@ -32,13 +43,15 @@ window.addEventListener("DOMContentLoaded", function() {
   const hide = (panel, target) => {
     panel.classList.remove('hover');
     target.classList.remove('details', 'vh-100');
+    target.style = "";
   }
   summaries.forEach((sum) => {
     sum.addEventListener('mouseenter', (e) => {
       const target = document.getElementById(e.target.getAttribute('data-target'));
       panel.classList.add('hover');
       target.classList.add('details', 'vh-100');
-      document.querySelector('header').classList.add('shrinked');
+      const headerHeight = document.querySelector('header').clientHeight;
+      panel.style = `top: -${Math.max(headerHeight - window.pageYOffset, 0)}px;`;
       target.addEventListener('mouseleave', () => {
         hide(panel, target);
       });

@@ -52,20 +52,31 @@ section#placeholder {
 }
 
 header {
-  position: fixed;
-  z-index: 15;
-  width: 100vw;
+  position: relative;
+  z-index: 9;
   background: var(--primary-color);
   padding: 15px 10px;
-  transition: all .5s ease-out;
 }
 
 header.shrinked {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 11;
   background: var(--white);
   color: var(--black);
   padding-top: 2px;
   padding-bottom: 2px;
   box-shadow: 0px 3px 6px #00000029;
+}
+
+header.slide-down {
+  animation: slide-down .8s ease-out;
+}
+
+header.shrinked.slide-up {
+  transition: top .8s;
+  top: -100px;
 }
 
 .shrinked nav.navbar-dark .nav-item .nav-link {
@@ -74,10 +85,6 @@ header.shrinked {
 
 header.shrinked .border {
   border-color: var(--black) !important;
-}
-
-header.hidden {
-  transform: translateY(-100%);
 }
 
 .navbar-brand img {
@@ -174,6 +181,7 @@ a.btn.btn-primary {
 
 .panel {
   transition: background .2s ease-out;
+  position: relative;
 }
 
 .panel.hover {
@@ -297,6 +305,24 @@ p.number {
   }
   100% {
     transform: translateY(-7px);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 
