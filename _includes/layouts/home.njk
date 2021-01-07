@@ -1,9 +1,9 @@
 ---
 layout: layouts/base.njk
 ---
-<div class="d-flex position-absolute panel vh-100">
+<div class="d-flex position-absolute panel vh-100 w-100">
 {% for sum in summary %}
-  <div id="panel{{ loop.index }}" class="col px-5 d-flex my-auto">
+  <div id="panel{{ loop.index }}" class="col-4 px-5 d-flex my-auto">
     <div class="my-auto">
       <p class="fs-3">0{{ loop.index}}</p>
       {{ sum.title | markdown | safe }}
@@ -26,7 +26,7 @@ layout: layouts/base.njk
     <h2 class="p-5">Laissez-nous nous présenter en 3 points</h2>
     <div class="row">
       {% for sum in summary %}
-        <div class="col px-5 summary" data-target="panel{{ loop.index }}">
+        <div class="col-4  px-5 summary" data-target="panel{{ loop.index }}">
         <p class="fs-3">0{{ loop.index}}</p>
         {{ sum.title | markdown | safe }}
         <span class="fs-3 border rounded-circle d-inline-block circle">+</span>
