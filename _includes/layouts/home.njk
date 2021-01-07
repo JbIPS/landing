@@ -3,7 +3,7 @@ layout: layouts/base.njk
 ---
 <div class="d-flex position-absolute panel vh-100">
 {% for sum in summary %}
-  <div id="panel{{ loop.index }}" class="float-start col px-5 d-flex my-auto">
+  <div id="panel{{ loop.index }}" class="col px-5 d-flex my-auto">
     <div class="my-auto">
       <p class="fs-3">0{{ loop.index}}</p>
       {{ sum.title | markdown | safe }}
