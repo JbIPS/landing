@@ -31,6 +31,7 @@ body {
 main {
   z-index: 10;
   position: relative;
+  overflow-x: hidden;
 }
 
 section {
@@ -55,15 +56,13 @@ section#placeholder {
 }
 
 header {
-  position: relative;
+  position: fixed;
   z-index: 9;
   background: var(--primary-color);
   padding: 15px 10px;
 }
 
 header.shrinked {
-  width: 100vw;
-  position: fixed;
   top: 0;
   z-index: 11;
   background: var(--white);
@@ -109,6 +108,11 @@ h3 {
 
 .hero {
   height: 100vh;
+  background: transparent;
+}
+
+.hero > div:not(#headerPlaceholder) {
+  background: var(--primary-color);
 }
 
 .hero h3 {
@@ -152,8 +156,12 @@ footer ul a, footer h3 {
   opacity: 1;
 }
 
-.indent--2 {
+.indent--1 {
   text-indent: -1em;
+}
+
+.indent--2 {
+  text-indent: -2em;
 }
 
 .pad-2 {
@@ -184,19 +192,35 @@ a.btn.btn-primary {
 
 .summary {
   position: relative;
-  top: 0;
-  height: auto;
   transition: all .5s;
 }
 
 .summary:hover {
   background: url({{ '/img/red_blue/red_panel.svg' | url }}) var(--white) no-repeat center / cover ;
-  height: 100vh;
-  top: -50vh;
   z-index: 1;
   padding-top: 3rem;
   color: var(--black);
   border: none;
+  bottom: 0;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.summary:hover:nth-child(1) {
+  left: 0;
+}
+
+.summary:hover:nth-child(3) {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.summary:hover:nth-child(5) {
+  right: 0;
 }
 
 .summary:hover strong, .summary:hover h3 {
@@ -208,6 +232,14 @@ a.btn.btn-primary {
 }
 
 .summary:hover .details {
+  display: block;
+}
+
+.dummy {
+  display: none;
+}
+
+.summary:hover + .dummy {
   display: block;
 }
 

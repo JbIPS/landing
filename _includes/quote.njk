@@ -1,15 +1,15 @@
 <section class="bg-light py-5">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-2">
+      <div class="col-3">
         <img class="img-fluid" src="{{ testimonial.image | url }}" alt="Portrait de {{ testimonial.name }}">
       </div>
-      <div class="col-6">
+      <div class="col-8">
         <figure>
           <blockquote class="blockquote">
             <p>{{ testimonial.citation }}</p>
           </blockquote>
-          <figcaption class="blockquote-footer indent--2 pad-2">
+          <figcaption class="blockquote-footer indent--1 pad-2">
             {{ testimonial.name }} <br/> {{ testimonial.job }}
           </figcaption>
         </figure>
