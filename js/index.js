@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", function() {
     const sy = window.pageYOffset;
     const header = document.querySelector('header');
     // Don't show on small scroll
-    if((sy - lastScroll) < 50 && (sy - lastScroll) > -50) return;
+    //if((sy - lastScroll) < 50 && (sy - lastScroll) > -50) return;
 
     if(sy < lastScroll && sy < 20) {
       header.classList.remove('shrinked');
@@ -38,30 +38,6 @@ window.addEventListener("DOMContentLoaded", function() {
     }
     lastScroll = sy;
   })
-
-  // Panels
-  const summaries = document.querySelectorAll('.summary');
-  const panel = document.querySelector('.panel');
-  const hide = (panel, target) => {
-    panel.classList.remove('hover');
-    target.classList.remove('details', 'vh-100');
-    target.style = "";
-  }
-  summaries.forEach((sum) => {
-    sum.addEventListener('mouseenter', (e) => {
-      const target = document.getElementById(e.target.getAttribute('data-target'));
-      panel.classList.add('hover');
-      target.classList.add('details', 'vh-100');
-      const headerHeight = document.querySelector('header').clientHeight;
-      panel.style = `top: -${Math.max(headerHeight - window.pageYOffset, 0)}px;`;
-      target.addEventListener('mouseleave', () => {
-        hide(panel, target);
-      });
-      window.addEventListener('scroll', () => {
-        hide(panel, target);
-      });
-    })
-  });
 
 	// Footer parallax
 	const placeholder = document.getElementById('placeholder')
