@@ -18,15 +18,16 @@ window.addEventListener("DOMContentLoaded", function() {
 
   // Header stick shrink
   let lastScroll = window.pageYOffset;
+  const header = document.querySelector('header');
   window.addEventListener('scroll', (e) => {
     const sy = window.pageYOffset;
-    const header = document.querySelector('header');
     // Don't show on small scroll
     //if((sy - lastScroll) < 50 && (sy - lastScroll) > -50) return;
 
     if(sy < lastScroll && sy < 20) {
       header.classList.remove('shrinked');
       header.classList.remove('slide-up');
+      header.classList.remove('slide-down');
       header.onanimationend = null;
     }
     else if(sy < lastScroll) {
@@ -43,6 +44,10 @@ window.addEventListener("DOMContentLoaded", function() {
 	const placeholder = document.getElementById('placeholder')
 	const footer = document.querySelector('footer')
 
+  // header
+  const headerPlaceholder = document.getElementById('headerPlaceholder');
+  const hero = document.getElementById('heroContent');
+
 	// On DOMContentLoaded, set placeholder height to be equal to footer height
 	updateHeight()
 
@@ -56,5 +61,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	function updateHeight() {
 		// Placeholder should always match footer height
 		placeholder.style.height = `${footer.offsetHeight}px`
+    headerPlaceholder.style.height = `${header.offsetHeight}px`;
+    hero.style.height = `calc(100% - ${headerPlaceholder.offsetHeight}px)`;
 	}
 })
