@@ -150,7 +150,7 @@ footer ul a, footer h3 {
 }
 
 .indent--2 {
-  text-indent: -1.5em;
+  text-indent: -1em;
 }
 
 .pad-2 {
@@ -179,50 +179,42 @@ a.btn.btn-primary {
   border-left: 1px solid var(--white);
 }
 
-.panel {
-  transition: background .2s ease-out;
+.summary {
+  position: relative;
+  top: 0;
+  height: auto;
+  transition: all .5s;
 }
 
-.panel.hover {
-  z-index: 3;
+.summary:hover {
+  background: url(/landing/img/red_blue/red_panel.svg) var(--white) no-repeat center / cover ;
+  height: 100vh;
+  top: -50vh;
+  z-index: 1;
+  padding-top: 3rem;
+  color: var(--black);
+  border: none;
+}
+
+.summary:hover strong, .summary:hover h3 {
+  color: var(--black);
+}
+
+.summary .details {
+  display: none;
+}
+
+.summary:hover .details {
+  display: block;
+}
+
+.summary:hover ~ .overlay {
   background: rgba(0, 0, 0, 0.5);
-}
-
-.panel > div {
-  background-color: white;
-  background-size: cover;
-  color: var(--black);
-  height: 0;
-  overflow: hidden;
-  transition: height .1s linear;
-}
-
-.panel > div:nth-child(1) {
-  background-image: url(/landing/img/red_blue/red_panel.svg);
-}
-
-.panel > div:nth-child(2) {
-  background-image: url(/landing/img/red_blue/red_panel.svg);
-}
-
-.panel > div:nth-child(3) {
-  background-image: url(/landing/img/red_blue/red_panel.svg);
-}
-
-.panel > div.details {
-  z-index: 30;
-}
-
-.panel > div strong {
-  color: var(--black);
-}
-
-.panel span {
-  transition: all .4s linear;
-}
-
-.panel .details span {
-  transform: rotate(45deg);
+  width: 100%;
+  height: calc(100% + 120px);
+  position: absolute;
+  top: -120px;
+  left: 0;
 }
 
 .circle {
@@ -230,6 +222,10 @@ a.btn.btn-primary {
   height: 30px;
   text-align: center;
   line-height: 26px;
+}
+
+.summary:hover .circle {
+  display: none;
 }
 
 .bg-light h2 {

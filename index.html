@@ -46,7 +46,7 @@
     </header>
 
     <main>
-      <div class="d-flex position-absolute panel vh-100 w-100">
+      <div class="d-flex position-absolute panel vh-100 w-100 d-none">
 
   <div id="panel1" class="col-4 px-5 d-flex my-auto">
     <div class="my-auto">
@@ -82,7 +82,7 @@
   </div>
 
 </div>
-<section class="hero d-flex position-relative">
+<section class="hero d-flex position-relative overflow-visible">
   <div class="my-auto">
     <div class="col-6 ms-5">
       <h1 class="">
@@ -93,30 +93,52 @@
       <h2 class="fs-5 text-center">Révéler les talents. Libérer la performance.</h2>
     </div>
     <h2 class="p-5">Laissez-nous nous présenter en 3 points</h2>
-    <div class="row">
+    
       
-        <div class="col-4  px-5 summary" data-target="panel1">
-        <p class="fs-3">01</p>
-        <h3 id="immerger-des-salari%C3%A9s-en-start-up">Immerger <strong>des salariés en start-up</strong></h3>
+        <div class="col-4  px-5 float-start d-flex flex-column justify-content-center summary" data-target="panel1">
+          <p class="fs-3">01</p>
+          <h3 id="immerger-des-salari%C3%A9s-en-start-up">Immerger <strong>des salariés en start-up</strong></h3>
 
-        <span class="fs-3 border rounded-circle d-inline-block circle">+</span>
-      </div>
+          <div class="details"><p>Cameo propose des <strong>solutions de mobilité professionnelle</strong> à destination des entreprises. Nous coordonnons des <strong>parcours de formation</strong> pour des salariés de grandes entreprises, en les plaçant en <strong>situation active</strong> au sein de start-ups.</p>
+</div>
+          <span class="fs-3 border rounded-circle circle">+</span>
+        </div>
+        
+          
+          
+          
+        
       
-        <div class="col-4  px-5 summary" data-target="panel2">
-        <p class="fs-3">02</p>
-        <h3 id="r%C3%A9v%C3%A9ler-les-talents">Révéler <strong>les talents</strong></h3>
+        <div class="col-4  px-5 float-start d-flex flex-column justify-content-center summary" data-target="panel2">
+          <p class="fs-3">02</p>
+          <h3 id="r%C3%A9v%C3%A9ler-les-talents">Révéler <strong>les talents</strong></h3>
 
-        <span class="fs-3 border rounded-circle d-inline-block circle">+</span>
-      </div>
+          <div class="details"><p>Nos parcours amènent les apprenants à exprimer leurs compétences dans de nouveaux environnements, plus agiles. Ils conduisent les apprenants à <strong>adopter une posture entrepreneuriale</strong> et <strong>acquérir de nouvelles compétences</strong>.</p>
+</div>
+          <span class="fs-3 border rounded-circle circle">+</span>
+        </div>
+        
+          
+          
+          
+        
       
-        <div class="col-4  px-5 summary" data-target="panel3">
-        <p class="fs-3">03</p>
-        <h3 id="lib%C3%A9rer-la-performance">Libérer <strong>la performance</strong></h3>
+        <div class="col-4  px-5 float-start d-flex flex-column justify-content-center summary" data-target="panel3">
+          <p class="fs-3">03</p>
+          <h3 id="lib%C3%A9rer-la-performance">Libérer <strong>la performance</strong></h3>
 
-        <span class="fs-3 border rounded-circle d-inline-block circle">+</span>
-      </div>
+          <div class="details"><p>En permettant à leurs collaborateurs de révéler puis mettre à profit ces nouveaux potentiels, nos parcours constituent <strong>une solution innovante pour les entreprises</strong> pour <strong>former leurs collaborateurs</strong> et <strong>faciliter la mobilité professionnelle</strong>. Et en définitive, <strong>renforcer leur performance</strong>.</p>
+</div>
+          <span class="fs-3 border rounded-circle circle">+</span>
+        </div>
+        
+          
+          
+          
+        
       
-    </div>
+      <div class="overlay"></div>
+    
     <div class="position-absolute bottom-0 w-100 mb-2">
       <p class="text-center m-0">Scrollez</p>
       <p class="text-center fs-1 lh-0 arrow">&#8964;</p>
@@ -125,7 +147,7 @@
 </section>
 <section class="bg-light">
   <div class="container pt-5">
-    <h2 class="my-5 fs-1">Pourquoi et quand faire appel <strong>à nos services ?</strong></h2>
+    <h2 class="my-5 fs-1">Pourquoi et quand faire appel <strong>à nos services&nbsp;?</strong></h2>
     <div class="glider-contain">
       <div class="controls">
         <button aria-label="Previous" class="glider-prev">←</button>
@@ -172,7 +194,7 @@
 </p>
       <a class="btn btn-primary rounded-pill" href="/landing/offres">Let's go</a>
     </div>
-    <div class="col-6 svg-bkg d-flex ps-0" style="background-image: url(%2Flanding%2Fimg%2Fyellow_blue%2FAsset%2011.svg);">
+    <div class="col-6 svg-bkg d-flex ps-0" style="background-image: url('/landing/img/yellow_blue/Asset 11.svg');">
       <div class="col-6 ps-0 my-auto">
         <img class="img-fluid" src="/landing/img/lab1.webp" alt="Notre offre">
       </div>
@@ -184,7 +206,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-2">
-        <img class="img-fluid" src="/img/audrey_amiot.webp" alt="Portrait de Audrey Amiot">
+        <img class="img-fluid" src="/landing/img/audrey_amiot.webp" alt="Portrait de Audrey Amiot">
       </div>
       <div class="col-6">
         <figure>
@@ -203,13 +225,10 @@
 
 <section class="bg-light pt-5">
   <div class="row">
-    <div class="col-5 svg-bkg d-flex ps-0" style="background-image: url(%2Flanding%2Fimg%2Fred_blue%2FAsset%2025.svg);">
-      
-        
-      
+    <div class="col-5 svg-bkg d-flex ps-0" style="background-image: url('/landing/img/red_blue/Asset 25.svg');">
     </div>
     <div class="col-7 p-5 my-5">
-      <h2>Comment créons-nous <strong>de la valeur ?</strong></h2>
+      <h2>Comment créons-nous <strong>de la valeur&nbsp;?</strong></h2>
       
         <h3>Pour les entreprises</h3>
         <p>Cameo <strong>renforce la performance</strong> des entreprises en révélant des compétences inexploitées et des potentiels inhibés chez leurs collaborateurs, et <strong>facilite la mobilité interne</strong>.</p>
@@ -259,7 +278,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-2">
-        <img class="img-fluid" src="/img/laurence_ricard.webp" alt="Portrait de Laurence Ricard">
+        <img class="img-fluid" src="/landing/img/laurence_ricard.webp" alt="Portrait de Laurence Ricard">
       </div>
       <div class="col-6">
         <figure>
@@ -277,9 +296,9 @@
 </section>
 
 <section class="">
-  <div class="row justify-content-end" style="background: url(%2Flanding%2Fimg%2Fred_blue%2FAsset%207b.svg) no-repeat center;">
+  <div class="row justify-content-end" style="background: url('/landing/img/red_blue/Asset 7b.svg') no-repeat center;">
     <div class="col-6 p-5">
-      <h2>Envie de commencer <strong>l'aventure ?</strong></h2>
+      <h2>Envie de commencer <strong>l'aventure&nbsp;?</strong></h2>
       <p>Nos parcours de formation s’inscrivent dans une démarche <strong>d’accompagnement</strong> et une approche <strong>pragmatique</strong> et concrète. Cette exigence fait de chaque expérience Cameo un véritable apprentissage personnalisé, une initiation par l’expérience, approuvée par une <strong>certification</strong> reconnue.</p>
 
       <a class="btn btn-primary rounded-pill" href="/landing/partenaires">Let's go</a>
@@ -312,7 +331,7 @@
 
     <section id="placeholder">
     </section>
-    <footer class="position-fixed bottom-0 p-5 vw-100 container" style="background: url(%2Flanding%2Fimg%2Fyellow_red%2FAsset%2017.svg) no-repeat right;">
+    <footer class="position-fixed bottom-0 p-5 vw-100" style="background: url('/landing/img/yellow_red/Asset 17.svg') no-repeat right;">
       <div class="row justify-content-evenly">
         <div class="col-4">
           <div class="py-4">
