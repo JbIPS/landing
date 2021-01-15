@@ -3,13 +3,26 @@ permalink: css/index.css
 ---
 @font-face {
   font-family: TTNorms;
+  src: url({{ '/fonts/TTNormsPro-Light.otf' | url }}) format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: TTNorms;
+  src: url({{ '/fonts/TTNormsPro-Regular.otf' | url }}) format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: TTNorms;
   src: url({{ '/fonts/TTNormsPro-Medium.otf' | url }}) format('opentype');
+  font-weight: 500;
 }
 
 @font-face {
   font-family: TTNorms;
   src: url({{ '/fonts/TTNormsPro-Bold.otf' | url }}) format('opentype');
-  font-weight: bold;
+  font-weight: 700;
 }
 
 :root {
@@ -22,10 +35,27 @@ permalink: css/index.css
   --red: #FF5C55;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 body {
   background-color: var(--primary-color);
   color: var(--white);
   font-family: TTNorms;
+  font-weight: 500;
 }
 
 main {
@@ -198,6 +228,7 @@ a.btn.btn-primary {
   color: var(--primary-color);
   min-width: 8em;
   background-color: var(--white);
+  border: none;
 }
 
 .row.panel-row {
