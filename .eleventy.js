@@ -22,6 +22,10 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addFilter('log', (elem) => {
+    console.log(elem);
+  });
+
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("js");

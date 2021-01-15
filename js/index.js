@@ -1,20 +1,23 @@
 window.addEventListener("DOMContentLoaded", function() {
 	// Slideshow
-	new Glider(document.querySelector('.glider'), {
-		draggable: true,
-    slidesToShow: 1.4,
-		slidesToScroll: 1,
-		arrows: {
-			prev: '.glider-prev',
-			next: '.glider-next'
-		},
-    responsive: [{
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 2.5
-      }
-    }]
-	});
+  const gliders = document.querySelectorAll('.glider');
+  gliders.forEach(glider => {
+    new Glider(glider, {
+      draggable: true,
+      slidesToShow: glider.classList.contains('posts') ? 1.1 : 1.3,
+      slidesToScroll: 1,
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      },
+      responsive: [{
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2.5
+        }
+      }]
+    });
+  })
 
   // Header stick shrink
   let lastScroll = window.pageYOffset;
@@ -62,6 +65,6 @@ window.addEventListener("DOMContentLoaded", function() {
 		// Placeholder should always match footer height
 		placeholder.style.height = `${footer.offsetHeight}px`
     headerPlaceholder.style.height = `${header.offsetHeight}px`;
-    hero.style.height = `calc(100% - ${headerPlaceholder.offsetHeight}px)`;
+    //hero.style.height = `calc(100% - ${headerPlaceholder.offsetHeight}px)`;
 	}
 })

@@ -3,70 +3,72 @@ layout: layouts/base.njk
 ---
 <section class="hero position-relative">
   <div class="w-100" id="headerPlaceholder"></div>
-  <div id="heroContent" class="my-auto w-100">
-    <div class="col-6 ms-5">
+  <div id="heroContent" class="my-auto w-100 d-flex flex-column justify-content-center">
+    <div class="col-12 col-md-6 ms-md-5 px-3">
       <h1 class="">
         <a href="{{ '/' | url }}" class="w-100">
           <img class="w-100" src="{{ '/img/logo.svg' | url }}" alt="Cameo">
         </a>
       </h1>
-      <h2 class="fs-5 text-center">Révéler les talents. Libérer la performance.</h2>
+      <h2 class="baseline text-center">Révéler les talents. Libérer la performance.</h2>
     </div>
-    <h2 class="p-5">Laissez-nous nous présenter en 3 points</h2>
-    <div class="row">
+    <h2 class="p-4 fs-1">Laissez-nous nous présenter en 3 points</h2>
+    <div class="row panel-row">
       {% for sum in summary %}
         {% set index = loop.index %}
         {% for i in [1, 2] %}
-          <div class="col-4  px-5 {%if loop.first %}summary{% else %}dummy{% endif %}">
-            <p class="fs-3">0{{ index}}</p>
+          <div class="col-11 col-md-4 px-5 justify-content-center flex-column {%if loop.first %}d-flex summary{% else %}dummy{% endif %}">
+            <p class="fs-3 mt-5">0{{ index}}</p>
             {{ sum.title | markdown | safe }}
             {% if loop.first %}
               <div class="details">{{ sum.text | markdown | safe }}</div>
             {% endif %}
-            <span class="fs-3 border d-inline-block rounded-circle circle">+</span>
+            <span class="fs-3 border d-inline-block rounded-circle circle d-none d-md-block">+</span>
           </div>
         {% endfor %}
       {% endfor %}
-      <div class="overlay"></div>
+      <div class="overlay d-none d-md-block"></div>
     </div>
-    <div class="position-absolute bottom-0 w-100 mb-2">
+    <div class="position-absolute bottom-0 w-100 mb-2 d-none d-md-block">
       <p class="text-center m-0">Scrollez</p>
       <p class="text-center fs-1 lh-0 arrow">&#8964;</p>
     </div>
   </div>
 </section>
 <section class="bg-light">
-  <div class="ps-5 ms-5 pt-5">
-    <h2 class="my-5 fs-1">Pourquoi et quand faire appel <strong>à nos services&nbsp;?</strong></h2>
-    <div class="glider-contain">
-      <div class="controls">
+  <div class="pt-5 ps-md-5 ms-md-5 pt-md-5">
+    <h2 class="col-10 ps-4 my-md-5 fs-1">Pourquoi et quand faire appel <strong>à nos services&nbsp;?</strong></h2>
+    <div class="glider-contain ms-4 mt-5">
+      <div class="controls d-none d-md-block">
         <button aria-label="Previous" class="glider-prev">←</button>
         <button aria-label="Next" class="glider-next">→</button>
       </div>
       <div class="glider">
       {% for case in usecases %}
-        <div class="px-5 pt-5 pb-3 d-flex flex-column justify-content-between usecase">
-          <h3 class="fs-4">{{ case.text }}</h3>
-          <img class="img-fluid mt-4" src="{{ case.image | url }}" alt="Illustration abstraite">
-          <div class="details">
-            <p class="">{{ case.details }}</p>
-            <a class="btn btn-outline-light px-4 rounded-pill" href="{{ '/partenaires' | url }}">Let's go!</a>
+        <div class="d-flex flex-column justify-content-between usecase">
+          <div class="content px-5 py-4 flex-grow-1 d-flex flex-column justify-content-around">
+            <h3 class="fs-4">{{ case.text }}</h3>
+            <div class="details">
+              <p class="">{{ case.details }}</p>
+              <a class="btn btn-light px-4 rounded-pill" href="{{ '/partenaires' | url }}">Let's go!</a>
+            </div>
           </div>
+          <img class="img-fluid" src="{{ case.image | url }}" alt="Illustration abstraite">
         </div>
       {% endfor %}
       </div>
     </div>
   </div>
 </section>
-<section class="bg-light pt-5">
+<section class="bg-light pt-2">
   <div class="row justify-content-end">
-    <div class="col-5 p-5 my-5">
-      <h2 class="indent--2">Notre offre <br/><strong>en quelques mots</strong></h2>
+    <div class="col-12 col-md-5 p-5 my-5">
+      <h2 class="ps-4 indent--1">Notre offre <br/><strong>en quelques mots</strong></h2>
       <p>{{ presentation_offre | markdown | safe }}</p>
       <a class="btn btn-primary rounded-pill" href="{{ '/offres' | url }}">Let's go</a>
     </div>
-    <div class="col-6 svg-bkg d-flex ps-0" style="background-image: url('{{ '/img/yellow_blue/Asset 11.svg' | url }}');">
-      <div class="col-8 ps-0 my-auto">
+    <div class="col-12 col-md-6 svg-bkg d-flex ps-0" style="background-image: url('{{ '/img/yellow_blue/Asset 11.svg' | url }}');">
+      <div class="col-9 ps-0 my-auto">
         <img class="img-fluid" src="{{ '/img/lab1_squared.webp' | url }}" alt="Notre offre">
       </div>
     </div>
@@ -76,10 +78,10 @@ layout: layouts/base.njk
 {% include 'quote.njk' %}
 <section class="bg-light pt-5">
   <div class="row">
-    <div class="col-5 svg-bkg d-flex ps-0" style="background-image: url('{{ '/img/red_blue/Asset 25.svg' | url }}');">
+    <h2 class="text-center px-4 my-5 fs-1">Comment créons-nous <strong>de la valeur&nbsp;?</strong></h2>
+    <div class="col-8 mx-auto col-md-5 svg-bkg d-flex ps-0" style="background-image: url('{{ '/img/red_blue/Asset 25.svg' | url }}');">
     </div>
-    <div class="col-7 p-5 my-5">
-      <h2>Comment créons-nous <strong>de la valeur&nbsp;?</strong></h2>
+    <div class="col-8 mx-auto col-md-7 p-5 my-5">
       {% for value in values %}
         <h3>{{ value.title }}</h3>
         {{ value.text | markdown | safe }}
@@ -87,9 +89,9 @@ layout: layouts/base.njk
     </div>
   </div>
 </section>
-<section class="bg-secondary-color d-flex flex-wrap justify-content-evenly">
+<section class="bg-secondary-color d-flex flex-wrap justify-content-evenly ps-3">
   {% for number in numbers %}
-    <div class="d-flex align-items-center">
+    <div class="col-5">
       <p class="number">{{ number.number }}</p>
       <p class="">{{ number.text }}</p>
     </div>
@@ -98,32 +100,27 @@ layout: layouts/base.njk
 {% set testimonial = testimonials | last %}
 {% include 'quote.njk' %}
 <section class="">
-  <div class="row justify-content-end" style="background: url('{{ '/img/red_blue/Asset 7b.svg' | url }}') no-repeat center;">
-    <div class="col-6 p-5">
-      <h2>Envie de commencer <strong>l'aventure&nbsp;?</strong></h2>
-      {{ start | markdown | safe }}
-      <a class="btn btn-primary rounded-pill" href="{{ '/partenaires' | url }}">Let's go</a>
+  <div class="row svg-bkg small" style="background-image: url('{{ '/img/red_blue/Asset 7b.svg' | url }}');">
+    <div class="col-8 ps-4 ms-5 d-flex flex-column justify-content-center">
+      <h2 class="fs-1">Envie de commencer <strong>l'aventure&nbsp;?</strong></h2>
+      <div class="d-none">
+        {{ start | markdown | safe }}
+      </div>
+      <a class="btn btn-primary rounded-pill mt-4 w-50" href="{{ '/partenaires' | url }}">Let's go</a>
   </div>
 </section>
-<section class="bg-light p-5 blog">
-  <h2 class="ps-5">Dans <strong>l'actualité</strong></h2>
-  <div class="row ps-5">
-    <div class="col-5">
-      <div class="post active">
-        <h3>Ils nous inspirent</h3>
-        <p class="fw-bold active">"Travailler en 2020 : du sens sinon rien !" Rencontre avec ASG</p>
-      </div>
-      <div class="post">
-        <h3>Le futur est déjà là</h3>
-        <p class="fw-bold">Mes salariés sont-ils prêts pour un cameo</p>
-      </div>
-      <div class="post">
-        <h3>Retours d'expérience</h3>
-        <p class="fw-bold">Témoignages : Comment Medtronic a rendu ses salariés plus agiles</p>
-      </div>
-    </div>
-    <div class="col-7">
-      <img class="img-fluid" src="{{ '/img/lab3.webp' | url }}">
+<section class="bg-light py-5 ps-5 blog">
+  <h2 class="fs-1">Dans <strong>l'actualité</strong></h2>
+  <div class="glider-contain mt-5">
+    <div class="glider posts">
+      {% for post in collections.post %}
+      <div class="{% if not loop.last %}me-5{% else %}me-2{% endif %}">
+          <img class="img-fluid" src="{{ post.data.image | url }}" alt="{{ post.data.title }}">
+          <h3 class="mt-4">{{ post.data.category }}</h3>
+          <p>{{ post.data.title }}</p>
+        </div>
+      {% endfor %}
     </div>
   </div>
+  <a href="/blog" class="btn btn-primary rounded-pill px-4">Toutes les actualités</a>
 </section>

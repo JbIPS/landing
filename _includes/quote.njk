@@ -1,5 +1,5 @@
 <section class="bg-light py-5">
-  <div class="container">
+  <div class="container pt-5">
     <div class="row justify-content-center">
       <div class="col-3">
         <img class="img-fluid" src="{{ testimonial.image | url }}" alt="Portrait de {{ testimonial.name }}">
@@ -7,6 +7,7 @@
       <div class="col-8">
         <figure>
           <blockquote class="blockquote">
+            <div style="height: 50px;width: 50px: background: red;display: inline"></div>
             <p>{{ testimonial.citation }}</p>
           </blockquote>
           <figcaption class="blockquote-footer indent--1 pad-2">
