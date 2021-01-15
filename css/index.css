@@ -31,6 +31,10 @@ main {
   overflow-x: hidden;
 }
 
+h2.baseline {
+  font-size: 1rem;
+}
+
 section {
   overflow-x: hidden;
   background-color: var(--primary-color);
@@ -49,6 +53,7 @@ section#placeholder {
 }
 
 .bg-light {
+  color: var(--black);
   background-color: var(--white) !important;
 }
 
@@ -100,11 +105,11 @@ nav.navbar-dark .nav-item .nav-link {
 }
 
 h3 {
-  color: var(--black);
+  
 }
 
 .hero {
-  height: 100vh;
+  
   background: transparent;
 }
 
@@ -113,7 +118,7 @@ h3 {
 }
 
 .hero h3 {
-  color: var(--white);
+  
 }
 
 h3 a {
@@ -138,6 +143,15 @@ footer input.form-control::placeholder {
 
 footer ul a, footer h3 {
   color: var(--white);
+}
+
+footer strong {
+  color: var(--secondary-color);
+}
+
+footer .social svg {
+  width: 20px;
+  fill: var(--secondary-color);
 }
 
 .blog h3 {
@@ -170,7 +184,7 @@ footer ul a, footer h3 {
 }
 
 strong {
-  color: var(--secondary-color);
+  
 }
 
 .lh-0 {
@@ -183,17 +197,37 @@ a.btn.btn-primary {
   background-color: var(--white);
 }
 
+.row.panel-row {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  min-height: 90vh;
+}
+
 .summary:nth-child(n+2) {
-  border-left: 1px solid var(--white);
+  
 }
 
 .summary {
   position: relative;
   transition: all .5s;
+  background: url(/landing/img/red_blue/red_panel.svg) white no-repeat center/cover;
+  color: var(--black);
+}
+
+.summary:nth-child(3) {
+  background: yellow;
+}
+
+.summary:nth-child(5) {
+  background: blue;
+}
+
+.summary:nth-child(5) * {
+  color: var(--white);
 }
 
 .summary:hover {
-  background: url(/landing/img/red_blue/red_panel.svg) var(--white) no-repeat center / cover ;
+  background: url(/landing/img/red_blue/red_panel.svg) no-repeat center / cover ;
   z-index: 1;
   padding-top: 3rem;
   color: var(--black);
@@ -208,16 +242,24 @@ a.btn.btn-primary {
 
 .summary:hover:nth-child(1) {
   left: 0;
+  background-color: white;
 }
 
 .summary:hover:nth-child(3) {
+  background-image: url(/landing/img/Visuel_02-brut.svg);
   left: 0;
   right: 0;
   margin: auto;
 }
 
 .summary:hover:nth-child(5) {
+  background-image: url(/landing/img/blue_bkg.svg);
   right: 0;
+  color: var(--white);
+}
+
+.summary:hover:nth-child(5) strong, .summary:hover:nth-child(5) h3 {
+  color: var(--white);
 }
 
 .summary:hover strong, .summary:hover h3 {
@@ -225,7 +267,7 @@ a.btn.btn-primary {
 }
 
 .summary .details {
-  display: none;
+  
 }
 
 .summary:hover .details {
@@ -265,7 +307,7 @@ a.btn.btn-primary {
 }
 
 .bg-light p {
-  color: var(--black);
+  
 }
 
 .bg-light strong {
@@ -280,30 +322,58 @@ a.btn.btn-primary {
 .svg-bkg {
   background-size: cover;
   background-position: bottom;
+  min-height: 75vh;
+  background-repeat: no-repeat;
+}
+
+.svg-bkg.small {
+  background-position-x: 100%;
+  min-height: 66vh;
 }
 
 p.number {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bolder;
 }
 
 .number + p {
-  max-width: 9rem;
+  
+  margin-top: -2rem;
 }
 
 .usecase {
   transition: background .8s ease-out;
 }
 
+.usecase .content {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.usecase:nth-child(2n) .content {
+  background: var(--white);
+  color: var(--black);
+}
+
+.btn-light {
+  color: var(--primary-color);
+}
+
+.usecase:nth-child(2n) .btn-light {
+  color: var(--white);
+  background: var(--primary-color);
+}
+
+.content h3, .content p {
+  
+}
+
 .usecase:hover {
   background: var(--primary-color);
-  padding-bottom: 2rem !important;
-  margin: 0 !important;
-  justify-content: space-evenly !important;
 }
 
 .usecase .details {
-  display: none;
+  
 }
 
 .usecase:hover p, .usecase:hover h3 {
@@ -362,6 +432,10 @@ p.number {
 
 .controls button {
   position: static;
+}
+
+.glider-track {
+  scrollbar-width: 0;
 }
 
 /* Glider */
