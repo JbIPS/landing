@@ -4,7 +4,7 @@ layout: layouts/base.njk
 <section class="hero position-relative">
   <div class="w-100" id="headerPlaceholder"></div>
   <div id="heroContent" class="my-auto w-100 d-flex flex-column justify-content-center">
-    <div class="col-12 col-md-6 ms-md-5 px-3">
+    <div class="col-12 col-md-6 ms-md-5 px-3 mt-lg-5">
       <h1 class="">
         <a href="{{ '/' | url }}" class="w-100">
           <img class="w-100" src="{{ '/img/logo.svg' | url }}" alt="Cameo">
@@ -12,18 +12,20 @@ layout: layouts/base.njk
       </h1>
       <h2 class="baseline text-center font-regular">Révéler les talents. Libérer la performance.</h2>
     </div>
-    <h2 class="p-4 fs-1">Laissez-nous nous présenter en 3 points</h2>
+    <h2 class="p-4 fs-1 mt-lg-4 m-lg-5">Laissez-nous nous présenter en 3 points</h2>
     <div class="row panel-row">
       {% for sum in summary %}
         {% set index = loop.index %}
         {% for i in [1, 2] %}
-          <div class="col-11 col-md-4 px-5 justify-content-center flex-column {%if loop.first %}d-flex summary{% else %}dummy{% endif %}">
-            <p class="fs-3 mt-5">0{{ index}}</p>
-            {{ sum.title | markdown | safe }}
-            {% if loop.first %}
-              <div class="details font-regular">{{ sum.text | markdown | safe }}</div>
-            {% endif %}
-            <span class="fs-3 border d-inline-block rounded-circle circle d-none d-md-block">+</span>
+          <div class="col-11 col-md-4 {%if loop.first %}summary{% else %}dummy{% endif %}">
+            <div class="px-5 my-auto">
+              <p class="fs-3 mt-5 mt-lg-0">0{{ index}}</p>
+              {{ sum.title | markdown | safe }}
+              {% if loop.first %}
+                <div class="details d-lg-none font-regular">{{ sum.text | markdown | safe }}</div>
+              {% endif %}
+              <span class="fs-1 mt-4 border d-inline-block rounded-circle circle d-none d-lg-block">+</span>
+            </div>
           </div>
         {% endfor %}
       {% endfor %}
@@ -36,8 +38,8 @@ layout: layouts/base.njk
   </div>
 </section>
 <section class="bg-light">
-  <div class="pt-5 ps-md-5 ms-md-5 pt-md-5">
-    <h2 class="col-10 ps-4 my-md-5 fs-1">Pourquoi et quand faire appel <strong>à nos services&nbsp;?</strong></h2>
+  <div class="pt-5 ps-md-5 ms-lg-5 py-lg-5">
+    <h2 class="col-10 col-lg-6 ps-4 my-md-5 fs-1">Pourquoi et quand faire appel <strong>à nos services&nbsp;?</strong></h2>
     <div class="glider-contain ms-4 mt-5">
       <div class="controls d-none d-md-block">
         <button aria-label="Previous" class="glider-prev">←</button>
@@ -45,10 +47,10 @@ layout: layouts/base.njk
       </div>
       <div class="glider">
       {% for case in usecases %}
-        <div class="d-flex flex-column justify-content-between usecase">
-          <div class="content px-5 py-4 flex-grow-1 d-flex flex-column justify-content-around">
+        <div class="d-flex flex-column justify-content-between usecase px-lg-5 me-lg-5">
+          <div class="content px-5 px-lg-0 py-4 flex-grow-1 d-flex flex-column justify-content-around">
             <h3 class="fs-4">{{ case.text }}</h3>
-            <div class="details">
+            <div class="details d-lg-none">
               <p class="font-regular">{{ case.details }}</p>
               <a class="btn btn-light px-4 rounded-pill" href="{{ '/partenaires' | url }}">Let's go!</a>
             </div>
@@ -60,7 +62,7 @@ layout: layouts/base.njk
     </div>
   </div>
 </section>
-<section class="bg-light pt-2">
+<section class="bg-light pt-2 pt-lg-5">
   <div class="row justify-content-end">
     <div class="col-12 col-md-5 p-5 my-5">
       <h2 class="ps-4 indent--1">Notre offre <br/><strong>en quelques mots</strong></h2>
@@ -78,10 +80,11 @@ layout: layouts/base.njk
 {% include 'quote.njk' %}
 <section class="bg-light pt-5">
   <div class="row">
-    <h2 class="text-center px-4 my-5 fs-1">Comment créons-nous <strong>de la valeur&nbsp;?</strong></h2>
-    <div class="col-8 mx-auto col-md-5 svg-bkg d-flex ps-0" style="background-image: url('{{ '/img/red_blue/Asset 25.svg' | url }}');">
+    <h2 class="text-center px-4 my-5 fs-1 d-lg-none">Comment créons-nous <strong>de la valeur&nbsp;?</strong></h2>
+    <div class="col-8 mx-auto mx-lg-0 col-lg-5 svg-bkg ps-0" style="background-image: url('{{ '/img/red_blue/Asset 25.svg' | url }}');">
     </div>
-    <div class="col-8 mx-auto col-md-7 p-5 my-5 font-regular">
+    <div class="col-8 mx-auto col-lg-5 p-5 my-5 font-regular">
+      <h2 class="text-center text-lg-start px-4 px-lg-0 my-5 fs-1 d-none d-lg-block">Comment créons-nous <strong>de la valeur&nbsp;?</strong></h2>
       {% for value in values %}
         <h3 class="font-medium">{{ value.title }}</h3>
         {{ value.text | markdown | safe }}

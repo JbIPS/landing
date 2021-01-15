@@ -33,13 +33,14 @@ module.exports = function(eleventyConfig) {
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
     html: true,
-    breaks: true,
+    breaks: false,
     linkify: true
   }).use(markdownItAnchor, {
     permalink: false,
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
   });
+
   eleventyConfig.setLibrary("md", markdownLibrary);
   eleventyConfig.addFilter('markdown', (string) => {
     return markdownLibrary.render(string);
