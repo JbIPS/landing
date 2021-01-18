@@ -103,13 +103,14 @@ layout: layouts/base.njk
 {% set testimonial = testimonials | last %}
 {% include 'quote.njk' %}
 <section class="">
-  <div class="row svg-bkg small" style="background-image: url('{{ '/img/red_blue/Asset 7b.svg' | url }}');">
-    <div class="col-8 ps-4 ms-5 d-flex flex-column justify-content-center">
+  <div class="row svg-bkg small justify-content-lg-end py-lg-5" style="background-image: url('{{ '/img/red_blue/Asset 7b.svg' | url }}');">
+    <div class="col-8 col-lg-6 ps-4 ms-5 my-auto pe-lg-4">
       <h2 class="fs-1">Envie de commencer <strong>l'aventure&nbsp;?</strong></h2>
-      <div class="d-none">
+      <div class="d-none d-lg-block">
         {{ start | markdown | safe }}
       </div>
       <a class="btn btn-primary rounded-pill mt-4 w-50" href="{{ '/partenaires' | url }}">Let's go</a>
+    </div>
   </div>
 </section>
 <section class="bg-light py-5 ps-5 blog">

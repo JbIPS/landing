@@ -160,6 +160,7 @@ h3 a {
 
 footer {
   z-index: 5;
+  background: url("{{ '/img/yellow_red/Asset 17.svg' | url}}") no-repeat right/contain;
 }
 
 footer input.form-control {
@@ -178,7 +179,7 @@ footer ul a, footer h3 {
   color: var(--white);
 }
 
-footer strong {
+footer strong, footer a:hover {
   color: var(--secondary-color);
 }
 
@@ -214,10 +215,6 @@ footer .social svg {
 
 .nav-link {
   color: var(--white);
-}
-
-strong {
-  {#color: var(--secondary-color);#}
 }
 
 .lh-0 {
@@ -267,11 +264,11 @@ a.btn.btn-primary {
   color: var(--primary-color);
 }
 
-.bg-light p {
-  {#color: var(--black);#}
+section strong {
+  color: var(--secondary-color);
 }
 
-.bg-light strong {
+section.bg-light strong {
   color: var(--tertiary-color);
 }
 
@@ -490,4 +487,22 @@ p.number {
   .svg-bkg img {
     max-width: 450px;
   }
+
+  .w-lg-75 {
+    width: 75% !important;
+  }
+
+  .w-lg-100 {
+    width: 100% !important;
+  }
+
+  .position-lg-fixed {
+    position: fixed;
+  }
+
+  .svg-bkg.small {
+    background-size: 60%;
+    background-position: left;
+  }
 }
+
