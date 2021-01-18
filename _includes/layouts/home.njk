@@ -31,7 +31,7 @@ layout: layouts/base.njk
       {% endfor %}
       <div class="overlay d-none d-md-block"></div>
     </div>
-    <div class="position-absolute bottom-0 w-100 mb-2 d-none d-md-block">
+    <div class="position-absolute bottom-0 w-100 mb-2 d-none d-md-block pb-lg-5">
       <p class="text-center m-0">Scrollez</p>
       <p class="text-center fs-1 lh-0 arrow">&#8964;</p>
     </div>
@@ -94,9 +94,9 @@ layout: layouts/base.njk
 </section>
 <section class="bg-secondary-color d-flex flex-wrap justify-content-evenly ps-3">
   {% for number in numbers %}
-    <div class="col-5">
+    <div class="col-5 col-lg-4 d-lg-flex align-items-lg-center">
       <p class="number">{{ number.number }}</p>
-      <p class="">{{ number.text }}</p>
+      <p class="col-lg-4 ms-2">{{ number.text }}</p>
     </div>
   {% endfor %}
 </section>
@@ -104,12 +104,12 @@ layout: layouts/base.njk
 {% include 'quote.njk' %}
 <section class="">
   <div class="row svg-bkg small justify-content-lg-end py-lg-5" style="background-image: url('{{ '/img/red_blue/Asset 7b.svg' | url }}');">
-    <div class="col-8 col-lg-6 ps-4 ms-5 my-auto pe-lg-4">
+    <div class="col-8 col-lg-5 ps-4 ms-5 my-auto ps-lg-0 pe-lg-5">
       <h2 class="fs-1">Envie de commencer <strong>l'aventure&nbsp;?</strong></h2>
       <div class="d-none d-lg-block">
         {{ start | markdown | safe }}
       </div>
-      <a class="btn btn-primary rounded-pill mt-4 w-50" href="{{ '/partenaires' | url }}">Let's go</a>
+      <a class="btn btn-primary rounded-pill mt-4" href="{{ '/partenaires' | url }}">Let's go</a>
     </div>
   </div>
 </section>
