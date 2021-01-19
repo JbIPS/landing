@@ -26,8 +26,48 @@
     },
     {
       "text": "Je veux booster les mobilités internes",
-      "details": "Marre du cloisonnement entre les BU ? Sortez vos salariés de leur bocal pour leur redonner le goût de la découverte et de l'aventure",
+      "details": "Marre du cloisonnement entre les BU ? Sortez vos salariés de leur bocal pour leur redonner le goût de la découverte et de l'aventure. Changements majeurs à l'horizon !",
       "image": "/img/yellow_red/Asset 9.svg"
+    },
+    {
+      "text": "Je modernise un programme intrapreneurial ou de mécénat de compétences",
+      "details": "Et si on prenait les avantages de ce genre de programme, mais qu'on le tournait vers la performance ? Créez des extrapreneurs qui sortiront de vos murs pour mieux les transformer !",
+      "image": "/img/yellow_blue/Asset 3.svg"
+    },
+    {
+      "text": "Je cherche à transformer ma force commerciale",
+      "details": "Le marché devient de plus en plus concurrentiel ? Les nouveaux acteurs bousculent  l'ordre établi ? Ne restez pas en reste et boostez vos équipes avec les techniques de ventes à la pointe du secteur !",
+      "image": "/img/yellow_blue/Asset 20.svg"
+    },
+    {
+      "text": "Je pilote un programme d'accompagnement des talents",
+      "details": "Comment bien préparer vos talents et leur donner toutes les billes pour moderniser votre entreprise ? Montrez leur ce qui se fait de mieux dehors. Faites grandir vos talents en extérieur !",
+      "image": "/img/yellow_red/Asset 11.svg"
+    },
+    {
+      "text": "Je dois créer une offre de services innovante pour acquérir et conserver des clients",
+      "details": "C'est toujours le même problème : se différencier. Et si pour commencer on ne faisait pas comme les autres en interne ? Allez puisez dans la source de l'innovation avec cette formation !",
+      "image": "/img/yellow_red/Asset 15.svg"
+    },
+    {
+      "text": "Je dois développer les compétences numériques des collaborateurs",
+      "details": "Le télétravail n'est plus une option. Mais comment bien le gérer ? Inspirez-vous des entreprises qui l'utilise depuis leur naissance et engager la renaissance de la vôtre !",
+      "image": "/img/red_blue/Asset 16.svg"
+    },
+    {
+      "text": "J'ai besoin de remettre mon utilisateur final au centre du projet",
+      "details": "Parfois, dans les méandres des process, on fini par perdre l'objectif : \"Faciliter la vie de l'utilisateur\". Reprenons les bases de la création de services avec cette formation user-centric !",
+      "image": "/img/yellow_red/Asset 9.svg"
+    },
+    {
+      "text": "J'ai l'obligation d'améliorer l'employabilité de mes collaborateurs",
+      "details": "Ce qui est bien avec les gens qui sont là depuis 20 ans, c'est qu'ils connaissent l'entreprise par cœur. Le problème, c'est qu'ils ne connaissent qu'elle. C'est le moment d'agrandir leur champ de vision !",
+      "image": "/img/yellow_blue/Asset 10.svg"
+    },
+    {
+      "text": "Je mets en place une politique d'égalité homme/femme",
+      "details": "Les accords c'est bien, mais comment mettre des femmes dans le ComEx sans froisser personne ? Offrez leur une formation \"sas\" le temps de faire une place. Elles reviendront pleines d'idées !",
+      "image": "/img/red_blue/Asset 22.svg"
     }
   ],
   "testimonials": [{
