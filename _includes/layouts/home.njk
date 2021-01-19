@@ -13,7 +13,7 @@ layout: layouts/base.njk
       <h2 class="baseline text-center font-regular">Révéler les talents. Libérer la performance.</h2>
     </div>
     <h2 class="p-4 fs-1 mt-lg-4 m-lg-5">Laissez-nous nous présenter en 3 points</h2>
-    <div class="row panel-row align-items-start">
+    <div class="row panel-row">
       {% for sum in summary %}
         {% set index = loop.index %}
         {% for i in [1, 2] %}
@@ -115,7 +115,7 @@ layout: layouts/base.njk
 </section>
 <section class="bg-light py-5 ps-5 blog">
   <h2 class="fs-1">Dans <strong>l'actualité</strong></h2>
-  <div class="glider-contain mt-5">
+  <div class="glider-contain mt-5 d-lg-none">
     <div class="glider posts">
       {% for post in collections.post %}
       <div class="{% if not loop.last %}me-5{% else %}me-2{% endif %}">
@@ -124,6 +124,22 @@ layout: layouts/base.njk
           <p>{{ post.data.title }}</p>
         </div>
       {% endfor %}
+    </div>
+  </div>
+  <div class="row ps-5 d-none d-lg-block position-relative">
+    <div class="col-4">
+      {% for post in collections.post %}
+        <a class="post" href="{{ post.url | url }}">
+          <div class="post-headline pb-4{% if loop.first %} hovered{% endif %}">
+            <h3 class="post-title">{{ post.data.category }}</h3>
+            <p class="fw-bold fs-4">{{ post.data.title }}</p>
+          </div>
+          <img class="position-absolute top-0 mh-100 me-5 thumbnail" src="{{ post.data.image | url }}">
+        </a>
+      {% endfor %}
+    </div>
+    <div class="col-7">
+      <img id="postThumbnail" class="img-fluid" src="">
     </div>
   </div>
   <a href="/blog" class="btn btn-primary rounded-pill px-4">Toutes les actualités</a>
