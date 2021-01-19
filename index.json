@@ -58,10 +58,6 @@
   ],
   "numbers": [
     {
-      "number": "12M€",
-      "text": "de chiffre d'affaire généré entre start-ups et grands groupes"
-    },
-    {
       "number": "50%",
       "text": "de nos apprenants ont réalisé une mobilité interne"
     },
@@ -72,6 +68,10 @@
     {
       "number": "45",
       "text": "ans, c'est la moyenne d'âge de nos apprenants"
+    },
+    {
+      "number": "12M€",
+      "text": "de chiffre d'affaire généré entre start-ups et grands groupes"
     },
     {
       "number": "100%",
