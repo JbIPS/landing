@@ -22,23 +22,28 @@ window.addEventListener("DOMContentLoaded", function() {
   // Header stick shrink
   let lastScroll = window.pageYOffset;
   const header = document.querySelector('header');
+  const nav = header.children[0];
   window.addEventListener('scroll', (e) => {
     const sy = window.pageYOffset;
     // Don't show on small scroll
     //if((sy - lastScroll) < 50 && (sy - lastScroll) > -50) return;
 
     if(sy < lastScroll && sy < 20) {
-      header.classList.remove('shrinked');
-      header.classList.remove('slide-up');
-      header.classList.remove('slide-down');
+      header.classList.remove('shrinked', 'slide-up', 'slide-down');
+      nav.classList.add('navbar-dark');
+      nav.classList.remove('navbar-light');
       header.onanimationend = null;
     }
     else if(sy < lastScroll) {
       header.classList.add('shrinked', 'slide-down');
       header.classList.remove('slide-up');
+      nav.classList.add('navbar-light');
+      nav.classList.remove('navbar-dark');
     } else {
       header.classList.add('slide-up');
       header.classList.remove('slide-down');
+      nav.classList.add('navbar-light');
+      nav.classList.remove('navbar-dark');
     }
     lastScroll = sy;
   })

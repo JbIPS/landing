@@ -59,6 +59,7 @@ main {
   z-index: 10;
   position: relative;
   overflow-x: hidden;
+  pointer-events: none;
 }
 
 h2.baseline {
@@ -68,6 +69,7 @@ h2.baseline {
 section {
   overflow-x: hidden;
   background-color: var(--primary-color);
+  pointer-events: initial;
 }
 
 section.bg-secondary-color {
@@ -88,15 +90,14 @@ section#placeholder {
 }
 
 header {
-  position: fixed;
-  z-index: 9;
-  background: var(--primary-color);
   padding: 15px 10px;
+  background: var(--primary-color);
 }
 
 header.shrinked {
   top: 0;
   z-index: 11;
+  position: fixed;
   background: var(--white);
   color: var(--black);
   padding-top: 2px;
@@ -113,12 +114,25 @@ header.shrinked.slide-up {
   top: -100px;
 }
 
-.shrinked nav.navbar-dark .nav-item .nav-link {
+#headerPlaceholder {
+  background: transparent;
+}
+
+.shrinked .nav-item .nav-link {
   color: var(--black);
 }
 
-header.shrinked .border {
-  border-color: var(--black) !important;
+.shrinked .nav-item.border .nav-link {
+  color: var(--white);
+}
+
+.shrinked .nav-item.border {
+  border: none !important;
+  background: var(--primary-color);
+}
+
+.shrinked .navbar-toggler {
+  color: var(--black);
 }
 
 .navbar-brand img {
@@ -134,30 +148,18 @@ nav.navbar-dark .nav-item .nav-link {
   color: var(--white);
 }
 
-h3 {
-  
-}
-
 .hero {
-  
   background: transparent;
+  pointer-events: none;
 }
 
-.hero > div:not(#headerPlaceholder) {
+#heroContent {
   background: var(--primary-color);
-}
-
-.hero h3 {
-  
+  pointer-events: initial;
 }
 
 h3 a {
   color: var(--white);
-}
-
-footer {
-  z-index: 5;
-  background: url("/landing/img/yellow_red/Asset 17.svg") no-repeat right/contain;
 }
 
 footer input.form-control {
@@ -234,11 +236,28 @@ a.btn.btn-primary {
 .summary {
   position: relative;
   transition: all .5s;
-  background: url(/landing/img/red_blue/red_panel.svg) white no-repeat center/cover;
+  background: white no-repeat center/cover;
   color: var(--black);
 }
 
-.summary:nth-child(5) * {
+.summary strong {
+  color: var(--black);
+}
+
+.summary:nth-child(1) {
+  background-image: url(/landing/img/red_blue/red_panel.svg);
+}
+
+.summary:nth-child(3) {
+  background-image: url(/landing/img/yellow_bkg.svg);
+}
+
+.summary:nth-child(5) {
+  color: var(--white);
+  background-image: url(/landing/img/blue_bkg.svg);
+}
+
+.summary:nth-child(5) strong {
   color: var(--white);
 }
 
@@ -287,12 +306,11 @@ section.bg-light strong {
 }
 
 .number {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bolder;
 }
 
 .number + p {
-  
   margin-top: -2rem;
 }
 
@@ -373,6 +391,10 @@ section.bg-light strong {
 /* Glider */
 
 @media (min-width: 1280px) {
+  header {
+    position: fixed;
+  }
+
   h2.baseline {
     font-size: 1.9rem;
   }
@@ -386,8 +408,12 @@ section.bg-light strong {
     overflow-x: clip;
   }
 
-  .summary {
+  .panel-row .summary {
     background: transparent;
+    color: var(--white);
+  }
+
+  .summary strong {
     color: var(--white);
   }
 
@@ -408,6 +434,10 @@ section.bg-light strong {
     flex-direction: column;
   }
 
+  .summary:hover strong {
+    color: var(--black);
+  }
+
   .summary:hover:nth-child(1) {
     left: 0;
     background-color: white;
@@ -423,6 +453,9 @@ section.bg-light strong {
   .summary:hover:nth-child(5) {
     background-image: url(/landing/img/blue_bkg.svg);
     right: 0;
+    color: var(--white);
+  }
+  .summary:hover:nth-child(5) strong {
     color: var(--white);
   }
 
@@ -508,6 +541,10 @@ section.bg-light strong {
 
   .number + p {
     margin-top: 0;
+  }
+
+  footer {
+    background: url("/landing/img/yellow_red/Asset 17.svg") no-repeat right/contain;
   }
 }
 
