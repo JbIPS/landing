@@ -13,12 +13,12 @@ layout: layouts/base.njk
       <h2 class="baseline text-center font-regular">Révéler les talents. Libérer la performance.</h2>
     </div>
     <h2 class="p-4 fs-1 mt-lg-4 m-lg-5">Laissez-nous nous présenter en 3 points</h2>
-    <div class="row panel-row">
+    <div class="row panel-row align-items-start">
       {% for sum in summary %}
         {% set index = loop.index %}
         {% for i in [1, 2] %}
           <div class="col-11 col-md-4 {%if loop.first %}summary{% else %}dummy{% endif %}">
-            <div class="px-5 my-auto">
+            <div class="px-5">
               <p class="fs-3 mt-5 mt-lg-0">0{{ index}}</p>
               {{ sum.title | markdown | safe }}
               {% if loop.first %}
