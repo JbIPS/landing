@@ -238,6 +238,7 @@ a.btn.btn-primary {
   transition: all .5s;
   background: white no-repeat center/cover;
   color: var(--black);
+  display: flex;
 }
 
 .summary strong {
@@ -414,7 +415,7 @@ section.bg-light strong {
   }
 
   .summary strong {
-    color: var(--white);
+    color: var(--secondary-color);
   }
 
   .summary:nth-child(n+2) > div {
@@ -430,8 +431,15 @@ section.bg-light strong {
     bottom: 0;
     position: absolute;
     height: 100%;
-    display: flex;
     flex-direction: column;
+  }
+
+  .summary:hover div {
+    margin: auto;
+  }
+
+  .summary:hover .circle {
+    display: none !important;
   }
 
   .summary:hover strong {
@@ -457,6 +465,10 @@ section.bg-light strong {
   }
   .summary:hover:nth-child(5) strong {
     color: var(--white);
+  }
+
+  .summary:nth-child(5) strong {
+    color: var(--secondary-color);
   }
 
   .summary:hover:nth-child(n+2) > div {
