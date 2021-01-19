@@ -192,14 +192,6 @@ footer .social svg {
   font-size: 1rem;
 }
 
-.blog div.post {
-  opacity: 0.5;
-}
-
-.blog div.post.active {
-  opacity: 1;
-}
-
 .indent--1 {
   text-indent: -1em;
 }
@@ -411,6 +403,7 @@ section.bg-light strong {
   .row.panel-row {
     min-height: 43vh;
     overflow-x: clip;
+    align-items: flex-start;
   }
 
   .panel-row .summary {
@@ -557,6 +550,35 @@ section.bg-light strong {
 
   .number + p {
     margin-top: 0;
+  }
+
+  .post {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  .post:hover {
+    color: inherit;
+  }
+
+  .thumbnail {
+    transition: opacity .8s ease-out;
+    opacity: 0;
+    left: 40%;
+    pointer-events: none;
+  }
+
+  .post-headline:hover + .thumbnail, .post-headline.hovered + .thumbnail {
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .blog .post-headline {
+    opacity: 0.5;
+  }
+
+  .blog .post-headline:hover, .blog .post-headline.hovered {
+    opacity: 1;
   }
 
   footer {

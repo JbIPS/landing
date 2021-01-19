@@ -25,8 +25,6 @@ window.addEventListener("DOMContentLoaded", function() {
   const nav = header.children[0];
   window.addEventListener('scroll', (e) => {
     const sy = window.pageYOffset;
-    // Don't show on small scroll
-    //if((sy - lastScroll) < 50 && (sy - lastScroll) > -50) return;
 
     if(sy < lastScroll && sy < 20) {
       header.classList.remove('shrinked', 'slide-up', 'slide-down');
@@ -70,6 +68,26 @@ window.addEventListener("DOMContentLoaded", function() {
 		// Placeholder should always match footer height
 		placeholder.style.height = `${footer.offsetHeight}px`
     headerPlaceholder.style.height = `${header.offsetHeight}px`;
-    //hero.style.height = `calc(100% - ${headerPlaceholder.offsetHeight}px)`;
 	}
+
+  // Blog
+  window.addEventListener('load', () => {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    thumbnails.forEach(t => {
+      t.addEventListener('transitionrun', (e) => {
+        if(e.target.parentNode.firstElementChild.classList.contains('hover-out')) {
+          e.target.parentNode.firstElementChild.classList.remove('hover-out');
+          return;
+        }
+        thumbnails.forEach(thumb => {
+          const headline = thumb.parentNode.firstElementChild;
+          if(headline.classList.contains('hovered')) {
+            headline.classList.remove('hovered');
+            headline.classList.add('hover-out');
+          }
+        });
+        t.parentNode.firstElementChild.classList.add('hovered');
+      })
+    })
+  })
 })
