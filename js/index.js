@@ -89,5 +89,17 @@ window.addEventListener("DOMContentLoaded", function() {
         t.parentNode.firstElementChild.classList.add('hovered');
       })
     })
-  })
+  });
+
+  //
+  // Usecases
+  //
+  Array.from(document.getElementsByClassName('usecase'))
+    // remove first (must always stay first)
+    .slice(1)
+    // shuffle list
+    .sort(() => 0.5 - Math.random())
+    .forEach((usecase) => {
+      usecase.parentNode.appendChild(usecase);
+    });
 })

@@ -15,6 +15,11 @@
   ],
   "usecases": [
     {
+      "text": "Je veux booster les mobilités internes",
+      "details": "Marre du cloisonnement entre les BU ? Sortez vos salariés de leur bocal pour leur redonner le goût de la découverte et de l'aventure. Changements majeurs à l'horizon !",
+      "image": "/img/yellow_red/Asset 9.svg"
+    },
+    {
       "text": "J’accompagne la création et déploiement d’une offre partenariale avec une startup",
       "details": "La collaboration avec une start-up peut être compliquée mais elle peut rapporter gros. En envoyant vos salariés au cœur de l'action, vous assurez la réussite du projet.",
       "image": "/img/red_blue/Asset 15.svg"
@@ -23,11 +28,6 @@
       "text": "Je cherche à développer la posture entrepreneuriale des collaborateurs",
       "details": "Oubliez les projets saucissonnés, où chacun ne s'occupe que de sa petite partie. Donnez à vos équipes une vision d'ensemble, d'un bout à l'autre de la chaine. Vous serez surpris.",
       "image": "/img/yellow_blue/Asset 23.svg"
-    },
-    {
-      "text": "Je veux booster les mobilités internes",
-      "details": "Marre du cloisonnement entre les BU ? Sortez vos salariés de leur bocal pour leur redonner le goût de la découverte et de l'aventure. Changements majeurs à l'horizon !",
-      "image": "/img/yellow_red/Asset 9.svg"
     },
     {
       "text": "Je modernise un programme intrapreneurial ou de mécénat de compétences",
