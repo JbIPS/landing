@@ -52,7 +52,6 @@ window.addEventListener("DOMContentLoaded", function() {
 
   // header
   const headerPlaceholder = document.getElementById('headerPlaceholder');
-  const hero = document.getElementById('heroContent');
 
 	// On DOMContentLoaded, set placeholder height to be equal to footer height
 	updateHeight()
@@ -67,7 +66,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	function updateHeight() {
 		// Placeholder should always match footer height
 		placeholder.style.height = `${footer.offsetHeight}px`
-    headerPlaceholder.style.height = `${header.offsetHeight}px`;
+    if(headerPlaceholder) headerPlaceholder.style.height = `${header.offsetHeight}px`;
 	}
 
   // Blog
@@ -90,6 +89,24 @@ window.addEventListener("DOMContentLoaded", function() {
       })
     })
   });
+
+  //
+  // Budget slider
+  //
+  const budget = document.querySelector('.multirange.original');
+  const ghost = document.querySelector('.multirange.ghost');
+  const update = (low, high, budgetEl) => {
+    low.textContent = budgetEl.valueLow;
+    high.textContent = budgetEl.valueHigh;
+  };
+  if(budget) {
+    const lowEnd = document.getElementById('low-end');
+    const highEnd = document.getElementById('high-end');
+    update(lowEnd, highEnd, budget);
+    ghost.addEventListener('input', () => {
+      update(lowEnd, highEnd, budget);
+    });
+  }
 
   //
   // Usecases

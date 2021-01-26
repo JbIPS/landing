@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Let&#39;s go</title>
     <meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="/landing/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="/landing/css/multirange.css">
+    <link rel="stylesheet" href="/landing/css/style.css">
   </head>
   <body>
     <header class="w-100">
       <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            <img class="w-100" src="/landing/img/logo-dark.svg" alt="Cameo">
+          <img class="w-100" src="/landing/img/logo.svg" alt="Cameo">
           </a>
           <div class="d-flex d-lg-none">
             <p class="my-auto me-2">Menu</p>
@@ -49,7 +49,60 @@
     </header>
 
     <main>
-      <p>I am a person that writes stuff.</p>
+      <section class="px-4">
+  <h1>Let's go!</h1>
+  <h2>Envie de vous lancer dans <strong>l'aventure</strong>?</h2>
+  <img class="img-fluid" src="/landing/img/yellow_red/Asset 18.svg" alt="Forme">
+  <form class="mt-5">
+    <div>
+      <h3 class="text-center">Qui êtes-vous ?</h3>
+      <p class="text-center">On ne juge pas, promis</p>
+      <div class="d-flex justify-content-between">
+        <input type="radio" id="entreprise" class="btn-check" name="type" value="entreprise" autocomplete="off" checked>
+        <label for="entreprise" class="btn btn-outline-primary">Entreprise</label>
+        <input type="radio" id="startup" class="btn-check" name="type" value="startup" autocomplete="off">
+        <label for="startup" class="btn btn-outline-primary">Start-up</label>
+        <input type="radio" id="apprenant" class="btn-check" name="type" value="apprenant" autocomplete="off">
+        <label for="apprenant" class="btn btn-outline-primary">Apprenant</label>
+      </div>
+    </div>
+    <div class="mt-5">
+      <h3 class="text-center">Durée souhaitée</h3>
+      <p class="text-center">On vous fait un crédit de combien ?</p>
+      <div class="row g-3">
+        <div class="col-6 order-0">
+        <input type="radio" id="1to2" class="btn-check" name="duration" value="1" autocomplete="off" checked>
+        <label for="1to2" class="btn btn-outline-primary d-block">1 ~ 2 mois</label>
+        </div>
+        <div class="col-6 order-2">
+        <input type="radio" id="3to5" class="btn-check" name="duration" value="3" autocomplete="off">
+        <label for="3to5" class="btn btn-outline-primary d-block">3 ~ 5 mois</label>
+        </div>
+        <div class="col-6 order-4">
+        <input type="radio" id="6to12" class="btn-check" name="duration" value="6" autocomplete="off">
+        <label for="6to12" class="btn btn-outline-primary d-block">6 ~ 12 mois</label>
+        </div>
+        <div class="col-6 order-1">
+        <input type="radio" id="12+" class="btn-check" name="duration" value="12" autocomplete="off">
+        <label for="12+" class="btn btn-outline-primary d-block">Plus d'un an</label>
+        </div>
+        <div class="col-6 order-3">
+        <input type="radio" id="na" class="btn-check" name="duration" value="0" autocomplete="off">
+        <label for="na" class="btn btn-outline-primary d-block">Non determiné</label>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <h3 class="text-center">Cadre budgetaire</h3>
+      <p class="text-center">Non, nos devis ne sont pas systématiquement sur la borne supérieur !</p>
+      <p class="text-center"><span id="low-end"></span>€ — <span id="high-end"></span>€</p>
+      <div class="position-relative">
+        <input type="range" min="4000" max="500000" multiple value="5000, 300000" />
+      </div>
+    </div>
+  </form>
+
+</section>
 
     </main>
 
@@ -147,9 +200,9 @@
       <p class="text-lg-center">Pas de cookies sur notre site. La meilleure façon de protéger vos données, c'est de ne pas les garder.</p>
     </footer>
     <!-- Current page: /landing/contact/ -->
-    <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous" async=""></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script src="/landing/js/index.js"></script>
+    <script src="/landing/js/index.js" async></script>
+    <script src="/landing/js/multirange.js" async></script>
   </body>
 </html>
