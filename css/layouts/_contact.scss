@@ -1,4 +1,4 @@
-.btn-outline-primary {
+.btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active {
   color: var(--white);
   border-color: var(--white);
   border-radius: 0;
@@ -30,6 +30,31 @@ input[type="range"].multirange {
 
   &.ghost {
     --range-color: var(--secondary-color);
-    --track-background: linear-gradient(to right, transparent var(--low), var(--range-color) 0, var(--range-color) var(--high), transparent 0 ) no-repeat 0 50% / 100% 10%;
+    --track-background: linear-gradient(to right, transparent var(--low), var(--range-color) 0, var(--range-color) var(--high), transparent 0 ) no-repeat 0 50% / 100% 2px;
+  }
+}
+
+form .form-control {
+  background: transparent;
+  border-radius: 0;
+
+  &:focus {
+    background: transparent;
+  }
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 0.6;
+    font-style: italic;
+  }
+}
+
+label {
+  font-weight: 400;
+}
+
+@include media-breakpoint-up(lg) {
+  .contact h1 {
+    font-size: 5rem !important;
   }
 }

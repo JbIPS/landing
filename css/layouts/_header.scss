@@ -2,10 +2,6 @@ header {
   padding: 15px 10px;
   background: var(--primary-color);
   color: var(--white);
-
-  @include media-breakpoint-up(lg) {
-    position: fixed;
-  }
 }
 
 .shrinked {
@@ -41,8 +37,12 @@ header {
     color: var(--black);
   }
 
-  .navbar-brand img {
+  .navbar-brand .logo-dark {
     display: block !important;
+  }
+
+  .navbar-brand .logo-light {
+    display: none !important;
   }
 }
 
@@ -54,8 +54,13 @@ header {
   background: transparent;
 }
 
-.navbar-brand img {
+.navbar-brand {
+  img {
   max-width: 100px;
+}
+  .logo-dark {
+    display: none;
+  }
 }
 
 nav.navbar-dark .nav-item .nav-link {

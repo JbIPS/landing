@@ -1,57 +1,95 @@
 ---
 layout: layouts/base.njk
 ---
-<section class="px-4">
-  <h1>Let's go!</h1>
-  <h2>Envie de vous lancer dans <strong>l'aventure</strong>?</h2>
-  <img class="img-fluid" src="{{ '/img/yellow_red/Asset 18.svg' | url }}" alt="Forme">
+<section class="contact px-4">
+  <div class="row col-lg-11 mx-auto">
+    <div class="col-lg-6 d-lg-flex flex-column justify-content-center">
+      <h1>Let's go!</h1>
+      <h2 class="fs-1">Envie de vous lancer dans <strong>l'aventure</strong>?</h2>
+    </div>
+    <div class="col-lg-6">
+      <img class="img-fluid" src="{{ '/img/yellow_red/Asset 18.svg' | url }}" alt="Forme">
+    </div>
+  </div>
   <form class="mt-5">
-    <div>
-      <h3 class="text-center">Qui êtes-vous ?</h3>
+    <div class="">
+      <h3 class="text-center pt-lg-4">Qui êtes-vous ?</h3>
       <p class="text-center">On ne juge pas, promis</p>
-      <div class="d-flex justify-content-between">
-        <input type="radio" id="entreprise" class="btn-check" name="type" value="entreprise" autocomplete="off" checked>
-        <label for="entreprise" class="btn btn-outline-primary">Entreprise</label>
-        <input type="radio" id="startup" class="btn-check" name="type" value="startup" autocomplete="off">
-        <label for="startup" class="btn btn-outline-primary">Start-up</label>
-        <input type="radio" id="apprenant" class="btn-check" name="type" value="apprenant" autocomplete="off">
-        <label for="apprenant" class="btn btn-outline-primary">Apprenant</label>
+      <div class="row justify-content-between justify-content-lg-center g-1 g-lg-3">
+        <div class="w-auto">
+          <input type="radio" id="entreprise" class="btn-check" name="type" value="entreprise" autocomplete="off" checked>
+          <label for="entreprise" class="btn btn-outline-primary">Entreprise</label>
+        </div>
+        <div class="w-auto">
+          <input type="radio" id="startup" class="btn-check" name="type" value="startup" autocomplete="off">
+          <label for="startup" class="btn btn-outline-primary">Start-up</label>
+        </div>
+        <div class="w-auto">
+          <input type="radio" id="apprenant" class="btn-check" name="type" value="apprenant" autocomplete="off">
+          <label for="apprenant" class="btn btn-outline-primary">Apprenant</label>
+        </div>
       </div>
     </div>
-    <div class="mt-5">
-      <h3 class="text-center">Durée souhaitée</h3>
+    <div class="mt-5 container-lg">
+      <h3 class="text-center pt-lg-4">Durée souhaitée</h3>
       <p class="text-center">On vous fait un crédit de combien ?</p>
-      <div class="row g-3">
-        <div class="col-6 order-0">
-        <input type="radio" id="1to2" class="btn-check" name="duration" value="1" autocomplete="off" checked>
-        <label for="1to2" class="btn btn-outline-primary d-block">1 ~ 2 mois</label>
+      <div class="row g-3 justify-content-lg-center">
+        <div class="col-6 order-0 col-lg-2">
+          <input type="radio" id="1to2" class="btn-check" name="duration" value="1" autocomplete="off" checked>
+          <label for="1to2" class="btn btn-outline-primary d-block">1 ~ 2 mois</label>
         </div>
-        <div class="col-6 order-2">
-        <input type="radio" id="3to5" class="btn-check" name="duration" value="3" autocomplete="off">
-        <label for="3to5" class="btn btn-outline-primary d-block">3 ~ 5 mois</label>
+        <div class="col-6 order-2 col-lg-2 order-lg-1">
+          <input type="radio" id="3to5" class="btn-check" name="duration" value="3" autocomplete="off">
+          <label for="3to5" class="btn btn-outline-primary d-block">3 ~ 5 mois</label>
         </div>
-        <div class="col-6 order-4">
-        <input type="radio" id="6to12" class="btn-check" name="duration" value="6" autocomplete="off">
-        <label for="6to12" class="btn btn-outline-primary d-block">6 ~ 12 mois</label>
+        <div class="col-6 order-4 col-lg-2 order-lg-2">
+          <input type="radio" id="6to12" class="btn-check" name="duration" value="6" autocomplete="off">
+          <label for="6to12" class="btn btn-outline-primary d-block">6 ~ 12 mois</label>
         </div>
-        <div class="col-6 order-1">
-        <input type="radio" id="12+" class="btn-check" name="duration" value="12" autocomplete="off">
-        <label for="12+" class="btn btn-outline-primary d-block">Plus d'un an</label>
+        <div class="col-6 order-1 col-lg-2 order-lg-3">
+          <input type="radio" id="12+" class="btn-check" name="duration" value="12" autocomplete="off">
+          <label for="12+" class="btn btn-outline-primary d-block">Plus d'un an</label>
         </div>
-        <div class="col-6 order-3">
-        <input type="radio" id="na" class="btn-check" name="duration" value="0" autocomplete="off">
-        <label for="na" class="btn btn-outline-primary d-block">Non determiné</label>
+        <div class="col-6 order-3 col-lg-2 order-lg-4">
+          <input type="radio" id="na" class="btn-check" name="duration" value="0" autocomplete="off">
+          <label for="na" class="btn btn-outline-primary d-block">Non determiné</label>
         </div>
       </div>
     </div>
-    <div class="mt-5">
-      <h3 class="text-center">Cadre budgetaire</h3>
+    <div class="mt-5 container-lg">
+      <h3 class="text-center pt-lg-4">Cadre budgetaire</h3>
       <p class="text-center">Non, nos devis ne sont pas systématiquement sur la borne supérieur !</p>
       <p class="text-center"><span id="low-end"></span>€ — <span id="high-end"></span>€</p>
-      <div class="position-relative">
-        <input type="range" min="4000" max="500000" multiple value="5000, 300000" />
+      <div class="position-relative col-lg-6 mx-auto">
+        <input type="range" min="4000" max="500000" multiple value="50000,300000" />
       </div>
     </div>
+    <div class="mt-5 container-lg">
+      <h3 class="text-center pt-lg-4">Informations personnelles</h3>
+      <p class="text-center">Car on ne vous surveille pas comme Facebook</p>
+      <div class="row w-lg-75 justify-content-lg-center g-lg-3 mx-auto">
+        <div class="col-lg-5">
+          <label for="firstname" class="form-label">Prénom</label>
+          <input type="text" class="form-control mb-3" id="firstname" placeholder="Alfred">
+        </div>
+        <div class="col-lg-5">
+          <label for="lastname" class="form-label">Nom de famille</label>
+          <input type="text" class="form-control mb-3" id="lastname" placeholder="Hitchcock">
+        </div>
+        <div class="col-lg-5">
+          <label for="email" class="form-label">Adresse e-mail</label>
+          <input type="email" class="form-control mb-3" id="email" placeholder="alfred.hitchcock@cameo.fr">
+        </div>
+        <div class="col-lg-5">
+          <label for="phone" class="form-label">Numéro de téléphone (facultatif)</label>
+          <input type="text" class="form-control mb-3" id="phone" placeholder="0600000000">
+        </div>
+        <div class="col-lg-10">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control mb-3" id="message" name="message" rows="5">...</textarea>
+        </div>
+      </div>
+      <button class="btn btn-light rounded-pill mx-auto px-5 mt-5 d-block">Envoyer</button>
   </form>
 
 </section>
