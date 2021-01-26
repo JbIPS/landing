@@ -1,0 +1,45 @@
+@font-face {
+  font-family: TTNorms;
+  src: url(../fonts/TTNormsPro-Light.otf) format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: TTNorms;
+  src: url(../fonts/TTNormsPro-Regular.otf) format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: TTNorms;
+  src: url(../fonts/TTNormsPro-Medium.otf) format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: TTNorms;
+  src: url(../fonts/TTNormsPro-Bold.otf) format('opentype');
+  font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+@include media-breakpoint-up(lg) {
+  h3 strong {
+    display: block;
+  }
+}

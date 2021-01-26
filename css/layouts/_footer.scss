@@ -1,0 +1,30 @@
+footer {
+  @include media-breakpoint-up(lg) {
+    background: url('../img/yellow_red/Asset 17.svg') no-repeat right/contain;
+  }
+
+  input.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+
+    &::placeholder {
+      color: var(--grey);
+      opacity: 0.6;
+    }
+  }
+
+  ul a, footer h3 {
+    color: var(--white);
+  }
+
+  strong, a:hover {
+    color: var(--secondary-color);
+  }
+
+  .social svg {
+    width: 20px;
+    fill: var(--secondary-color);
+  }
+}

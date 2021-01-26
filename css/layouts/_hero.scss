@@ -1,0 +1,174 @@
+.hero {
+  background: transparent;
+  pointer-events: none;
+  color: var(--white);
+}
+
+#heroContent {
+  background: var(--primary-color);
+  pointer-events: initial;
+}
+
+.row.panel-row {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  min-height: 90vh;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 43vh;
+    overflow-x: clip;
+    align-items: flex-start;
+  }
+}
+
+.summary {
+  position: relative;
+  transition: all .5s;
+  background: white no-repeat center/cover;
+  color: var(--black);
+  display: flex;
+
+  @include media-breakpoint-up(lg) {
+    background: transparent;
+    color: var(--white);
+
+    &:hover {
+      background-positon: center;
+      background-size: cover;
+      background-color: var(--white);
+      z-index: 1;
+      padding-top: 3rem;
+      color: var(--black);
+      border: none;
+      bottom: 0;
+      position: absolute;
+      height: 100%;
+      flex-direction: column;
+
+      div {
+        margin: auto;
+      }
+
+      .details {
+        display: block !important;
+      }
+
+      .circle {
+        display: none !important;
+      }
+
+      strong {
+        color: var(--black);
+      }
+
+      &.first {
+        left: 0;
+        background-image: url(../img/red_blue/red_panel.svg);
+      }
+
+      &.second {
+        background-image: url(../img/yellow_bkg.svg);
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      &.third {
+        background-image: url(../img/blue_bkg.svg);
+        right: 0;
+        color: var(--white);
+
+        strong {
+          color: var(--white);
+        }
+      }
+
+      & + .dummy {
+        display: block;
+      }
+
+      & ~ .overlay {
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: calc(100% + 120px);
+        position: absolute;
+        top: -120px;
+        left: 0;
+      }
+    }
+  }
+
+  strong {
+    color: var(--black);
+
+    @include media-breakpoint-up(lg) {
+      color: var(--secondary-color);
+    }
+  }
+
+  &.first {
+    background-image: url(../img/red_blue/red_panel.svg);
+    @include media-breakpoint-up(lg) {
+      background-image: none;
+    }
+  }
+
+  &.second {
+    background-image: url(../img/yellow_bkg.svg);
+    @include media-breakpoint-up(lg) {
+      background-image: none;
+    }
+  }
+
+  &.third {
+    color: var(--white);
+    background-image: url(../img/blue_bkg.svg);
+    @include media-breakpoint-up(lg) {
+      background-image: none;
+    }
+    strong {
+      color: var(--white);
+
+      @include media-breakpoint-up(lg) {
+        color: var(--secondary-color);
+      }
+    }
+
+  }
+
+  &.second > div, &.third > div {
+    border-left: 1px solid var(--white);
+
+    @include media-breakpoint-up(lg) {
+      border-left: none;
+    }
+  }
+}
+
+.dummy {
+  display: none;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 34px;
+}
+
+.summary:hover .circle {
+  display: none;
+}
+
+.arrow {
+  animation: bounce .8s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}

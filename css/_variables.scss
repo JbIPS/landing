@@ -1,0 +1,16 @@
+$primary: #3B64FF;
+$secondary: #FFF75F;
+$white: #EAF5FB;
+$light: $white;
+$body-color: $white;
+$body-bg: $primary;
+
+:root {
+  --primary-color: #{$primary};
+  --secondary-color: #{$secondary};
+  --tertiary-color: #FF5C55;
+  --white: #{$white};
+  --black: #1D1D1D;
+  --grey: #EAF5FB;
+  --red: #FF5C55;
+}

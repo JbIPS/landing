@@ -3,9 +3,11 @@ const fs = require("fs");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const pluginSass = require('eleventy-plugin-sass');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(pluginSass, {sourcemaps: true});
 
   eleventyConfig.setDataDeepMerge(true);
 
@@ -29,6 +31,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("css/*.css");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
