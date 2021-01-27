@@ -2,6 +2,18 @@ header {
   padding: 15px 10px;
   background: var(--primary-color);
   color: var(--white);
+
+  &.home {
+    .logo-light {
+      display: none;
+    }
+  }
+
+  &.offre {
+    position: absolute;
+    z-index: 11;
+    background: transparent;
+  }
 }
 
 .shrinked {

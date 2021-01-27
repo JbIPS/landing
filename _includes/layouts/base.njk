@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
   </head>
   <body>
-    <header class="w-100{% if page.url == '/' %} d-lg-fixed{% endif %}">
+    <header class="w-100{% if headerClass %} {{ headerClass }}{% endif %}">
       <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            <img class="w-100 logo-light{% if page.url == '/' %} d-none{% endif %}" src="{{ '/img/logo.svg' | url }}" alt="Cameo">
+            <img class="w-100 logo-light" src="{{ '/img/logo.svg' | url }}" alt="Cameo">
             <img class="w-100 logo-dark" src="{{ '/img/logo-dark.svg' | url }}" alt="Cameo dark">
           </a>
           <div class="d-flex d-lg-none">

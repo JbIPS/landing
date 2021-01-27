@@ -1,0 +1,96 @@
+.video {
+  height: 100vh;
+  background-image: url('../img/yellow_blue/Asset 2.svg');
+  background-size: cover;
+
+  h1 {
+    font-size: 2.5rem;
+
+    strong {
+      display: block;
+    }
+  }
+}
+
+h2 {
+  font-size: 2rem;
+
+  strong {
+    display: block;
+    font-weight: 500;
+  }
+}
+
+.nav-tabs {
+  border-bottom: none;
+
+  .nav-item {
+    margin: 0 1rem 1rem 0;
+
+    .nav-link {
+      padding: 0.5rem 0;
+      color: var(--black);
+      font-weight: 400;
+
+      &.active {
+        color: var(--primary-color);
+        border: none;
+        border-bottom: 1px solid var(--primary-color);
+        background: transparent;
+      }
+    }
+  }
+}
+
+.tab-content {
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  h3 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+}
+
+.steps {
+  padding-left: 4rem;
+}
+
+.step {
+  font-weight: 400;
+
+  .index {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+  }
+
+  .title {
+    position: relative;
+    left: -4rem;
+  }
+}
+
+.advantage {
+  h2 strong {
+    display: inline;
+  }
+
+  .content {
+    background: var(--primary-color);
+    color: var(--white);
+    font-weight: 400;
+
+    * {
+      margin: auto;
+    }
+  }
+}
+
+.small-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.bg-red {
+  background: rgba($tertiary, 0.8);
+}

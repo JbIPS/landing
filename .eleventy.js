@@ -15,6 +15,10 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
 
+  eleventyConfig.addFilter("pad", number => {
+    return number.toString().padStart(2, '0');
+  });
+
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
