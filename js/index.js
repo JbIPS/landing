@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("load", function() {
 	// Slideshow
   const gliders = document.querySelectorAll('.glider');
   gliders.forEach(glider => {
