@@ -2,6 +2,11 @@
   height: 100vh;
   background-image: url('../img/yellow_blue/Asset 2.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-up(lg) {
+    background-size: contain;
+  }
 
   h1 {
     font-size: 2.5rem;
@@ -54,6 +59,16 @@ h2 {
 
 .steps {
   padding-left: 4rem;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 50%;
+    //overflow-y: scroll;
+    //height: 240px;
+
+    //.glider-track {
+      //flex-direction: column;
+    //}
+  }
 }
 
 .step {
@@ -92,5 +107,5 @@ h2 {
 }
 
 .bg-red {
-  background: rgba($tertiary, 0.8);
+  background: rgba(var(--tertiary-color), 0.8);
 }

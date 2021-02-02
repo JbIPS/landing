@@ -2,6 +2,7 @@ header {
   padding: 15px 10px;
   background: var(--primary-color);
   color: var(--white);
+  z-index: 1;
 
   &.home {
     .logo-light {
@@ -77,10 +78,20 @@ header {
 
 nav.navbar-dark .nav-item .nav-link {
   color: var(--white);
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: .2rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
 }
 
 .nav-link {
   color: var(--white);
+
+  &.active {
+    //text-decoration: underline;
+    border-bottom: 1px solid var(--white);
+  }
 }
 
 @keyframes slide-up {

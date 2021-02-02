@@ -5,35 +5,48 @@ headerClass: offre
 <section class="pt-5 video px-4">
   <h1 class="pt-5">L'offre Cameo <strong>en deux minutes</strong></h1>
 </section>
-<section class="bg-light py-5 px-4">
-  <h2>Choisir Cameo <strong>c'est...</strong></h2>
-  <ul class="nav nav-tabs" role="tablist">
-    <li class="nav-item" role="presentation">
-      <a class="nav-link active" href="#entreprises" id="entreprises-tab" data-bs-toggle="tab" role="tab" aria-controls="entreprises" aria-selected="true">Pour les entreprises</a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link" href="#startups" id="startups-tab" data-bs-toggle="tab" role="tab" aria-controls="startups" aria-selected="false">Pour les start-ups</a>
-    </li>
-  </ul>
-  <div class="tab-content pt-2 mb-5">
-    <div class="tab-pane fade show active" id="entreprises" role="tabpanel" aria-labelledby="entreprises-tab">
-      <h3>Formez vos collaborateurs</h3>
-      <p>aux compétences clés</p>
-      <h3>Faciliter la mobilité interne</h3>
-      <p>et augmenter leur employabilité</p>
-      <h3>Créer des synergies</h3>
-      <p>avec vos start-ups</p>
-      <h3>Accélérer vos projets</h3>
-      <p>et générer du chiffres d'affaires</p>
-    </div>
-    <div class="tab-pane fade show" id="startups" role="tabpanel" aria-labelledby="startups-tab">
-      Lorem ipsum
+<section class="bg-light py-5 px-4 d-lg-flex">
+  <h2 class="mt-lg-5 mx-lg-auto">Choisir Cameo <strong>c'est...</strong></h2>
+  <div class="col-lg-6 mt-lg-5">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" href="#entreprises" id="entreprises-tab" data-bs-toggle="tab" role="tab" aria-controls="entreprises" aria-selected="true">Pour les entreprises</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#startups" id="startups-tab" data-bs-toggle="tab" role="tab" aria-controls="startups" aria-selected="false">Pour les start-ups</a>
+      </li>
+    </ul>
+    <div class="tab-content pt-2 mb-5">
+      <div class="tab-pane fade show active" id="entreprises" role="tabpanel" aria-labelledby="entreprises-tab">
+        <h3>Formez vos collaborateurs</h3>
+        <p>aux compétences clés</p>
+        <h3>Facilitez la mobilité interne</h3>
+        <p>et augmenter leur employabilité</p>
+        <h3>Créez des synergies</h3>
+        <p>avec vos start-ups</p>
+        <h3>Accélérez vos projets</h3>
+        <p>et générer du chiffres d'affaires</p>
+      </div>
+      <div class="tab-pane fade show" id="startups" role="tabpanel" aria-labelledby="startups-tab">
+        <h3>Accédez à des compétences</h3>
+        <p>expérimentées</p>
+        <h3>Déveleppez un vrai partenariat</h3>
+        <p>avec un grand groupe</p>
+        <h3>Génerez du chiffres d'affaires</h3>
+        <p>grande échelle rapidement</p>
+        <h3>Formez vos équipes</h3>
+        <p>avec un expert</p>
+      </div>
     </div>
   </div>
 </section>
-<section class="bg-light py-5 px-4">
-  <h2>L'expérience Cameo <strong class="ps-5 ms-5">en 10 étapes</strong></h2>
+<section class="bg-light py-5 px-4 d-lg-flex flex-column">
+  <h2 class="text-lg-center">L'expérience Cameo <strong class="ps-5 ms-5">en 10 étapes</strong></h2>
   <div class="glider-contain mt-4">
+    <div class="controls d-none d-lg-block">
+      <button aria-label="Previous" class="glider-prev">←</button>
+      <button aria-label="Next" class="glider-next">→</button>
+    </div>
     <div class="glider steps">
       {% for step in steps %}
         <div class="step me-3">
@@ -48,24 +61,34 @@ headerClass: offre
       {% endfor %}
     </div>
   </div>
-  <a class="btn btn-primary rounded-pill mt-5" href="/syllabus.pdf">Télécharger le programme pédagogique</a>
+  <a class="btn btn-primary rounded-pill mt-5 mx-lg-auto" href="/syllabus.pdf">Télécharger le programme pédagogique</a>
 </section>
 <section class="bg-light pt-5 advantage">
   <h2 class="ps-4 mb-4">Cameo <strong>c'est aussi...</strong></h2>
   <div class="content p-5">
-    <h3 class="fs-5">Une formule gagnant-gagnant-gagnant</h3>
-    <p class="mb-5">Lorem ipsum</p>
-    <h3 class="fs-5">Une formule gagnant-gagnant-gagnant</h3>
-    <p class="mb-5">Lorem ipsum</p>
-    <h3 class="fs-5">Une formule gagnant-gagnant-gagnant</h3>
-    <p class="mb-5">Lorem ipsum</p>
+    <div class="d-lg-flex">
+      <h3 class="fs-5">Une formule gagnant-gagnant-gagnant</h3>
+      <p class="mb-5">Lorem ipsum</p>
+    </div>
+    <div class="d-lg-flex">
+      <h3 class="fs-5">Une formule gagnant-gagnant-gagnant</h3>
+      <p class="mb-5">Lorem ipsum</p>
+    </div>
+    <div class="d-lg-flex">
+      <h3 class="fs-5">Une formule gagnant-gagnant-gagnant</h3>
+      <p class="mb-5">Lorem ipsum</p>
+    </div>
   </div>
 </section>
-<section class="bg-light py-5 px-4">
-  <h2 class="w-75">Cameo :<strong>combien ça coûte ?</strong></h2>
-  <img class="img-fluid" src="">
-  <h3 class="fs-5">Un financement tri-partite et sur-mesure</h3>
-  <p class="small-text">Lorem Ipsum</p>
+<section class="bg-light py-5 px-4 d-lg-flex justify-content-lg-evenly align-items-lg-center">
+  <h2 class="w-75 d-lg-none">Cameo :<strong>combien ça coûte ?</strong></h2>
+  {#<img class="img-fluid" src="">#}
+  <div style="height: 700px;width: 300px; display: block; background: black"></div>
+  <div>
+    <h2 class="d-none d-lg-block">Cameo :<strong>combien ça coûte ?</strong></h2>
+    <h3 class="fs-5">Un financement tri-partite et sur-mesure</h3>
+    <p class="small-text">Lorem Ipsum</p>
+  </div>
 </section>
 <section class="py-5 px-4">
   <div class="p-4 bg-red">
