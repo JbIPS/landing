@@ -1,5 +1,5 @@
 window.addEventListener("load", function() {
-	// Slideshow
+  // Slideshow
   const gliders = document.querySelectorAll('.glider');
   gliders.forEach(glider => {
     new Glider(glider, {
@@ -46,28 +46,28 @@ window.addEventListener("load", function() {
     lastScroll = sy;
   })
 
-	// Footer parallax
-	const placeholder = document.getElementById('placeholder')
-	const footer = document.querySelector('footer')
+  // Footer parallax
+  const placeholder = document.getElementById('placeholder')
+  const footer = document.querySelector('footer')
 
   // header
   const headerPlaceholder = document.getElementById('headerPlaceholder');
 
-	// On DOMContentLoaded, set placeholder height to be equal to footer height
-	updateHeight()
+  // On DOMContentLoaded, set placeholder height to be equal to footer height
+  updateHeight()
 
-	window.addEventListener('resize', onResize)
+  window.addEventListener('resize', onResize)
 
-	// On window resize, update placeholder height to be equal to footer height
-	function onResize() {
-		updateHeight()
-	}
+  // On window resize, update placeholder height to be equal to footer height
+  function onResize() {
+    updateHeight()
+  }
 
-	function updateHeight() {
-		// Placeholder should always match footer height
-		placeholder.style.height = `${footer.offsetHeight}px`
+  function updateHeight() {
+    // Placeholder should always match footer height
+    placeholder.style.height = `${footer.offsetHeight}px`
     if(headerPlaceholder) headerPlaceholder.style.height = `${header.offsetHeight}px`;
-	}
+  }
 
   // Blog
   window.addEventListener('load', () => {
@@ -119,4 +119,15 @@ window.addEventListener("load", function() {
     .forEach((usecase) => {
       usecase.parentNode.appendChild(usecase);
     });
+
+  // Contact form
+  const type = document.querySelectorAll('input[name="type"]');
+  const updateFields = (selectedType) => {
+    const fields = document.querySelectorAll('[data-selection]');
+    fields.forEach((f) => {
+      f.style.display = f.getAttribute('data-selection') === selectedType ? 'initial' : 'none';
+    });
+  }
+  updateFields(type.item(0).value);
+  type.forEach((t) => t.addEventListener("input", (e) => updateFields(e.target.value)));
 })
