@@ -128,6 +128,6 @@ window.addEventListener("load", function() {
       f.style.display = f.getAttribute('data-selection') === selectedType ? 'initial' : 'none';
     });
   }
-  updateFields(type.item(0).value);
+  if(type.length > 0) updateFields(type.item(0).value);
   type.forEach((t) => t.addEventListener("input", (e) => updateFields(e.target.value)));
 })

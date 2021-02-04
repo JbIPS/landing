@@ -53,7 +53,7 @@ headerClass: position-lg-fixed home
             <h3 class="fs-4">{{ case.text }}</h3>
             <div class="details d-lg-none">
               <p class="font-regular">{{ case.details }}</p>
-              <a class="btn btn-light px-4 rounded-pill" href="{{ '/partenaires' | url }}">Let's go!</a>
+              <a class="btn btn-light px-4 rounded-pill" href="{{ '/contact/' | url }}">Let's go!</a>
             </div>
           </div>
           <img class="img-fluid" src="{{ case.image | url }}" alt="Illustration abstraite">
@@ -68,7 +68,7 @@ headerClass: position-lg-fixed home
     <div class="col-12 col-md-5 p-5 my-5">
       <h2 class="ps-4 indent--1">Notre offre <br/><strong>en quelques mots</strong></h2>
       <p class="font-regular">{{ presentation_offre | markdown | safe }}</p>
-      <a class="btn btn-primary rounded-pill" href="{{ '/offres' | url }}">Let's go</a>
+      <a class="btn btn-primary rounded-pill" href="{{ '/contact/' | url }}">Let's go</a>
     </div>
     <div class="col-12 col-md-6 svg-bkg d-flex ps-0" style="background-image: url('{{ '/img/yellow_blue/Asset 11.svg' | url }}');">
       <div class="col-9 ps-0 my-auto">
@@ -110,38 +110,38 @@ headerClass: position-lg-fixed home
       <div class="d-none d-lg-block">
         {{ start | markdown | safe }}
       </div>
-      <a class="btn btn-light rounded-pill mt-4 px-4" href="{{ '/partenaires' | url }}">Let's go</a>
+      <a class="btn btn-light rounded-pill mt-4 px-4" href="{{ '/contact/' | url }}">Let's go</a>
     </div>
   </div>
 </section>
-<section class="bg-light py-5 ps-5 blog">
-  <h2 class="fs-1">Dans <strong>l'actualité</strong></h2>
-  <div class="glider-contain mt-5 d-lg-none">
-    <div class="glider posts">
-      {% for post in collections.post %}
-      <div class="{% if not loop.last %}me-5{% else %}me-2{% endif %}">
-          <img class="img-fluid" src="{{ post.data.image | url }}" alt="{{ post.data.title }}">
-          <h3 class="mt-4">{{ post.data.category }}</h3>
-          <p>{{ post.data.title }}</p>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="row ps-5 d-none d-lg-block position-relative">
-    <div class="col-4">
-      {% for post in collections.post %}
-        <a class="post" href="{{ post.url | url }}">
-          <div class="post-headline pb-4{% if loop.first %} hovered{% endif %}">
-            <h3 class="post-title">{{ post.data.category }}</h3>
-            <p class="fw-bold fs-4">{{ post.data.title }}</p>
-          </div>
-          <img class="position-absolute top-0 mh-100 me-5 thumbnail" src="{{ post.data.image | url }}">
-        </a>
-      {% endfor %}
-    </div>
-    <div class="col-7">
-      <img id="postThumbnail" class="img-fluid" src="">
-    </div>
-  </div>
-  <a href="/blog" class="btn btn-primary rounded-pill px-4">Toutes les actualités</a>
+{#<section class="bg-light py-5 ps-5 blog">#}
+  {#<h2 class="fs-1">Dans <strong>l'actualité</strong></h2>#}
+  {#<div class="glider-contain mt-5 d-lg-none">#}
+    {#<div class="glider posts">#}
+      {#{% for post in collections.post %}#}
+      {#<div class="{% if not loop.last %}me-5{% else %}me-2{% endif %}">#}
+          {#<img class="img-fluid" src="{{ post.data.image | url }}" alt="{{ post.data.title }}">#}
+          {#<h3 class="mt-4">{{ post.data.category }}</h3>#}
+          {#<p>{{ post.data.title }}</p>#}
+        {#</div>#}
+      {#{% endfor %}#}
+    {#</div>#}
+  {#</div>#}
+  {#<div class="row ps-5 d-none d-lg-block position-relative">#}
+    {#<div class="col-4">#}
+      {#{% for post in collections.post %}#}
+        {#<a class="post" href="{{ post.url | url }}">#}
+          {#<div class="post-headline pb-4{% if loop.first %} hovered{% endif %}">#}
+            {#<h3 class="post-title">{{ post.data.category }}</h3>#}
+            {#<p class="fw-bold fs-4">{{ post.data.title }}</p>#}
+          {#</div>#}
+          {#<img class="position-absolute top-0 mh-100 me-5 thumbnail" src="{{ post.data.image | url }}">#}
+        {#</a>#}
+      {#{% endfor %}#}
+    {#</div>#}
+    {#<div class="col-7">#}
+      {#<img id="postThumbnail" class="img-fluid" src="">#}
+    {#</div>#}
+  {#</div>#}
+  {#<a href="/blog" class="btn btn-primary rounded-pill px-4">Toutes les actualités</a>#}
 </section>
