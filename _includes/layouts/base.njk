@@ -1,10 +1,20 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
+    {% metagen
+    url="https://cameo.fr/",
+    img="/favicon.svg",
+    img_alt="Logo Cameo",
+    twitterHandle="@CameoTalents",
+    name="Cameo"
+    %}
+
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Light.otf'}}" type="font/opentype" crossorigin>
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Regular.otf'}}" type="font/opentype" crossorigin>
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Medium.otf'}}" type="font/opentype" crossorigin>
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Bold.otf'}}" type="font/opentype" crossorigin>
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="{{ '/css/style.css' | url }}">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -13,7 +23,7 @@
     <header class="w-100{% if headerClass %} {{ headerClass }}{% endif %}">
       <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{{ '/' | url }}">
+          <a class="navbar-brand" href="{{ '/' | url }}" aria-label="Retour à la page principale">
             <img class="w-100 logo-light" src="{{ '/img/logo.svg' | url }}" alt="Cameo">
             <img class="w-100 logo-dark" src="{{ '/img/logo-dark.svg' | url }}" alt="Cameo dark">
           </a>
@@ -55,7 +65,7 @@
           </div>
           <div class="py-4">
             <p class="indent--2 pad-2 fs-1 fs-lg-2">Je m'inscris <br/><strong>à la newsletter</strong><p>
-            <input type="email" class="form-control" placeholder="Votre adresse e-mail">
+            <input type="email" class="form-control" placeholder="Votre adresse e-mail" name="newsletter-email">
           </div>
           <div class="my-3">
             <p class="fs-5 d-inline">Suivez-nous</p>

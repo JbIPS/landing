@@ -30,6 +30,7 @@
     "purgecss": "^4.0.0"
   },
   "dependencies": {
-    "eleventy-critical-css": "^0.2.2"
+    "eleventy-critical-css": "^0.2.2",
+    "eleventy-plugin-metagen": "^1.0.3"
   }
 }
