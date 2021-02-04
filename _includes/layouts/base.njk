@@ -6,7 +6,6 @@
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    {% if page.url == '/contact/' %}<link rel="stylesheet" href="{{ '/css/multirange.css' | url }}">{% endif %}
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
   </head>
   <body>
@@ -85,6 +84,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous" async=""></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="{{ '/js/index.js' | url }}" async></script>
-    {% if page.url == '/contact/' %}<script src="{{ '/js/multirange.js' | url }}" async></script>{% endif %}
   </body>
 </html>
