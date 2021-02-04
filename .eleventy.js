@@ -41,6 +41,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("css/*.css");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
