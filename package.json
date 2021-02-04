@@ -1,28 +1,23 @@
 {
-  "name": "eleventy-base-blog",
+  "name": "cameo-landing",
   "version": "5.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "description": "Cameo official website",
   "scripts": {
     "build": "eleventy --pathprefix 'landing' && npm run purge && npm run critical",
     "start": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
     "purge": "purgecss -css _site/css/style.css --content _site/**/*.html --output _site/css/style.css",
-    "critical": "critical _site/index.html --base _site --inline > _site/index.html"
+    "critical": "critical _site/index.html --base _site --inline > _site/index.critical.html && mv _site/index.critical.html _site/index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/JbIPS/landing.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Jean-Baptiste Richardet",
+    "email": "jb@cameo.fr",
+    "url": "https://cameo.fr"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
-  },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
