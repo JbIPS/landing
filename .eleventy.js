@@ -4,10 +4,15 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const pluginSass = require('eleventy-plugin-sass');
+const criticalCss = require('eleventy-critical-css');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginSass, {sourcemaps: true});
+  eleventyConfig.addPlugin(criticalCss, {
+    css: ['_site/css/*.css'],
+    minify: true
+  });
 
   eleventyConfig.setDataDeepMerge(true);
 

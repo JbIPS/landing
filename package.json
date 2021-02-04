@@ -3,11 +3,10 @@
   "version": "5.0.2",
   "description": "Cameo official website",
   "scripts": {
-    "build": "eleventy --pathprefix 'landing' && npm run purge && npm run critical",
+    "build": "eleventy --pathprefix 'landing' && npm run purge",
     "start": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
-    "purge": "purgecss -css _site/css/style.css --content _site/**/*.html --output _site/css/style.css",
-    "critical": "critical _site/index.html --base _site --inline > _site/index.critical.html && mv _site/index.critical.html _site/index.html"
+    "purge": "purgecss -css _site/css/style.css --content _site/**/*.html --output _site/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -24,11 +23,13 @@
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "bootstrap": "^5.0.0-beta1",
-    "critical": "^2.0.6",
     "eleventy-plugin-sass": "^1.1.1",
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
     "purgecss": "^4.0.0"
+  },
+  "dependencies": {
+    "eleventy-critical-css": "^0.2.2"
   }
 }

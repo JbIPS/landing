@@ -56,7 +56,7 @@ headerClass: position-lg-fixed home
               <a class="btn btn-light px-4 rounded-pill" href="{{ '/contact/' | url }}">Let's go!</a>
             </div>
           </div>
-          <img class="img-fluid" src="{{ case.image | url }}" alt="Illustration abstraite">
+          <img class="img-fluid lazyload" data-src="{{ case.image | url }}" alt="Illustration abstraite">
         </div>
       {% endfor %}
       </div>
@@ -72,7 +72,7 @@ headerClass: position-lg-fixed home
     </div>
     <div class="col-12 col-md-6 svg-bkg d-flex ps-0" style="background-image: url('{{ '/img/yellow_blue/Asset 11.svg' | url }}');">
       <div class="col-9 ps-0 my-auto">
-        <img class="img-fluid" src="{{ '/img/lab1_squared.webp' | url }}" alt="Notre offre">
+        <img class="img-fluid lazyload" data-src="{{ '/img/lab1_squared.webp' | url }}" alt="Notre offre">
       </div>
     </div>
   </div>
