@@ -5,19 +5,24 @@
     <meta name="description" content="{{ description or metadata.description }}">
     {% metagen
     url="https://cameo.fr/",
-    img="/favicon.svg",
+    img="/favicon.png",
     img_alt="Logo Cameo",
     twitterHandle="@CameoTalents",
     name="Cameo"
     %}
+    <meta property="og:image:secure_url" content="/favicon.png"/>
+    <meta property="og:image:width" content="256"/>
+    <meta property="og:image:length" content="256"/>
+    <meta property="og:locale" content="fr_FR">
 
-    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Light.otf'}}" type="font/opentype" crossorigin>
-    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Regular.otf'}}" type="font/opentype" crossorigin>
-    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Medium.otf'}}" type="font/opentype" crossorigin>
-    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Bold.otf'}}" type="font/opentype" crossorigin>
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="{{ '/css/style.css' | url }}">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Light.otf'}}" type="font/opentype" crossorigin/>
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Regular.otf'}}" type="font/opentype" crossorigin/>
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Medium.otf'}}" type="font/opentype" crossorigin/>
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Bold.otf'}}" type="font/opentype" crossorigin/>
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"/>
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="{{ '/css/style.css' | url }}"/>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link property="image" href="favicon.png"/>
   </head>
   <body>
     <header class="w-100{% if headerClass %} {{ headerClass }}{% endif %}">
