@@ -4,7 +4,7 @@ module.exports = {
       staticDistDir: '_site'
     },
     upload: {
-      target: 'lh-reports'
+      target: 'temporary-public-storage'
     }
   }
 };
