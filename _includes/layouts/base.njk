@@ -5,12 +5,13 @@
     <meta name="description" content="{{ description or metadata.description }}">
     {% metagen
     url="https://cameo.fr/",
-    img="https://jbips.github.io/landing/img/banner.png",
     img_alt="Logo Cameo",
     twitterHandle="@CameoTalents",
     name="Cameo"
     %}
     <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:image" content="https://jbips.github.io/landing/img/banner.png">
+    <meta property="og:image" content="https://jbips.github.io/landing/img/banner.png">
 
     <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Light.otf' | url }}" type="font/opentype" crossorigin/>
     <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Regular.otf' | url }}" type="font/opentype" crossorigin/>
