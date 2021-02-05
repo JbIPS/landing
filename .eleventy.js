@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const Image = require('@11ty/eleventy-img');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const pluginSass = require('eleventy-plugin-sass');
@@ -17,6 +18,28 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(metagen);
 
   eleventyConfig.setDataDeepMerge(true);
+
+  eleventyConfig.addNunjucksShortcode("image", (src, alt, sizes, classes) => {
+    const options = {
+      widths: [300],
+      formats: ["webp"],
+      outputDir: '_site/img'
+    };
+
+    Image(src, options);
+
+    const metadata = Image.statsSync(src, options);
+
+    let imageAttributes = {
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async",
+      class: `img-fluid ${classes || ''}`
+    };
+
+    return Image.generateHTML(metadata, imageAttributes);
+  })
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");

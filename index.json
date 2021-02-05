@@ -17,70 +17,70 @@
     {
       "text": "Je veux booster les mobilités internes",
       "details": "Marre du cloisonnement entre les BU ? Sortez vos salariés de leur bocal pour leur redonner le goût de la découverte et de l'aventure. Changements majeurs à l'horizon !",
-      "image": "/img/yellow_red/Asset 9.svg"
+      "image": "img/yellow_red/Asset 9.png"
     },
     {
       "text": "J’accompagne la création et déploiement d’une offre partenariale avec une startup",
       "details": "La collaboration avec une start-up peut être compliquée mais elle peut rapporter gros. En envoyant vos salariés au cœur de l'action, vous assurez la réussite du projet.",
-      "image": "/img/red_blue/Asset 15.svg"
+      "image": "img/red_blue/Asset 15.png"
     },
     {
       "text": "Je cherche à développer la posture entrepreneuriale des collaborateurs",
       "details": "Oubliez les projets saucissonnés, où chacun ne s'occupe que de sa petite partie. Donnez à vos équipes une vision d'ensemble, d'un bout à l'autre de la chaine. Vous serez surpris.",
-      "image": "/img/yellow_blue/Asset 23.svg"
+      "image": "img/yellow_blue/Asset 23.png"
     },
     {
       "text": "Je modernise un programme intrapreneurial ou de mécénat de compétences",
       "details": "Et si on prenait les avantages de ce genre de programme, mais qu'on le tournait vers la performance ? Créez des extrapreneurs qui sortiront de vos murs pour mieux les transformer !",
-      "image": "/img/yellow_blue/Asset 3.svg"
+      "image": "img/yellow_blue/Asset 3.png"
     },
     {
       "text": "Je cherche à transformer ma force commerciale",
       "details": "Le marché devient de plus en plus concurrentiel ? Les nouveaux acteurs bousculent  l'ordre établi ? Ne restez pas en reste et boostez vos équipes avec les techniques de ventes à la pointe du secteur !",
-      "image": "/img/yellow_blue/Asset 20.svg"
+      "image": "img/yellow_blue/Asset 20.png"
     },
     {
       "text": "Je pilote un programme d'accompagnement des talents",
       "details": "Comment bien préparer vos talents et leur donner toutes les billes pour moderniser votre entreprise ? Montrez leur ce qui se fait de mieux dehors. Faites grandir vos talents en extérieur !",
-      "image": "/img/yellow_red/Asset 11.svg"
+      "image": "img/yellow_red/Asset 11.png"
     },
     {
       "text": "Je dois créer une offre de services innovante pour acquérir et conserver des clients",
       "details": "C'est toujours le même problème : se différencier. Et si pour commencer on ne faisait pas comme les autres en interne ? Allez puisez dans la source de l'innovation avec cette formation !",
-      "image": "/img/yellow_red/Asset 15.svg"
+      "image": "img/yellow_red/Asset 15.png"
     },
     {
       "text": "Je dois développer les compétences numériques des collaborateurs",
       "details": "Le télétravail n'est plus une option. Mais comment bien le gérer ? Inspirez-vous des entreprises qui l'utilise depuis leur naissance et engager la renaissance de la vôtre !",
-      "image": "/img/red_blue/Asset 16.svg"
+      "image": "img/red_blue/Asset 16.png"
     },
     {
       "text": "J'ai besoin de remettre mon utilisateur final au centre du projet",
       "details": "Parfois, dans les méandres des process, on fini par perdre l'objectif : \"Faciliter la vie de l'utilisateur\". Reprenons les bases de la création de services avec cette formation user-centric !",
-      "image": "/img/yellow_red/Asset 9.svg"
+      "image": "img/yellow_red/Asset 9.png"
     },
     {
       "text": "J'ai l'obligation d'améliorer l'employabilité de mes collaborateurs",
       "details": "Ce qui est bien avec les gens qui sont là depuis 20 ans, c'est qu'ils connaissent l'entreprise par cœur. Le problème, c'est qu'ils ne connaissent qu'elle. C'est le moment d'agrandir leur champ de vision !",
-      "image": "/img/yellow_blue/Asset 10.svg"
+      "image": "img/yellow_blue/Asset 10.png"
     },
     {
       "text": "Je mets en place une politique d'égalité homme/femme",
       "details": "Les accords c'est bien, mais comment mettre des femmes dans le ComEx sans froisser personne ? Offrez leur une formation \"sas\" le temps de faire une place. Elles reviendront pleines d'idées !",
-      "image": "/img/red_blue/Asset 22.svg"
+      "image": "img/red_blue/Asset 22.png"
     }
   ],
   "testimonials": [{
       "name": "Audrey Amiot",
       "job": "Early Career Program Manager EMEA, Medtronic",
       "citation": "Les retours des start up & salariés sont incroyables. Je recommande vivement Cameo dans vos projets de développement de compétences, de transformation d'état d'esprit pour développer vos managers ou salariés sur l'entrepreneuriat et la gestion de projet innovant",
-      "image": "/img/audrey_amiot.webp"
+      "image": "img/audrey_amiot.jpg"
     },
     {
       "name": "Laurence Ricard",
       "job": "Directrice Marketing et Communication, Synlab France",
       "citation": "Ce parcours a été formidablement formateur pour moi. Une aventure professionnelle et humaine qui stimule le goût d'entreprendre, la confiance en soi et le partage de compétences",
-      "image": "/img/laurence_ricard.webp"
+      "image": "img/laurence_ricard.jpg"
     }
   ],
   "presentation_offre": "Nous **coordonnons des parcours de formation** pour des salariés de grandes entreprises, en les plaçant en **situation active** au sein de start-ups. Ainsi, nous renforçons **l’employabilité des apprenants** et accélérons le **développement des start-ups**.De nouvelles perspectives s’ouvrent, de **nouvelles pratiques** émergent et la transformation s’opère.",
@@ -111,7 +111,7 @@
     },
     {
       "number": "12M€",
-      "text": "de chiffre d'affaire généré entre start-ups et grands groupes"
+      "text": "de chiffre d'affaires généré entre start-ups et grands groupes"
     },
     {
       "number": "100%",

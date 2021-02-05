@@ -2,24 +2,28 @@
   font-family: TTNorms;
   src: url(../fonts/TTNormsPro-Light.otf) format('opentype');
   font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
   font-family: TTNorms;
   src: url(../fonts/TTNormsPro-Regular.otf) format('opentype');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: TTNorms;
   src: url(../fonts/TTNormsPro-Medium.otf) format('opentype');
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: TTNorms;
   src: url(../fonts/TTNormsPro-Bold.otf) format('opentype');
   font-weight: 700;
+  font-display: swap;
 }
 
 .font-light {

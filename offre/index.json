@@ -2,7 +2,7 @@
   "steps": [
     {
       "title": "Lancement d'une campagne de candidature",
-      "text": "Grâce à notre pack de communication personnalisé avec votre charte, nous informons rapidement et automatiquement tous les collaborateurs visés par le programme. Le canal de communication peut aller du simple e-mail au message personnalisé sur votre logiciel de messagerie corporate (type MS Teams ou Slack). Le nombre de candidat n'est pas limitant."
+      "text": "Grâce à notre pack de communication personnalisé avec votre charte, nous informons rapidement et automatiquement tous les collaborateurs visés par le programme. Le canal de communication peut aller du simple e-mail au message personnalisé sur votre logiciel de messagerie corporate (type MS Teams ou Slack). Le nombre de candidats n'est pas limitant."
     },
     {
       "title": "Identification des candidats",
@@ -14,7 +14,7 @@
     },
     {
       "title": "Rencontre avec la startup",
-      "text": "Une fois l'effectif de la promotion rempli, un matching est effectué automatiquement par notre outils STAN. Ce matching est basé sur les données de candidatures, ainsi que sur les compte-rendus des entretiens. Chaque participant va donc rencontrer une à deux start-ups présentant un degré de compatibilité supérieur à 85%. Comme pour un entretien d'embauche, nous ne passons à l'étape suivante qu'une fois que les deux parties ont validé leur intérêt."
+      "text": "Une fois l'effectif de la promotion rempli, un matching est effectué automatiquement par notre outil STAN. Ce matching est basé sur les données de candidatures, ainsi que sur les compte-rendus des entretiens. Chaque participant va donc rencontrer une à deux start-ups présentant un degré de compatibilité supérieur à 85%. Comme pour un entretien d'embauche, nous ne passons à l'étape suivante qu'une fois que les deux parties ont validé leur intérêt."
     },
     {
       "title": "Formalisation juridique",
@@ -22,15 +22,15 @@
     },
     {
       "title": "Kick-off de départ",
-      "text": "Pour bien commencer, chaque promotion débute avec un kick-off d'une journée où sont rappelé le déroulement, les objectifs et les règles du programme de formation. Ce sera également un moment pour rencontrer toutes les participants (stagiaire et start-ups) de la promotion. La journée se finit sur la création d'un \"scénario\" décrivant l'engagement spécifique entre chaque couple apprenant/start-up, notamment les objectifs et les accomodations nécessaires."
+      "text": "Pour bien commencer, chaque promotion débute avec un kick-off d'une journée où sont rappelés le déroulement, les objectifs et les règles du programme de formation. Ce sera également un moment pour rencontrer tous les participants (stagiaire et start-ups) de la promotion. La journée se finit sur la création d'un \"scénario\" décrivant l'engagement spécifique entre chaque couple apprenant/start-up, notamment les objectifs et les accommodations nécessaires."
     },
     {
       "title": "Formation théorique",
-      "text": "C'est ici que commence le socle théorique de notre certification sur l'entrepreneuriat et la gestion de projet innovant. En fonction des promotions, ce bloc peut être divisé sur plusieurs semaines ou condensé au début de la formation. Ce sera le moment de parler agilité, prototypage, BMC et enquêtes utilisateurs. Tous ces sujets sont articulés autour d'atelier participatif pour ne jamais rester passif."
+      "text": "C'est ici que commence le socle théorique de notre certification sur l'entrepreneuriat et la gestion de projet innovant. En fonction des promotions, ce bloc peut être divisé sur plusieurs semaines ou condensé au début de la formation. Ce sera le moment de parler agilité, prototypage, BMC et enquêtes utilisateurs. Tous ces sujets sont articulés autour d'ateliers participatifs pour ne jamais rester passif."
     },
     {
       "title": "20 à 30 jours de pratique",
-      "text": "Un crédit de X jours (nombre décidé ave vous en amont de la formation), disponible durant l'ensemble de la formation, est dédié à la mise en pratique. Placé en situation active dans une start-up, avec une véritable mission opérationnelle à réaliser, l'apprenant va pouvoir expérimenter les notions théoriques vu précedemment. La start-up sera un parfait terrain d'expérimentation où il pourra mixer ses nouvelles connaissances et son expérience."
+      "text": "Un crédit de X jours (nombre décidé avec vous en amont de la formation), disponible durant l'ensemble de la formation, est dédié à la mise en pratique. Placé en situation active dans une start-up, avec une véritable mission opérationnelle à réaliser, l'apprenant va pouvoir expérimenter les notions théoriques vues précédemment. La start-up sera un parfait terrain d'expérimentation où il pourra mixer ses nouvelles connaissances et son expérience."
     },
     {
       "title": "Un suivi en continu",
@@ -38,7 +38,7 @@
     },
     {
       "title": "Accès à la communauté",
-      "text": "Rejoindre une promotion Cameo c'est bénéficier de toute l'expérience des promotions précédentes ! Avec un système de parrainage, d'alunmi et de partages de vécus, les nouveaux apprenants sont accueillis par une communauté de pairs prêt à les guider, les rassurer et les accompagner tout le long du chemin. L'expérience Cameo ne s'arraîte donc pas à la fin de la formation puisque chaque participant peut ainsi passer \"de l'autre côté\" et guider la prochaine promotion."
+      "text": "Rejoindre une promotion Cameo c'est bénéficier de toute l'expérience des promotions précédentes ! Avec un système de parrainage, d'alumni et de partages de vécus, les nouveaux apprenants sont accueillis par une communauté de pairs prêt à les guider, les rassurer et les accompagner tout le long du chemin. L'expérience Cameo ne s'arrête donc pas à la fin de la formation puisque chaque participant peut ainsi passer \"de l'autre côté\" et guider la prochaine promotion."
     },
     {
       "title": "Certification et remise de diplôme",
