@@ -3,7 +3,7 @@
   "version": "5.0.2",
   "description": "Cameo official website",
   "scripts": {
-    "build": "eleventy --pathprefix 'landing'",
+    "build": "PATH_PREFIX=/landing/ eleventy",
     "start": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
     "purge": "purgecss -css _site/css/style.css --content _site/**/*.html --output _site/css/style.css"

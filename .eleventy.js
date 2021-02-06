@@ -9,6 +9,8 @@ const metagen = require('eleventy-plugin-metagen');
 const criticalCss = require('eleventy-critical-css');
 
 module.exports = function(eleventyConfig) {
+  const pathPrefix = process.env.PATH_PREFIX || '/';
+
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginSass, {sourcemaps: true});
   eleventyConfig.addPlugin(criticalCss, {
@@ -23,7 +25,8 @@ module.exports = function(eleventyConfig) {
     const options = {
       widths: [300],
       formats: ["webp"],
-      outputDir: '_site/img'
+      outputDir: '_site/img',
+      urlPath: pathPrefix + 'img/'
     };
 
     Image(src, options);
@@ -117,7 +120,7 @@ module.exports = function(eleventyConfig) {
     // Best paired with the `url` filter: https://www.11ty.dev/docs/filters/url/
 
     // You can also pass this in on the command line using `--pathprefix`
-    // pathPrefix: "/",
+    pathPrefix: pathPrefix ? pathPrefix : "/",
 
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
