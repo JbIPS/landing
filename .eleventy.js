@@ -1,3 +1,4 @@
+const Path = require('path');
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginNavigation = require("@11ty/eleventy-navigation");
@@ -7,6 +8,8 @@ const markdownItAnchor = require("markdown-it-anchor");
 const pluginSass = require('eleventy-plugin-sass');
 const metagen = require('eleventy-plugin-metagen');
 const criticalCss = require('eleventy-critical-css');
+
+const DEFAULT_DOMAIN = 'localhost:8080';
 
 module.exports = function(eleventyConfig) {
   const pathPrefix = process.env.PATH_PREFIX || '/';
@@ -47,6 +50,19 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
+
+  eleventyConfig.addFilter("absolute", url => {
+    let domain, protocol;
+    if(process.env.DOMAIN) {
+      domain = process.env.DOMAIN;
+      protocol = 'https://';
+    } else {
+      domain = DEFAULT_DOMAIN;
+      protocol = 'http://';
+    }
+    const prefixedUrl = Path.join(pathPrefix, url);
+    return protocol + Path.join(domain, prefixedUrl);
+  })
 
   eleventyConfig.addFilter("pad", number => {
     return number.toString().padStart(2, '0');

@@ -3,7 +3,7 @@
   "version": "5.0.2",
   "description": "Cameo official website",
   "scripts": {
-    "build": "PATH_PREFIX=/landing/ eleventy",
+    "build": "DOMAIN=jbips.github.io PATH_PREFIX=/landing/ eleventy",
     "start": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
     "purge": "purgecss -css _site/css/style.css --content _site/**/*.html --output _site/css/style.css"
@@ -32,6 +32,6 @@
   "dependencies": {
     "@11ty/eleventy-img": "^0.7.8",
     "eleventy-critical-css": "^0.2.2",
-    "eleventy-plugin-metagen": "^1.0.3"
+    "eleventy-plugin-metagen": "github:JbIPS/eleventy-plugin-metagen"
   }
 }
