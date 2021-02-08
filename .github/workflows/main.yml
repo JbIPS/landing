@@ -10,6 +10,8 @@ jobs:
     environment:
       name: github-pages
       url: https://cameo.fr
+    env:
+      DOMAIN: cameo.fr
 
     runs-on: ubuntu-20.04
 
