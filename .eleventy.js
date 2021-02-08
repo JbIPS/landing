@@ -24,9 +24,9 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setDataDeepMerge(true);
 
-  eleventyConfig.addNunjucksShortcode("image", (src, alt, sizes, classes) => {
+  eleventyConfig.addNunjucksShortcode("image", (src, alt, sizes, classes, widths) => {
     const options = {
-      widths: [300],
+      widths: widths ? widths.split(' ').map(s => parseInt(s, 10)) : [300],
       formats: ["webp"],
       outputDir: '_site/img',
       urlPath: pathPrefix + 'img/'
