@@ -55,6 +55,10 @@ section {
   }
 }
 
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
+
 .indent--1 {
   text-indent: -1em;
 }
@@ -147,10 +151,6 @@ section {
       color: var(--white);
       background: var(--primary-color);
     }
-  }
-
-  img {
-    max-height: 25vh;
   }
 }
 

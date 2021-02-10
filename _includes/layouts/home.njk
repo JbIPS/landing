@@ -48,7 +48,7 @@ headerClass: position-lg-fixed home
       </div>
       <div class="glider">
       {% for case in usecases %}
-        <div class="d-flex flex-column justify-content-between usecase px-lg-5 me-lg-5">
+        <div class="d-flex flex-column justify-content-between usecase px-lg-5 me-3">
           <div class="content px-5 px-lg-0 py-4 flex-grow-1 d-flex flex-column justify-content-around">
             <h3 class="fs-4">{{ case.text }}</h3>
             <div class="details d-lg-none">
@@ -56,8 +56,9 @@ headerClass: position-lg-fixed home
               <a class="btn btn-light px-4 rounded-pill" href="{{ '/contact/' | url }}">Let's go!</a>
             </div>
           </div>
-          {#<img class="img-fluid" src="{{ case.image | url }}" alt="Illustration abstraite">#}
-          {% image case.image, "Illustration abstraite", null, "w-auto mx-auto" %}
+          <div class="bg-light-blue d-flex">
+            {% image case.image, "Illustration abstraite", null, "w-100 mx-auto" %}
+          </div>
         </div>
       {% endfor %}
       </div>
