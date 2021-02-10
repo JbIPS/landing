@@ -1,24 +1,4 @@
 window.addEventListener("load", function() {
-  // Slideshow
-  const gliders = document.querySelectorAll('.glider');
-  gliders.forEach(glider => {
-    new Glider(glider, {
-      draggable: true,
-      slidesToShow: glider.classList.contains('posts') ? 1.1 : 1.3,
-      slidesToScroll: 1,
-      arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
-      },
-      responsive: [{
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 2.5
-        }
-      }]
-    });
-  })
-
   // Header stick shrink
   let lastScroll = window.pageYOffset;
   const header = document.querySelector('header');
@@ -93,20 +73,20 @@ window.addEventListener("load", function() {
   //
   // Budget slider
   //
-  const budget = document.querySelector('.multirange.original');
-  const ghost = document.querySelector('.multirange.ghost');
-  const update = (low, high, budgetEl) => {
-    low.textContent = budgetEl.valueLow;
-    high.textContent = budgetEl.valueHigh;
-  };
-  if(budget) {
-    const lowEnd = document.getElementById('low-end');
-    const highEnd = document.getElementById('high-end');
-    update(lowEnd, highEnd, budget);
-    ghost.addEventListener('input', () => {
-      update(lowEnd, highEnd, budget);
-    });
-  }
+  //const budget = document.querySelector('.multirange.original');
+  //const ghost = document.querySelector('.multirange.ghost');
+  //const update = (low, high, budgetEl) => {
+    //low.textContent = budgetEl.valueLow;
+    //high.textContent = budgetEl.valueHigh;
+  //};
+  //if(budget) {
+    //const lowEnd = document.getElementById('low-end');
+    //const highEnd = document.getElementById('high-end');
+    //update(lowEnd, highEnd, budget);
+    //ghost.addEventListener('input', () => {
+      //update(lowEnd, highEnd, budget);
+    //});
+  //}
 
   //
   // Usecases
@@ -116,9 +96,28 @@ window.addEventListener("load", function() {
     .slice(1)
     // shuffle list
     .sort(() => 0.5 - Math.random())
-    .forEach((usecase) => {
+    .forEach((usecase, index, array) => {
       usecase.parentNode.appendChild(usecase);
+			if(index === array.length - 1) {
+        const emptyBlock = document.createElement('div');
+        emptyBlock.classList.add('splide__slide');
+        usecase.parentNode.appendChild(emptyBlock);
+      }
     });
+  // Slideshow
+  new Splide('.splide', {
+    pagination: false,
+    perPage: 2.5,
+    perMove: 1,
+    rewind: false,
+    //arrows: false,
+    breakpoints: {
+      900: {
+        perPage: 1.3,
+      }
+    }
+  }).mount();
+
 
   // Contact form
   const type = document.querySelectorAll('input[name="type"]');
