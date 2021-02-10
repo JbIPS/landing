@@ -41,26 +41,28 @@ headerClass: position-lg-fixed home
 <section class="bg-light">
   <div class="pt-5 ps-md-5 ms-lg-5 py-lg-5">
     <h2 class="col-10 col-lg-6 ps-4 my-md-5 fs-1">Pourquoi et quand faire appel <strong>à nos services&nbsp;?</strong></h2>
-    <div class="glider-contain ms-4 mt-5">
-      <div class="controls d-none d-md-block">
-        <button aria-label="Previous" class="glider-prev">←</button>
-        <button aria-label="Next" class="glider-next">→</button>
+    <div class="splide">
+      <div class="controls d-none d-md-block splide__arrows">
+        <button aria-label="Previous" class="splide__arrow splide__arrow--prev">←</button>
+        <button aria-label="Next" class="splide__arrow splide__arrow--next">→</button>
       </div>
-      <div class="glider">
-      {% for case in usecases %}
-        <div class="d-flex flex-column justify-content-between usecase px-lg-5 me-3">
-          <div class="content px-5 px-lg-0 py-4 flex-grow-1 d-flex flex-column justify-content-around">
-            <h3 class="fs-4">{{ case.text }}</h3>
-            <div class="details d-lg-none">
-              <p class="font-regular">{{ case.details }}</p>
-              <a class="btn btn-light px-4 rounded-pill" href="{{ '/contact/' | url }}">Let's go!</a>
+      <div class="splide__track">
+        <div class="splide__list">
+        {% for case in usecases %}
+          <div class="splide__slide d-flex flex-column justify-content-between usecase px-lg-5 me-3 me-lg-0">
+            <div class="content px-5 px-lg-0 py-4 flex-grow-1 d-flex flex-column justify-content-around">
+              <h3 class="fs-4">{{ case.text }}</h3>
+              <div class="details d-lg-none">
+                <p class="font-regular">{{ case.details }}</p>
+                <a class="btn btn-light px-4 rounded-pill" href="{{ '/contact/' | url }}">Let's go!</a>
+              </div>
+            </div>
+            <div class="bg-light-blue d-flex">
+              {% image case.image, "Illustration abstraite", null, "w-100 mx-auto", "300 600" %}
             </div>
           </div>
-          <div class="bg-light-blue d-flex">
-            {% image case.image, "Illustration abstraite", null, "w-100 mx-auto" %}
-          </div>
+        {% endfor %}
         </div>
-      {% endfor %}
       </div>
     </div>
   </div>

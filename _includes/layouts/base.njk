@@ -14,14 +14,12 @@
     %}
     <meta property="og:locale" content="fr_FR">
 
-    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Light.otf' | url }}" type="font/opentype" crossorigin/>
-    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Regular.otf' | url }}" type="font/opentype" crossorigin/>
-    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Medium.otf' | url }}" type="font/opentype" crossorigin/>
-    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Bold.otf' | url }}" type="font/opentype" crossorigin/>
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"/>
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Light.otf' | url }}" type="font/otf" crossorigin/>
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Regular.otf' | url }}" type="font/otf" crossorigin/>
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Medium.otf' | url }}" type="font/otf" crossorigin/>
+    <link rel="preload" as="font" href="{{ '/fonts/TTNormsPro-Bold.otf' | url }}" type="font/otf" crossorigin/>
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="{{ '/css/style.css' | url }}"/>
     <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
-    {#<link property="image" href="favicon.png"/>#}
   </head>
   <body>
     <header class="w-100{% if headerClass %} {{ headerClass }}{% endif %}">
@@ -99,8 +97,7 @@
     </footer>
     <!-- Current page: {{ page.url | url }} -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous" async=""></script>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js" async></script>
-    {#<script src="{{ '/js/lazysizes.min.js' | url}}" async></script>#}
+    <script src="{{ '/js/splide.min.js' | url }}" async></script>
     <script src="{{ '/js/index.js' | url }}" async></script>
   </body>
 </html>
