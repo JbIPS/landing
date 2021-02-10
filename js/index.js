@@ -1,4 +1,5 @@
 window.addEventListener("load", function() {
+
   // Header stick shrink
   let lastScroll = window.pageYOffset;
   const header = document.querySelector('header');
@@ -69,24 +70,6 @@ window.addEventListener("load", function() {
       })
     })
   });
-
-  //
-  // Budget slider
-  //
-  //const budget = document.querySelector('.multirange.original');
-  //const ghost = document.querySelector('.multirange.ghost');
-  //const update = (low, high, budgetEl) => {
-    //low.textContent = budgetEl.valueLow;
-    //high.textContent = budgetEl.valueHigh;
-  //};
-  //if(budget) {
-    //const lowEnd = document.getElementById('low-end');
-    //const highEnd = document.getElementById('high-end');
-    //update(lowEnd, highEnd, budget);
-    //ghost.addEventListener('input', () => {
-      //update(lowEnd, highEnd, budget);
-    //});
-  //}
 
   //
   // Usecases

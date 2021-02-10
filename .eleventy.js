@@ -8,6 +8,8 @@ const markdownItAnchor = require("markdown-it-anchor");
 const pluginSass = require('eleventy-plugin-sass');
 const metagen = require('eleventy-plugin-metagen');
 const criticalCss = require('eleventy-critical-css');
+const htmlmin = require('html-minifier');
+const {minify} = require('terser');
 
 const DEFAULT_DOMAIN = 'localhost:8080';
 
@@ -86,6 +88,19 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("css/*.css");
   eleventyConfig.addPassthroughCopy("favicon.svg");
+
+  /* Minify HTML */
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if(outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
+  });
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
