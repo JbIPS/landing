@@ -160,8 +160,10 @@
   display: none;
 }
 
-.arrow {
-  animation: bounce .8s infinite alternate;
+@include media-breakpoint-up(lg) {
+  .arrow {
+    animation: bounce .8s infinite alternate;
+  }
 }
 
 @keyframes bounce {
