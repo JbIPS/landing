@@ -2256,9 +2256,7 @@ var UID_NAME = 'uid';
      * @return {Object|undefined} - A Slide object if available. Undefined if not.
      */
     getSlide: function getSlide(index) {
-      return Slides.filter(function (Slide) {
-        return Slide.index === index;
-      })[0];
+      return Slides[Math.floor(index)];
     },
 
     /**
