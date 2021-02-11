@@ -89,7 +89,7 @@ __webpack_require__.d(states_namespaceObject, {
       if (options === void 0) {
         options = {};
       }
-      options.passive = true;
+      if(options.passive === void 0) options.passive = true;
 
       events.split(' ').forEach(function (event) {
         if (elm) {
@@ -529,13 +529,15 @@ function before(elm, ref) {
  */
 
 function applyStyle(elm, styles) {
-  if (elm) {
-    each(styles, function (value, prop) {
-      if (value !== null) {
-        elm.style[prop] = value;
-      }
-    });
-  }
+  requestAnimationFrame(() => {
+    if (elm) {
+      each(styles, function (value, prop) {
+        if (value !== null) {
+          elm.style[prop] = value;
+        }
+      });
+    }
+  });
 }
 /**
  * Add or remove classes to/from the element.
@@ -4156,6 +4158,7 @@ var FRICTION_REDUCER = 7;
      */
     mount: function mount() {
       Splide.on('click', onClick, Components.Elements.track, {
+        passive: false,
         capture: true
       }).on('drag', function () {
         disabled = true;

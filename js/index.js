@@ -80,7 +80,7 @@ window.addEventListener("load", function() {
     .forEach((usecase, index, array) => {
       usecase.parentNode.appendChild(usecase);
 			if(index === array.length - 1) {
-        const emptyBlock = document.createElement('div');
+        const emptyBlock = document.createElement('li');
         emptyBlock.classList.add('splide__slide');
         usecase.parentNode.appendChild(emptyBlock);
       }
