@@ -1,30 +1,38 @@
-window.addEventListener("load", function() {
+function initPage() {
 
   // Header stick shrink
   let lastScroll = window.pageYOffset;
   const header = document.querySelector('header');
   const nav = header.children[0];
+  let scheduledAF = false;
   window.addEventListener('scroll', (e) => {
     const sy = window.pageYOffset;
 
-    if(sy < lastScroll && sy < 20) {
-      header.classList.remove('shrinked', 'slide-up', 'slide-down');
-      nav.classList.add('navbar-dark');
-      nav.classList.remove('navbar-light');
-      header.onanimationend = null;
-    }
-    else if(sy < lastScroll) {
-      header.classList.add('shrinked', 'slide-down');
-      header.classList.remove('slide-up');
-      nav.classList.add('navbar-light');
-      nav.classList.remove('navbar-dark');
-    } else {
-      header.classList.add('slide-up');
-      header.classList.remove('slide-down');
-      nav.classList.add('navbar-light');
-      nav.classList.remove('navbar-dark');
-    }
-    lastScroll = sy;
+    if(scheduledAF) return;
+
+    scheduledAF = true;
+
+    requestAnimationFrame(() => {
+      if(sy < lastScroll && sy < 20) {
+        header.classList.remove('shrinked', 'slide-up', 'slide-down');
+        nav.classList.add('navbar-dark');
+        nav.classList.remove('navbar-light');
+        header.onanimationend = null;
+      }
+      else if(sy < lastScroll) {
+        header.classList.add('shrinked', 'slide-down');
+        header.classList.remove('slide-up');
+        nav.classList.add('navbar-light');
+        nav.classList.remove('navbar-dark');
+      } else {
+        header.classList.add('slide-up');
+        header.classList.remove('slide-down');
+        nav.classList.add('navbar-light');
+        nav.classList.remove('navbar-dark');
+      }
+      lastScroll = sy;
+      scheduledAF = false;
+    });
   }, {passive: true});
 
   // Footer parallax
@@ -46,8 +54,13 @@ window.addEventListener("load", function() {
 
   function updateHeight() {
     // Placeholder should always match footer height
-    placeholder.style.height = `${footer.offsetHeight}px`
-    if(headerPlaceholder) headerPlaceholder.style.height = `${header.offsetHeight}px`;
+    const footerHeight = footer.offsetHeight;
+    const headerHeight = header.offsetHeight;
+
+    requestAnimationFrame(() => {
+      placeholder.style.height = `${footerHeight}px`
+      if(headerPlaceholder) headerPlaceholder.style.height = `${headerHeight}px`;
+    })
   }
 
   // Blog
@@ -109,4 +122,10 @@ window.addEventListener("load", function() {
   }
   if(type.length > 0) updateFields(type.item(0).value);
   type.forEach((t) => t.addEventListener("input", (e) => updateFields(e.target.value)));
-})
+}
+
+if(document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', initPage);
+} else {
+  initPage();
+}
