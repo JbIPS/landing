@@ -25,7 +25,7 @@ window.addEventListener("load", function() {
       nav.classList.remove('navbar-dark');
     }
     lastScroll = sy;
-  })
+  }, {passive: true});
 
   // Footer parallax
   const placeholder = document.getElementById('placeholder')
@@ -51,23 +51,21 @@ window.addEventListener("load", function() {
   }
 
   // Blog
-  window.addEventListener('load', () => {
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    thumbnails.forEach(t => {
-      t.addEventListener('transitionrun', (e) => {
-        if(e.target.parentNode.firstElementChild.classList.contains('hover-out')) {
-          e.target.parentNode.firstElementChild.classList.remove('hover-out');
-          return;
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  thumbnails.forEach(t => {
+    t.addEventListener('transitionrun', (e) => {
+      if(e.target.parentNode.firstElementChild.classList.contains('hover-out')) {
+        e.target.parentNode.firstElementChild.classList.remove('hover-out');
+        return;
+      }
+      thumbnails.forEach(thumb => {
+        const headline = thumb.parentNode.firstElementChild;
+        if(headline.classList.contains('hovered')) {
+          headline.classList.remove('hovered');
+          headline.classList.add('hover-out');
         }
-        thumbnails.forEach(thumb => {
-          const headline = thumb.parentNode.firstElementChild;
-          if(headline.classList.contains('hovered')) {
-            headline.classList.remove('hovered');
-            headline.classList.add('hover-out');
-          }
-        });
-        t.parentNode.firstElementChild.classList.add('hovered');
-      })
+      });
+      t.parentNode.firstElementChild.classList.add('hovered');
     })
   });
 
@@ -93,7 +91,6 @@ window.addEventListener("load", function() {
     perPage: 2.5,
     perMove: 1,
     rewind: false,
-    //arrows: false,
     breakpoints: {
       900: {
         perPage: 1.3,

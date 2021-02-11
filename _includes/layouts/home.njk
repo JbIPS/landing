@@ -47,9 +47,9 @@ headerClass: position-lg-fixed home
         <button aria-label="Next" class="splide__arrow splide__arrow--next">→</button>
       </div>
       <div class="splide__track">
-        <div class="splide__list">
+        <ul class="splide__list">
         {% for case in usecases %}
-          <div class="splide__slide d-flex flex-column justify-content-between usecase px-lg-5 me-3 me-lg-0">
+          <li class="splide__slide d-flex flex-column justify-content-between usecase px-lg-5 me-3 me-lg-0">
             <div class="content px-5 px-lg-0 py-4 flex-grow-1 d-flex flex-column justify-content-around">
               <h3 class="fs-4">{{ case.text }}</h3>
               <div class="details d-lg-none">
@@ -60,9 +60,9 @@ headerClass: position-lg-fixed home
             <div class="bg-light-blue d-flex">
               {% image case.image, "Illustration abstraite", null, "w-100 mx-auto", "300 600" %}
             </div>
-          </div>
+          </li>
         {% endfor %}
-        </div>
+        </ul>
       </div>
     </div>
   </div>
