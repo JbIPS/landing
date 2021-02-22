@@ -42,23 +42,25 @@ headerClass: offre
 </section>
 <section class="bg-light py-5 px-4 d-lg-flex flex-column">
   <h2 class="text-lg-center">L'expérience Cameo <strong class="ps-5 ms-5">en 11 étapes</strong></h2>
-  <div class="glider-contain mt-4">
-    <div class="controls d-none d-lg-block">
-      <button aria-label="Previous" class="glider-prev">←</button>
-      <button aria-label="Next" class="glider-next">→</button>
+  <div class="splide mt-4 mx-lg-auto w-lg-75" data-splide='{"direction": "ttb", "height": 240, "autoHeight": true, "perPage": 1, "breakpoints": {"992": {"destroy": true}}}'>
+    <div class="splide__arrows vertical-controls d-none d-lg-block">
+      <button aria-label="Previous" class="splide__arrow splide__arrow--prev">←</button>
+      <button aria-label="Next" class="splide__arrow splide__arrow--next">→</button>
     </div>
-    <div class="glider steps">
-      {% for step in steps %}
-        <div class="step me-3">
-          <div class="mt-3 d-flex title">
-            <p class="pe-3 index">{{ loop.index | pad }}</p>
-            <h3 class="fs-5 pt-4">{{ step.title }}</h3>
+    <div class="splide__track steps">
+      <div class="splide__list">
+        {% for step in steps %}
+          <div class="step me-3 splide__slide d-lg-flex mb-lg-5">
+            <div class="mt-3 d-flex title mt-lg-0 col-lg-5">
+              <p class="pe-3 index">{{ loop.index | pad }}</p>
+              <h3 class="fs-5 pt-4 mt-lg-3 pt-lg-0 ps-lg-5 fs-lg-2">{{ step.title }}</h3>
+            </div>
+            <div class="small-text mt-lg-3 col-lg-4">
+              {{ step.text | markdown | safe }}
+            </div>
           </div>
-          <div class="small-text">
-            {{ step.text | markdown | safe }}
-          </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </div>
   <a class="btn btn-primary rounded-pill mt-5 mx-lg-auto" href="/syllabus.pdf">Télécharger le programme pédagogique</a>

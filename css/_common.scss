@@ -235,3 +235,13 @@ section {
     }
   }
 }
+
+.controls {
+  position: absolute;
+  top: -5rem;
+  right: 0;
+}
+
+.controls button {
+  position: static;
+}

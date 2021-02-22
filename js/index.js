@@ -85,31 +85,37 @@ function initPage() {
   //
   // Usecases
   //
-  Array.from(document.getElementsByClassName('usecase'))
+  requestAnimationFrame(() => {
+    Array.from(document.getElementsByClassName('usecase'))
     // remove first (must always stay first)
-    .slice(1)
+      .slice(1)
     // shuffle list
-    .sort(() => 0.5 - Math.random())
-    .forEach((usecase, index, array) => {
-      usecase.parentNode.appendChild(usecase);
-			if(index === array.length - 1) {
-        const emptyBlock = document.createElement('li');
-        emptyBlock.classList.add('splide__slide');
-        usecase.parentNode.appendChild(emptyBlock);
-      }
+      .sort(() => 0.5 - Math.random())
+      .forEach((usecase, index, array) => {
+        usecase.parentNode.appendChild(usecase);
+      });
+
+    // Add one empty slide after each slider (to balance floating silde number)
+    Array.from(document.getElementsByClassName('splide__list'))
+    .forEach(splide => {
+      const emptyBlock = splide.tagName.toLowerCase() === 'ul' ? document.createElement('li') : document.createElement('div');
+      emptyBlock.classList.add('splide__slide');
+      splide.appendChild(emptyBlock);
     });
-  // Slideshow
-  new Splide('.splide', {
-    pagination: false,
-    perPage: 2.5,
-    perMove: 1,
-    rewind: false,
-    breakpoints: {
-      900: {
-        perPage: 1.3,
+
+    // Slideshow
+    new Splide('.splide', {
+      pagination: false,
+      perPage: 2.5,
+      perMove: 1,
+      rewind: false,
+      breakpoints: {
+        992: {
+          perPage: 1.3,
+        }
       }
-    }
-  }).mount();
+    }).mount();
+  });
 
 
   // Contact form

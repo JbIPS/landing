@@ -10,6 +10,7 @@ const metagen = require('eleventy-plugin-metagen');
 const criticalCss = require('eleventy-critical-css');
 const htmlmin = require('html-minifier');
 const {minify} = require('terser');
+const pluginInjector = require('@infinity-interactive/eleventy-plugin-injector');
 
 const DEFAULT_DOMAIN = 'localhost:8080';
 
@@ -23,6 +24,20 @@ module.exports = function(eleventyConfig) {
     minify: true
   });
   eleventyConfig.addPlugin(metagen);
+  eleventyConfig.addPlugin(pluginInjector, {
+    watch: 'js/*.js',
+    inject: async (instance, options, file) => {
+      try {
+        fs.mkdirSync('_site/js')
+      } catch(e) {}
+      const code = {
+        'index.js': fs.readFileSync('js/index.js', {encoding: 'utf-8'}),
+        'splide.js': fs.readFileSync('js/splide.js', {encoding: 'utf-8'})
+      };
+      const result = await minify(code);
+      fs.writeFileSync('_site/js/index.js', result.code);
+    }
+  });
 
   eleventyConfig.setDataDeepMerge(true);
 
@@ -85,7 +100,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("fonts");
-  eleventyConfig.addPassthroughCopy("js");
+  //eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("css/*.css");
   eleventyConfig.addPassthroughCopy("favicon.svg");
 

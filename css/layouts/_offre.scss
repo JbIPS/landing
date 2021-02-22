@@ -59,16 +59,6 @@ h2 {
 
 .steps {
   padding-left: 4rem;
-
-  @include media-breakpoint-up(lg) {
-    max-width: 70%;
-    //overflow-y: scroll;
-    //height: 240px;
-
-    //.glider-track {
-      //flex-direction: column;
-    //}
-  }
 }
 
 .step {
@@ -104,8 +94,19 @@ h2 {
 .small-text {
   font-size: 0.8rem;
   font-weight: 400;
+
+  @include media-breakpoint-up(lg) {
+    font-size: initial;
+    font-weight: initial;
+  }
 }
 
 .bg-red {
   background: rgba(var(--tertiary-color), 0.8);
+}
+
+.vertical-controls {
+  transform: rotate(90deg);
+  position: absolute;
+  left: -5em;
 }

@@ -550,10 +550,12 @@ function applyStyle(elm, styles) {
 
 function addOrRemoveClasses(elm, classes, remove) {
   if (elm) {
-    toArray(classes).forEach(function (name) {
-      if (name) {
-        elm.classList[remove ? 'remove' : 'add'](name);
-      }
+    requestAnimationFrame(() => {
+      toArray(classes).forEach(function (name) {
+        if (name) {
+          elm.classList[remove ? 'remove' : 'add'](name);
+        }
+      });
     });
   }
 }
@@ -3307,6 +3309,8 @@ var abs = Math.abs;
      */
     height: 0,
 
+    widthCache: null,
+
     /**
      * Initialization.
      */
@@ -3329,6 +3333,7 @@ var abs = Math.abs;
         left: left,
         right: right
       };
+      this.widthCache = this.width;
       applyStyle(track, {
         paddingLeft: unit(left),
         paddingRight: unit(right)
@@ -3399,7 +3404,7 @@ var abs = Math.abs;
      * @return {number} - Current slider width.
      */
     get width() {
-      return track.clientWidth - this.padding.left - this.padding.right;
+      return this.widthCache ? this.widthCache : (track.clientWidth - this.padding.left - this.padding.right);
     }
 
   };
@@ -3729,8 +3734,10 @@ function createInterval(callback, interval, progress) {
     applyStyle(Splide.root, {
       maxWidth: unit(Splide.options.width)
     });
-    Elements.each(function (Slide) {
-      Slide.slide.style[Layout.margin] = unit(Layout.gap);
+    requestAnimationFrame(() => {
+      Elements.each(function (Slide) {
+        Slide.slide.style[Layout.margin] = unit(Layout.gap);
+      });
     });
     resize();
   }
@@ -3753,18 +3760,19 @@ function createInterval(callback, interval, progress) {
   function resize() {
     var options = Splide.options;
     Layout.resize();
-    applyStyle(Elements.track, {
-      height: unit(Layout.height)
-    });
     var slideHeight = options.autoHeight ? null : unit(Layout.slideHeight());
     Elements.each(function (Slide) {
+      const slideWidth = Layout.slideWidth(Slide.index);
       applyStyle(Slide.container, {
         height: slideHeight
       });
       applyStyle(Slide.slide, {
-        width: options.autoWidth ? null : unit(Layout.slideWidth(Slide.index)),
+        width: options.autoWidth ? null : unit(slideWidth),
         height: Slide.container ? null : slideHeight
       });
+    });
+    applyStyle(Elements.track, {
+      height: unit(Layout.height)
     });
     Splide.emit('resized');
   }
