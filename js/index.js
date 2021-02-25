@@ -101,20 +101,21 @@ function initPage() {
       const emptyBlock = splide.tagName.toLowerCase() === 'ul' ? document.createElement('li') : document.createElement('div');
       emptyBlock.classList.add('splide__slide');
       splide.appendChild(emptyBlock);
+
+      // Slideshow
+      new Splide(splide.parentElement.parentElement, {
+        pagination: false,
+        perPage: 2.5,
+        perMove: 1,
+        rewind: false,
+        breakpoints: {
+          992: {
+            perPage: 1.3,
+          }
+        }
+      }).mount();
     });
 
-    // Slideshow
-    new Splide('.splide', {
-      pagination: false,
-      perPage: 2.5,
-      perMove: 1,
-      rewind: false,
-      breakpoints: {
-        992: {
-          perPage: 1.3,
-        }
-      }
-    }).mount();
   });
 
 

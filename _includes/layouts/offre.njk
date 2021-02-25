@@ -5,43 +5,45 @@ headerClass: offre
 <section class="pt-5 video px-4">
   <h1 class="pt-5">L'offre Cameo <strong>en deux minutes</strong></h1>
 </section>
-<section class="bg-light py-5 px-4 d-lg-flex">
-  <h2 class="mt-lg-5 mx-lg-auto">Choisir Cameo <strong>c'est...</strong></h2>
-  <div class="col-lg-6 mt-lg-5">
-    <ul class="nav nav-tabs" role="tablist">
-      <li class="nav-item" role="presentation">
-        <a class="nav-link active" href="#entreprises" id="entreprises-tab" data-bs-toggle="tab" role="tab" aria-controls="entreprises" aria-selected="true">Pour les entreprises</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" href="#startups" id="startups-tab" data-bs-toggle="tab" role="tab" aria-controls="startups" aria-selected="false">Pour les start-ups</a>
-      </li>
-    </ul>
-    <div class="tab-content pt-2 mb-5">
-      <div class="tab-pane fade show active" id="entreprises" role="tabpanel" aria-labelledby="entreprises-tab">
-        <h3>Formez vos collaborateurs</h3>
-        <p>aux compétences clés</p>
-        <h3>Facilitez la mobilité interne</h3>
-        <p>et augmenter leur employabilité</p>
-        <h3>Créez des synergies</h3>
-        <p>avec vos start-ups</p>
-        <h3>Accélérez vos projets</h3>
-        <p>et générer du chiffres d'affaires</p>
-      </div>
-      <div class="tab-pane fade show" id="startups" role="tabpanel" aria-labelledby="startups-tab">
-        <h3>Accédez à des compétences</h3>
-        <p>expérimentées</p>
-        <h3>Déveleppez un vrai partenariat</h3>
-        <p>avec un grand groupe</p>
-        <h3>Génerez du chiffres d'affaires</h3>
-        <p>grande échelle rapidement</p>
-        <h3>Formez vos équipes</h3>
-        <p>avec un expert</p>
+<section class="bg-light py-5 px-4 d-lg-flex key-points align-items-center">
+  <div class="w-lg-100 d-lg-flex justify-content-lg-center">
+    <h2 class="mx-lg-auto fs-lg-1">Choisir Cameo <strong>c'est...</strong></h2>
+    <div class="col-lg-6">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" href="#entreprises" id="entreprises-tab" data-bs-toggle="tab" role="tab" aria-controls="entreprises" aria-selected="true">Pour les entreprises</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="#startups" id="startups-tab" data-bs-toggle="tab" role="tab" aria-controls="startups" aria-selected="false">Pour les start-ups</a>
+        </li>
+      </ul>
+      <div class="tab-content pt-2 mb-5">
+        <div class="tab-pane fade show active" id="entreprises" role="tabpanel" aria-labelledby="entreprises-tab">
+          <h3>Formez vos collaborateurs</h3>
+          <p>aux compétences clés</p>
+          <h3>Facilitez la mobilité interne</h3>
+          <p>et augmenter leur employabilité</p>
+          <h3>Créez des synergies</h3>
+          <p>avec vos start-ups</p>
+          <h3>Accélérez vos projets</h3>
+          <p>et générer du chiffres d'affaires</p>
+        </div>
+        <div class="tab-pane fade show" id="startups" role="tabpanel" aria-labelledby="startups-tab">
+          <h3>Accédez à des compétences</h3>
+          <p>expérimentées</p>
+          <h3>Déveleppez un vrai partenariat</h3>
+          <p>avec un grand groupe</p>
+          <h3>Génerez du chiffres d'affaires</h3>
+          <p>grande échelle rapidement</p>
+          <h3>Formez vos équipes</h3>
+          <p>avec un expert</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<section class="bg-light py-5 px-4 d-lg-flex flex-column">
-  <h2 class="text-lg-center">L'expérience Cameo <strong class="ps-5 ms-5">en 11 étapes</strong></h2>
+<section class="bg-light-blue py-5 px-4 d-lg-flex flex-column steps-section vh-100 justify-content-center">
+  <h2 class="text-lg-center fs-lg-1">L'expérience Cameo <strong class="ps-5 ms-5">en 11 étapes</strong></h2>
   <div class="splide mt-4 mx-lg-auto w-lg-75" data-splide='{"direction": "ttb", "height": 240, "autoHeight": true, "perPage": 1, "breakpoints": {"992": {"destroy": true}}}'>
     <div class="splide__arrows vertical-controls d-none d-lg-block">
       <button aria-label="Previous" class="splide__arrow splide__arrow--prev">←</button>
@@ -66,20 +68,30 @@ headerClass: offre
   <a class="btn btn-primary rounded-pill mt-5 mx-lg-auto" href="/syllabus.pdf">Télécharger le programme pédagogique</a>
 </section>
 <section class="bg-light pt-5 advantage">
-  <h2 class="ps-4 mb-4">Cameo <strong>c'est aussi...</strong></h2>
-  <div class="content p-5">
-    <div class="d-lg-flex">
-      <h3 class="fs-5">Une formule gagnant-gagnant-gagnant</h3>
-      <p class="mb-5">Lorem ipsum</p>
+  <h2 class="ps-4 mb-4 fs-lg-1 position-lg-absolute pt-lg-5 mt-lg-5 ms-lg-5">Cameo <strong>c'est aussi...</strong></h2>
+  <div class="d-none d-lg-flex h-100">
+    <div class="col-6 pt-5 mt-5">
+      <div class="col-8 mx-auto pt-5">
+        {% for advantage in advantages %}
+          <h3 class="mt-5">{{ advantage.title }}</h3>
+        {% endfor %}
+      </div>
     </div>
-    <div class="d-lg-flex">
-      <h3 class="fs-5">Une formule gagnant-gagnant-gagnant</h3>
-      <p class="mb-5">Lorem ipsum</p>
+    <div class="col-6 content">
+      <div class="col-6 mx-auto">
+        {% for advantage in advantages %}
+          <p class="">{{ advantage.text }}</h3>
+        {% endfor %}
+      </div>
     </div>
-    <div class="d-lg-flex">
-      <h3 class="fs-5">Une formule gagnant-gagnant-gagnant</h3>
-      <p class="mb-5">Lorem ipsum</p>
-    </div>
+  </div>
+  <div class="content p-5 d-lg-none">
+    {% for advantage in advantages %}
+      <div>
+        <h3 class="fs-5">{{ advantage.title }}</h3>
+        <p class="mb-5">{{ advantage.text }}</p>
+      </div>
+    {% endfor %}
   </div>
 </section>
 <section class="bg-light py-5 px-4 d-lg-flex justify-content-lg-evenly align-items-lg-center">

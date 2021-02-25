@@ -76,6 +76,8 @@ h2 {
 }
 
 .advantage {
+  height: 800px;
+
   h2 strong {
     display: inline;
   }
@@ -109,4 +111,25 @@ h2 {
   transform: rotate(90deg);
   position: absolute;
   left: -5em;
+}
+
+.steps-section {
+  background-image: url('../img/red_blue/Asset 30.png'), url('../img/yellow_red/Asset 19.png');
+  background-repeat: no-repeat;
+  background-size: 13%, 18%;
+  background-position-y: bottom, top;
+  background-position-x: left, right;
+  max-height: 800px;
+}
+
+.key-points {
+  background-image: url('../img/yellow_red/Asset 20.png');
+  background-repeat: no-repeat;
+  background-size: 18%;
+  background-position-y: bottom;
+  background-position-x: right;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 645px;
+  }
 }

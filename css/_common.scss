@@ -42,9 +42,8 @@ section {
   color: var(--primary-color);
 }
 
-.bg-light {
+.bg-light, .bg-light-blue {
   color: var(--black);
-  background-color: var(--white) !important;
 
   h2 {
     color: var(--primary-color);
@@ -53,6 +52,10 @@ section {
   strong {
     color: var(--tertiary-color);
   }
+}
+
+.bg-light {
+  background-color: var(--white) !important;
 }
 
 .bg-light-blue {
@@ -244,4 +247,10 @@ section {
 
 .controls button {
   position: static;
+}
+
+@include media-breakpoint-up(lg) {
+  .position-lg-absolute {
+    position: absolute;
+  }
 }
