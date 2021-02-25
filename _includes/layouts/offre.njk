@@ -67,9 +67,9 @@ headerClass: offre
   </div>
   <a class="btn btn-primary rounded-pill mt-5 mx-lg-auto" href="/syllabus.pdf">Télécharger le programme pédagogique</a>
 </section>
-<section class="bg-light pt-5 advantage">
+<section class="bg-light pt-5 pt-lg-0 advantage">
   <h2 class="ps-4 mb-4 fs-lg-1 position-lg-absolute pt-lg-5 mt-lg-5 ms-lg-5">Cameo <strong>c'est aussi...</strong></h2>
-  <div class="d-none d-lg-flex h-100">
+  <div class="d-none d-lg-flex h-100 justify-content-lg-evenly">
     <div class="col-6 pt-5 mt-5">
       <div class="col-8 mx-auto pt-5">
         {% for advantage in advantages %}
@@ -78,9 +78,9 @@ headerClass: offre
       </div>
     </div>
     <div class="col-6 content">
-      <div class="col-6 mx-auto">
+      <div class="col-6 mx-auto d-flex flex-column h-100">
         {% for advantage in advantages %}
-          <p class="">{{ advantage.text }}</h3>
+          <p class="h-50">{{ advantage.text }}</h3>
         {% endfor %}
       </div>
     </div>
@@ -96,7 +96,6 @@ headerClass: offre
 </section>
 <section class="bg-light py-5 px-4 d-lg-flex justify-content-lg-evenly align-items-lg-center">
   <h2 class="w-75 d-lg-none">Cameo :<strong>combien ça coûte ?</strong></h2>
-  {#<img class="img-fluid" src="">#}
   <div style="height: 700px;width: 300px; display: block; background: black"></div>
   <div>
     <h2 class="d-none d-lg-block">Cameo :<strong>combien ça coûte ?</strong></h2>

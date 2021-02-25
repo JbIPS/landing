@@ -60,7 +60,6 @@
   list-style-type: none!important;
   margin: 0;
   flex-shrink: 0;
-  width: 65vw !important;
 
   @include media-breakpoint-up(lg) {
     width: auto;

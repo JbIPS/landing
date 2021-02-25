@@ -63,6 +63,7 @@ h2 {
 
 .step {
   font-weight: 400;
+  width: 65vw !important;
 
   .index {
     color: var(--tertiary-color);
@@ -83,9 +84,10 @@ h2 {
   }
 
   .content {
-    background: var(--primary-color);
+    background: url('../img/red_blue/Asset 27.png') no-repeat center/cover var(--primary-color);
     color: var(--white);
     font-weight: 400;
+    max-width: 640px;
 
     * {
       margin: auto;
