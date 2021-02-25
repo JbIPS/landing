@@ -28,8 +28,9 @@ module.exports = function(eleventyConfig) {
     watch: 'js/*.js',
     inject: async (instance, options, file) => {
       try {
+        fs.mkdirSync('_site')
         fs.mkdirSync('_site/js')
-      } catch(e) {}
+      } catch(e) { console.error(e); }
       const code = {
         'index.js': fs.readFileSync('js/index.js', {encoding: 'utf-8'}),
         'splide.js': fs.readFileSync('js/splide.js', {encoding: 'utf-8'})
