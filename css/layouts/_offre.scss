@@ -1,11 +1,13 @@
 .video {
   height: 100vh;
-  background-image: url('../img/yellow_blue/Asset 2.svg');
+  background-image: url('../img/yellow_blue/Asset 7.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: -60%;
 
   @include media-breakpoint-up(lg) {
     background-size: contain;
+    background-position: 90%;
   }
 
   h1 {
@@ -83,15 +85,57 @@ h2 {
     display: inline;
   }
 
+  .list-group-item-action {
+    color: var(--black);
+    opacity: .3;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+
+    &.active {
+      opacity: 1;
+      text-indent: -1rem;
+
+      &:before {
+        content: '— ';
+        color: var(--tertiary-color);
+      }
+    }
+  }
+
   .content {
     background: url('../img/red_blue/Asset 27.png') no-repeat center/cover var(--primary-color);
     color: var(--white);
     font-weight: 400;
     max-width: 640px;
+    overflow: hidden;
 
-    * {
-      margin: auto;
+    & > div {
+      overflow-y: scroll;
+      position: relative;
+      scrollbar-width: none;
+
+      @include media-breakpoint-up(lg) {
+        mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
+      }
+
+      .advantage-body {
+        margin: auto;
+
+        &.first {
+          padding-top: 100%;
+        }
+
+        &.last {
+          padding-bottom: 100%;
+        }
+
+        @include media-breakpoint-up(lg) {
+          padding: 50% 0;
+        }
+      }
     }
+
   }
 }
 

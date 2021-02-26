@@ -68,19 +68,19 @@ headerClass: offre
   <a class="btn btn-primary rounded-pill mt-5 mx-lg-auto" href="/syllabus.pdf">Télécharger le programme pédagogique</a>
 </section>
 <section class="bg-light pt-5 pt-lg-0 advantage">
-  <h2 class="ps-4 mb-4 fs-lg-1 position-lg-absolute pt-lg-5 mt-lg-5 ms-lg-5">Cameo <strong>c'est aussi...</strong></h2>
+  <h2 class="ps-4 mb-4 fs-lg-1 position-lg-absolute mt-lg-5 ms-lg-5">Cameo <strong>c'est aussi...</strong></h2>
   <div class="d-none d-lg-flex h-100 justify-content-lg-evenly">
     <div class="col-6 pt-5 mt-5">
-      <div class="col-8 mx-auto pt-5">
+      <div class="col-8 mx-auto pt-5 list-group" id="advantages-titles">
         {% for advantage in advantages %}
-          <h3 class="mt-5">{{ advantage.title }}</h3>
+          <a class="mt-5 list-group-item list-group-item-action fs-3" href="#advantage-{{ loop.index }}">{{ advantage.title }}</a>
         {% endfor %}
       </div>
     </div>
     <div class="col-6 content">
-      <div class="col-6 mx-auto d-flex flex-column h-100">
+      <div data-bs-spy="scroll" data-bs-target="#advantages-titles" data-bs-offset="250" tabindex="0" class="col-6 mx-auto d-flex flex-column h-100">
         {% for advantage in advantages %}
-          <p class="h-50">{{ advantage.text }}</h3>
+        <div class="advantage-body{% if loop.first %} first{% elif loop.last %} last{% endif %}" id="advantage-{{ loop.index }}">{{ advantage.text | markdown | safe }}</div>
         {% endfor %}
       </div>
     </div>
