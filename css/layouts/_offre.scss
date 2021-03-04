@@ -170,6 +170,11 @@ h2 {
         mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
       }
 
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+
       .advantage-body {
         margin: auto;
 
