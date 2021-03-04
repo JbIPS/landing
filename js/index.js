@@ -136,3 +136,49 @@ if(document.readyState === 'loading') {
 } else {
   initPage();
 }
+
+function hideVideo(video, button) {
+  video.removeAttribute('style');
+  button.removeAttribute('style');
+}
+
+const listenerSet = false;
+function playPause(element) {
+  const playButton = document.querySelector('.play-button');
+  if(element.paused) {
+    playButton.style.display = 'none';
+    element.style.opacity = 1;
+
+    // Fullscreen on mobile
+    if(window.innerWidth < 992) {
+      if (element.requestFullscreen)
+        element.requestFullscreen();
+      else if (element.webkitRequestFullscreen)
+        element.webkitRequestFullscreen();
+      else if (element.msRequestFullScreen)
+        element.msRequestFullScreen();
+    }
+
+    element.play();
+    if(!listenerSet) {
+      element.addEventListener('ended', () => {
+        // Reset video
+        element.load();
+        hideVideo(element, playButton);
+      });
+      listenerSet = true;
+    }
+  } else {
+    hideVideo(element, playButton);
+    element.pause();
+
+    if(window.innerWidth < 992) {
+      if (document.exitFullscreen)
+        document.exitFullscreen();
+      else if (document.webkitExitFullscreen)
+        document.webkitExitFullscreen();
+      else if (document.msExitFullscreen)
+        document.msExitFullscreen();
+    }
+  }
+}

@@ -3,7 +3,21 @@ layout: layouts/base.njk
 headerClass: offre
 ---
 <section class="pt-5 video px-4">
-  <h1 class="pt-5">L'offre Cameo <strong>en deux minutes</strong></h1>
+  <h1 class="pt-5 col-lg-10 mx-lg-auto">L'offre Cameo <strong>en deux minutes</strong></h1>
+  <div class="position-relative player">
+    <div class="position-absolute play-button rounded-circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 337.173 337.173" style="enable-background:new 0 0 337.173 337.173;" xml:space="preserve">
+        <g>
+          <path d="M25.922,337.173V0l285.329,168.595L25.922,337.173z M42.179,28.491v280.2L279.29,168.595L42.179,28.491z"/>
+        </g>
+      </svg>
+    </div>
+    <video class="w-lg-100" poster="/video/poster.jpg" onclick="playPause(this)" preload="metadata">
+      <source src="/video/presentation_offre.webm" type="video/webm">
+      <source src="/video/presentation_offre.mp4" type="video/mp4">
+      <track kind="captions" srclang="fr" src="/video/captions.vtt" label="Français" default>
+    </video>
+  </div>
 </section>
 <section class="bg-light py-5 px-4 d-lg-flex key-points align-items-center">
   <div class="w-lg-100 d-lg-flex justify-content-lg-center">

@@ -100,6 +100,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("video");
   eleventyConfig.addPassthroughCopy("fonts");
   //eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("css/*.css");
