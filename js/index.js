@@ -142,7 +142,7 @@ function hideVideo(video, button) {
   button.removeAttribute('style');
 }
 
-const listenerSet = false;
+let listenerSet = false;
 function playPause(element) {
   const playButton = document.querySelector('.play-button');
   if(element.paused) {
