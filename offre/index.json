@@ -62,5 +62,27 @@
       "title": "Un suivi et un monitoring de chaque immersion",
       "text": "Six mois ça fait long comme tunnel. Un seul remède : le reporting ! Encore une fois STAN tient le beau rôle en vous transmettant à tout moment les statistiques de la promotion. Être curieux c'est bien, être informé c'est mieux !"
     }
+  ],
+  "faq": [
+    {
+      "title": "Quels sont les prérequis ? ",
+      "text": "Le participant doit justifier d’une expérience professionnelle d’**au moins 5 ans**.\nIl doit faire preuve de motivation et justifier d’un projet de mobilité professionnelle interne ou externe.\nSon emploi du temps professionnel doit pouvoir être aménagé pour réaliser les sessions d’immersion en entreprise innovante (**20 jours d’immersion sur 3 à 6 mois**)."
+    },
+    {
+      "title": "Quels sont les objectifs de la formation ? ",
+      "text": "La formation permet l'acquisition de méthodes et techniques pour **passer d'une idée d'innovation à sa réalisation**, avec un souci permanent de placer l'utilisateur final au centre du projet.\nElle vise le développement d'un **état d'esprit d'entrepreneur** et permet, par la pratique, l'acquisition de compétences et postures adaptées au **travail agile et en équipe pluridisciplinaires**.\nLa validation des compétences est sanctionnée par la passage de la certification [\"Définir et mettre en œuvre un projet d'innovation au sein d’une organisation\"](https://www.francecompetences.fr/recherche/rs/5326/)"
+    },
+    {
+      "title": "Combien de temps dure un cameo ? ",
+      "text": "Le parcours se déroule sur 24 semaines, pour une **durée totale de 175h30**, qui se décomposent ainsi :\n* Séminaire de lancement : 7h\n* Workshops thématiques : 6 x 2h, soit 12h\n* Webinaires : 3 x 1h30, soit 4h30\n* Mission en entreprise innovante : 140h, à raison de 7 heures par semaine, en moyenne. La planification des heures de présence du participant dans l’entreprise d’accueil est réalisée par le participant, son employeur et le tuteur, de manière conjointe, en début de parcours.\n* Coaching individuel : 24 x 0h30, soit 12 heures"
+    },
+    {
+      "title": "Comment se passe l'évaluation ? ",
+      "text": "La formation permet de préparer au passage des épreuves de la certification [\"Définir et mettre en œuvre un projet d'innovation au sein d’une organisation\"](https://www.francecompetences.fr/recherche/rs/5326/).\nChaque participant doit constituer, au fil de sa mission, un rapport problématisé sur sa mission, selon un plan défini et partagé avec lui.\nIl dispose, en fin de formation, de 30 minutes pour **soutenir son rapport devant un jury** composé de :\n* un représentant de l’organisme de formation ;\n* une à deux personnalités qualifiées, externes à l’organisme de formation.  \n\nLe jury évalue la prestation et les livrables proposés par le participant sur les points suivants :\n* qualité du business plan ;\n* qualité du pitch ;\n* appréciation écrite du tuteur sur la mission effectuée ;\n* assiduité du participant tout au long du parcours.  \n\nLes résultats de l’évaluation sont consignés dans un procès-verbal, transmis au participant, son tuteur et son employeur.\nTout participant qui obtient la moyenne (10 points sur 20) obtient la certification [\"Définir et mettre en œuvre un projet d'innovation au sein d’une organisation\"](https://www.francecompetences.fr/recherche/rs/5326/)."
+    },
+    {
+      "title": "Cette formation est-elle accessible aux personnes handicapées ? ",
+      "text": "Dans le cas d'un participant en situation de handicap, l'intégralité de son parcours est adapté. De l'organisation des workshops au choix de l'entreprise d'accueil, tout est mis en œuvre pour une accessibilité et une inclusion maximale. Pour plus d'informations, notre responsable handicap [Jérémy Marlin](mailto:jeremy@cameo.fr) est à votre disposition."
+    }
   ]
 }

@@ -129,6 +129,19 @@ module.exports = function(eleventyConfig) {
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
   });
+  // Remember old renderer, if overridden, or proxy to default renderer
+  const defaultRender = markdownLibrary.renderer.rules.link_open || function(tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+
+  markdownLibrary.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+    // If link URL is outside of this domain
+    if(tokens[idx].attrGet('href').startsWith('http'))
+      tokens[idx].attrPush(['target', '_blank']); // add new attribute
+
+    // pass token to default renderer.
+    return defaultRender(tokens, idx, options, env, self);
+  };
 
   eleventyConfig.setLibrary("md", markdownLibrary);
   eleventyConfig.addFilter('markdown', (string) => {

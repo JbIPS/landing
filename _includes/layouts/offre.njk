@@ -107,18 +107,39 @@ headerClass: offre
     {% endfor %}
   </div>
 </section>
-<section class="bg-light py-5 px-4 d-lg-flex justify-content-lg-evenly align-items-lg-center">
-  <h2 class="w-75 d-lg-none">Cameo :<strong>combien ça coûte ?</strong></h2>
-  <div style="height: 700px;width: 300px; display: block; background: black"></div>
-  <div>
-    <h2 class="d-none d-lg-block">Cameo :<strong>combien ça coûte ?</strong></h2>
-    <h3 class="fs-5">Un financement tri-partite et sur-mesure</h3>
-    <p class="small-text">Lorem Ipsum</p>
+<section class="bg-light py-5 px-4">
+  <h2 class="ps-4 mb-4 fs-lg-1 mt-lg-5 ms-lg-5">Cameo en <strong class="d-inline">questions</strong></h2>
+  <div class="container">
+    <div class="accordion accordion-flush" id="faq">
+      {% for question in faq %}
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faq-header-{{ loop.index }}">
+          <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body-{{ loop.index }}" aria-expanded="false" aria-controls="faq-body-{{ loop.index }}">
+            {{ question.title }}
+          </button>
+        </h3>
+        <div id="faq-body-{{ loop.index }}" class="accordion-collapse collapse" aria-labelledby="faq-header-{{ loop.index }}" data-bs-parent="#faq">
+          <div class="accordion-body">
+            {{ question.text | markdown | safe }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
+{#<section class="bg-light py-5 px-4 d-lg-flex justify-content-lg-evenly align-items-lg-center">#}
+  {#<h2 class="w-75 d-lg-none">Cameo :<strong>combien ça coûte ?</strong></h2>#}
+  {#<div style="height: 700px;width: 300px; display: block; background: black"></div>#}
+  {#<div>#}
+    {#<h2 class="d-none d-lg-block">Cameo :<strong>combien ça coûte ?</strong></h2>#}
+    {#<h3 class="fs-5">Un financement tri-partite et sur-mesure</h3>#}
+    {#<p class="small-text">Lorem Ipsum</p>#}
+  {#</div>#}
+{#</section>#}
 <section class="py-5 px-4 cta d-lg-flex justify-content-lg-end align-items-lg-center">
   <div class="p-4 col-lg-6">
-    <h2 class="fs-lg-0 col-lg-8">Notre offre vous intéresse ?<strong>Et si on prenait quelques minutes pour en parler ?</strong></h2>
+    <h2 class="fs-lg-1 col-lg-8">Notre offre vous intéresse ?<strong>Et si on prenait quelques minutes pour en parler ?</strong></h2>
     <a href="{{ '/contact/' | url }}" class="btn btn-light rounded-pill px-3 mt-3">Parlons-en !</a>
   </div>
 </section>
