@@ -50,7 +50,7 @@
       </nav>
     </header>
 
-    <main>
+    <main{% if contentClass %} class="{{ contentClass }}"{% endif %}>
       {{ content | safe }}
     </main>
 
@@ -89,9 +89,10 @@
           </ul>
         </div>
       </div>
+      <p class="text-lg-center">Orgagnisme de formation enregistré sous le numéro 11756020775 auprès du préfet de région d’Île-de-France.<br/> Cet enregistrement ne vaut pas agrément de l'État.</p>
       <ul class="mentions list-inline text-lg-center">
         <li class="list-inline-item font-regular">© Cameo 2021. Tous droits réservés.</li>
-        <li class="list-inline-item"><a href="{{ '/mentions-legales' | url }}">Mentions légales</a></li>
+        <li class="list-inline-item"><a href="{{ '/mentions_legales' | url }}">Mentions légales</a></li>
       </ul>
       <p class="text-lg-center">Pas de cookies sur notre site. La meilleure façon de protéger vos données, c'est de ne pas les garder.</p>
     </footer>
