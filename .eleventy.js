@@ -98,6 +98,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('log', (elem) => {
     console.log(elem);
   });
+  eleventyConfig.addFilter('selectPublished', (elem) => {
+    return elem.filter((entry) => !!entry.data?.published);
+  });
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("video");

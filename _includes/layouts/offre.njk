@@ -21,7 +21,7 @@ headerClass: offre
 <section class="bg-light py-5 px-4 d-lg-flex key-points align-items-center">
   <div class="w-lg-100 d-lg-flex justify-content-lg-center">
     <h2 class="mx-lg-auto fs-lg-1">Choisir Cameo <strong>c'est...</strong></h2>
-    <div class="col-lg-6">
+    <div class="col-lg-6 d-flex flex-column align-items-center">
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" role="presentation">
           <a class="nav-link active" href="#entreprises" id="entreprises-tab" data-bs-toggle="tab" role="tab" aria-controls="entreprises" aria-selected="true">Pour les entreprises</a>
@@ -55,7 +55,7 @@ headerClass: offre
     </div>
   </div>
 </section>
-<section class="bg-light-blue py-5 px-4 d-lg-flex flex-column steps-section vh-100 justify-content-center">
+<section class="bg-light-blue py-5 px-4 d-flex flex-column steps-section vh-100 justify-content-center">
   <h2 class="text-lg-center fs-lg-1">L'expérience Cameo <strong class="ps-5 ms-5">en 11 étapes</strong></h2>
   <div class="splide mt-4 mx-lg-auto w-lg-75" data-splide='{"direction": "ttb", "height": 260, "autoHeight": true, "perPage": 1, "breakpoints": {"992": {"destroy": true}}}'>
     <div class="splide__arrows vertical-controls d-none d-lg-block">
@@ -78,7 +78,7 @@ headerClass: offre
       </div>
     </div>
   </div>
-  <a class="btn btn-primary rounded-pill mt-5 mx-lg-auto" href="/img/Cameo - Programme Pédagogique Détaillé.pdf">Télécharger le programme pédagogique</a>
+  <a class="btn btn-primary rounded-pill mt-5 mx-auto" href="/img/Cameo - Programme Pédagogique Détaillé.pdf">Télécharger le programme pédagogique</a>
 </section>
 <section class="bg-light pt-5 pt-lg-0 advantage">
   <h2 class="ps-4 mb-4 fs-lg-1 position-lg-absolute mt-lg-5 ms-lg-5">Cameo <strong>c'est aussi...</strong></h2>
@@ -114,7 +114,7 @@ headerClass: offre
       {% for question in faq %}
       <div class="accordion-item">
         <h3 class="accordion-header" id="faq-header-{{ loop.index }}">
-          <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body-{{ loop.index }}" aria-expanded="false" aria-controls="faq-body-{{ loop.index }}">
+          <button class="accordion-button text-start collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body-{{ loop.index }}" aria-expanded="false" aria-controls="faq-body-{{ loop.index }}">
             {{ question.title }}
           </button>
         </h3>
@@ -137,8 +137,8 @@ headerClass: offre
     {#<p class="small-text">Lorem Ipsum</p>#}
   {#</div>#}
 {#</section>#}
-<section class="py-5 px-4 cta d-lg-flex justify-content-lg-end align-items-lg-center">
-  <div class="p-4 col-lg-6">
+<section class="py-5 px-4 cta d-md-flex justify-content-md-end align-items-md-center">
+  <div class="p-4 col-md-8 col-lg-6">
     <h2 class="fs-lg-1 col-lg-8">Notre offre vous intéresse ?<strong>Et si on prenait quelques minutes pour en parler ?</strong></h2>
     <a href="{{ '/contact/' | url }}" class="btn btn-light rounded-pill px-3 mt-3">Parlons-en !</a>
   </div>

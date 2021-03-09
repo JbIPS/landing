@@ -99,7 +99,7 @@ function initPage() {
     Array.from(document.getElementsByClassName('splide__list'))
     .forEach(splide => {
       const emptyBlock = splide.tagName.toLowerCase() === 'ul' ? document.createElement('li') : document.createElement('div');
-      emptyBlock.classList.add('splide__slide');
+      emptyBlock.classList.add('splide__slide', 'd-none', 'd-lg-block');
       splide.appendChild(emptyBlock);
 
       // Slideshow

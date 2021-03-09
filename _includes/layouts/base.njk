@@ -37,12 +37,10 @@
           </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
-              {%- for entry in collections.all | eleventyNavigation %}
-                {% if entry.url === '/contact/' %}
+              {%- for entry in collections.all | selectPublished | eleventyNavigation %}
                 <li class="nav-item{% if loop.last %} rounded-pill border px-5 ms-3 align-self-center{% endif %}">
                   <a class="nav-link{% if entry.url == page.url %} active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
                 </li>
-                {% endif %}
               {%- endfor %}
             </ul>
           </div>
@@ -81,7 +79,7 @@
         </div>
         <div class="col-6 px-5 d-none d-lg-block">
           <ul class="list-unstyled">
-            {%- for entry in collections.all | eleventyNavigation %}
+            {%- for entry in collections.all | selectPublished | eleventyNavigation %}
               <li class="fs-1">
                 <a class="text-decoration-none" href="{{ entry.url | url }}">{{ entry.title }}</a>
               </li>

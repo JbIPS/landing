@@ -153,7 +153,6 @@ h2 {
     background: url('../img/red_blue/Asset 27.png') no-repeat center/cover var(--primary-color);
     color: var(--white);
     font-weight: 400;
-    max-width: 640px;
     overflow: hidden;
 
     & > div {
@@ -234,10 +233,13 @@ h2 {
   background-position: right -77px bottom -62px;
   background-size: 250%;
 
-  @include media-breakpoint-up(lg) {
-    min-height: 80vh;
+  @include media-breakpoint-up(md) {
     background-size: 90%;
     background-position: -138% 73%
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 80vh;
   }
 }
 
