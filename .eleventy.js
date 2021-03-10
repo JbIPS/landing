@@ -30,7 +30,7 @@ module.exports = function(eleventyConfig) {
       try {
         fs.mkdirSync('_site')
         fs.mkdirSync('_site/js')
-      } catch(e) { console.error(e); }
+      } catch(e) {/* console.error(e);*/ }
       const code = {
         'index.js': fs.readFileSync('js/index.js', {encoding: 'utf-8'}),
         'splide.js': fs.readFileSync('js/splide.js', {encoding: 'utf-8'})
@@ -65,8 +65,8 @@ module.exports = function(eleventyConfig) {
     return Image.generateHTML(metadata, imageAttributes);
   })
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+  eleventyConfig.addFilter("date", (dateObj, format) => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat(format);
   });
 
   eleventyConfig.addFilter("absolute", url => {

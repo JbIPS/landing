@@ -5,4 +5,5 @@ published: true
 eleventyNavigation:
   key: Notre offre
   order: 2
+sitemapPriority: 0.9
 ---
