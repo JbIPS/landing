@@ -151,12 +151,19 @@ function playPause(element) {
 
     // Fullscreen on mobile
     if(window.innerWidth < 992) {
-      if (element.requestFullscreen)
+      try {
+        throw new Error('boom');
+      if(element.webkitEnterFullscreen)
+        element.webkitEnterFullscreen();
+      else if (element.requestFullscreen)
         element.requestFullscreen();
       else if (element.webkitRequestFullscreen)
         element.webkitRequestFullscreen();
       else if (element.msRequestFullScreen)
         element.msRequestFullScreen();
+      } catch(e) {
+        window.alert(e.message);
+      }
     }
 
     element.play();
