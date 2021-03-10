@@ -152,7 +152,6 @@ function playPause(element) {
     // Fullscreen on mobile
     if(window.innerWidth < 992) {
       try {
-        throw new Error('boom');
       if(element.webkitEnterFullscreen)
         element.webkitEnterFullscreen();
       else if (element.requestFullscreen)
