@@ -1,6 +1,7 @@
 ---
 layout: layouts/simple.njk
 eleventyExcludeFromCollections: true
+permalink: mentions_legales.html
 ---
 # MENTIONS LÉGALES DU SITE
 
