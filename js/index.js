@@ -152,8 +152,10 @@ function playPause(element) {
     // Fullscreen on mobile
     if(window.innerWidth < 992) {
       try {
+        console.log(element);
       if(element.webkitEnterFullscreen)
-        element.webkitEnterFullscreen();
+        //element.webkitEnterFullscreen();
+        console.log('ios');
       else if (element.requestFullscreen)
         element.requestFullscreen();
       else if (element.webkitRequestFullscreen)
@@ -161,14 +163,25 @@ function playPause(element) {
       else if (element.msRequestFullScreen)
         element.msRequestFullScreen();
       } catch(e) {
-        window.alert(e.message);
+        console.log(e);
+
       }
     }
 
-    element.play();
+    element.play()
+    .then(() => {
+      console.log('playing');
+    })
+    .catch((e) => {
+      console.log('Error while playing');
+      console.error(e);
+    });
+    console.log('Play called');
     if(!listenerSet) {
+      console.log('setting listener')
       element.addEventListener('ended', () => {
         // Reset video
+        console.log('ended');
         element.load();
         hideVideo(element, playButton);
       });
@@ -176,6 +189,7 @@ function playPause(element) {
     }
   } else {
     hideVideo(element, playButton);
+    console.log('paused');
     element.pause();
 
     if(window.innerWidth < 992) {
