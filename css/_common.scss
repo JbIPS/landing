@@ -264,3 +264,13 @@ section {
     color: var(--white);
   }
 }
+
+.bullet-point {
+  color: var(--black) !important;
+  text-indent: -1rem;
+
+  &:before {
+    content: '— ';
+    color: var(--tertiary-color);
+  }
+}

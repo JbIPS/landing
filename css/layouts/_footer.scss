@@ -23,8 +23,13 @@ footer {
     color: var(--secondary-color);
   }
 
-  .social svg {
-    height: 20px;
-    fill: var(--secondary-color);
+  .social {
+    display: block;
+    line-height: 1;
+
+    svg {
+      height: 20px;
+      fill: var(--secondary-color);
+    }
   }
 }

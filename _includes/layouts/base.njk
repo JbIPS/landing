@@ -42,7 +42,7 @@ date: Last Modified
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
               {%- for entry in collections.all | selectPublished | eleventyNavigation %}
                 <li class="nav-item{% if loop.last %} rounded-pill border px-5 ms-3 align-self-center{% endif %}">
-                  <a class="nav-link{% if entry.url == page.url %} active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                <a class="nav-link{% if loop.last %} py-2{% elif entry.url == page.url %} active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
                 </li>
               {%- endfor %}
             </ul>
@@ -70,12 +70,12 @@ date: Last Modified
             <label for="newsletter-email" class="indent--2 pad-2 fs-1 fs-lg-2">Je m'inscris <br/><strong>à la newsletter</strong><p>
             <input type="email" id="newsletter-email" class="form-control" placeholder="Votre adresse e-mail" name="newsletter-email">
           </div>
-          <div class="my-3">
-            <p class="fs-5 d-inline">Suivez-nous</p>
-            <a class="social ms-4" href="https://twitter.com/CameoTalents">
+          <div class="my-3 d-flex align-items-center justify-content-between">
+            <p class="fs-5 d-inline mb-0">Suivez-nous</p>
+            <a class="social" href="https://twitter.com/CameoTalents">
               {% include "twitter_logo.svg" %}
             </a>
-            <a class="social ms-4" href="https://www.linkedin.com/company/cameoedtech">
+            <a class="social" href="https://www.linkedin.com/company/cameoedtech">
               {% include "linkedin_logo.svg" %}
             </a>
           </div>
