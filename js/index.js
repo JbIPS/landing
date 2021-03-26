@@ -1,5 +1,6 @@
 function initPage() {
 
+  console.log('LOADED');
   // Header stick shrink
   let lastScroll = window.pageYOffset;
   const header = document.querySelector('header');
@@ -145,6 +146,7 @@ function hideVideo(video, button) {
 let listenerSet = false;
 function playPause(element) {
   const playButton = document.querySelector('.play-button');
+  console.log('Clicking');
   if(element.paused) {
     playButton.style.display = 'none';
     element.style.opacity = 1;

@@ -1,0 +1,34 @@
+{
+  "pluses": [
+    {
+      "title": "Bien financer",
+      "text": "Chez Cameo, on pense que **ce qui est gratuit n’a pas de valeurs**. Il est donc important pour nous d’engager toutes les parties prenantes, notamment financièrement. C’est pour ça que nos formations sont co-financées entre les grands groupes (via les fonds de formation), les start-ups (avec une aide de leur OPCO) et les participants (via leur [CPF](moncompteformation.gouv.fr/)). Travailler sur l’ingénierie financière afin que chacun puisse financer justement la formation fait aussi partie de nos engagements ! De plus notre formation est éligible au FNE, ce qui vous permettra un levier supplémentaire dans le plan de formation.",
+      "image": "img/financer.jpg",
+      "shape": "img/red_blue/Asset 1.png"
+    }, {
+      "title": "Sélectionner",
+      "text": "Soyons transparents : tout le monde ne peut pas faire de cameo ! Pour maintenir notre équilibre gagnant-gagnant-gagnant, les participants sont **évalués et sélectionnés par un jury** composé de représentants du client et des formateurs Cameo. Le but est de ne sélectionner que des personnes prêtes à sortir de leur zone de confort et d’apporter des compétences nécessaires à la start-up qui l’accueillera. Mais ça marche aussi dans l’autre sens : hors de question de les envoyer n’importe où ! Nos partenaires sont **sélectionnés scrupuleusement** sur plusieurs critères : maturité, innovation, disponibilité et engagement. C’est pourquoi nous favorisons au maximum les start-ups qui ont déjà accueilli des cameos et dont nous connaissons la valeur.",
+      "image": "img/selectionner.jpg",
+      "shape": "img/yellow_blue/Asset 24.png"
+    }, {
+      "title": "Engager",
+      "text": "Nous la savons, une formation sur plusieurs mois, à temps partiel, c’est dur de rester engagé tout du long. C’est pourquoi la vie d’un cameo est rythmée par des événements réguliers qui permettent de **maintenir l’engagement et prévenir le décrochage** : coaching téléphonique, moments de convivialité, envoi de contenu pédagogique personnalisé et workshop. Avant chaque promotion, nous établissons un calendrier pour répartir ces étapes dans le temps afin de garantir une continuité et un rythme maximal. Et cerise sur le gâteau, notre facilitateur qui suit la promotion se chargera d’animer la communauté des participants en proposant régulièrement des quizs, des challenges et des moments de partages entre eux.",
+      "image": "img/engager.jpg",
+      "shape": "img/red_blue/Asset 31.png"
+    }, {
+      "title": "Suivre",
+      "text": "Autour d’un _cameo_ gravitent une équipe projet, un ou plusieurs formateurs, un facilitateur, un tuteur, une équipe logistique, bref, tout un écosystème. C’est pour ça que notre travail est de rendre ça  le plus simple possible. Notre équipe devient un centre névralgique, point central de coordination entre les différentes parties. Le facilitateur fera le lien entre les formateurs, les tuteurs et les participants et remontera toutes les informations nécessaires à l’équipe projet afin que le client soit **toujours au courant des grands événements** de la formation, sans être submergé par les aléas sans conséquences. Nous respectons une démarche de qualité stricte, toutes nos actions sont consignées et suivies permettant d’instaurer un climat de confiance entre tous les acteurs.",
+      "image": "img/suivre.jpg",
+      "shape": "img/yellow_blue/Asset 18.png"
+    }, {
+      "title": "Mesurer",
+      "text": "Suivre c’est bien, encore faut-il savoir quoi suivre ! Les indicateurs, ou KPI, ce “vieux serpent de mer” dans le monde de la formation professionnelle, ce “rêve impossible”, sont une condition nécessaire au bon déroulé de notre programme. Avant de lancer une promotion, nous définissons avec le client **les objectifs Business et RH de la formation**. Nous faisons de même avec chaque participant et tuteur. Et bien sûr, ces objectifs sont ensuite mesurés tout au long de la formation et évalués en fin de parcours lors de nos réunions de clôture. C’est grâce à cette culture de l’indicateur quantifiable et mesurable que nous sommes fiers d’avoir, en 2020, généré plus de 12 M€ de business dans notre écosystème et que nos participants notent leur satisfaction 9,4/10 pour l’ensemble du programme.",
+      "image": "img/mesurer.jpg",
+      "shape": "img/yellow_blue/Asset 25.png"
+    }, {
+      "title": "Certifier",
+      "text": "Ici, nous révélons les talents et certifions les compétences ! Toutes nos formations aboutissent sur la certification \"[Définir et mettre en œuvre un projet d'innovation au sein d’une organisation](https://www.francecompetences.fr/recherche/rs/5326/)\". C’est pour nous une preuve de sérieux et un levier d’engagement des candidats qui y voient une reconnaissance de leurs efforts lors de la formation. Cette certification est également un premiers pas vers la reconnaissance d’une expérience de formation différente d’un cours magistral et plus formatrice qu’un stage de découverte de 3ème. Être certifiant, c’est se montrer exigeant, d’abord envers nous-même, mais aussi avec tout notre écosystème. Vous voulez un véritable impact, **demandez une certification**.",
+      "image": "img/certifier.jpg",
+      "shape": "img/red_blue/Asset 32.png"
+    }]
+}
