@@ -4,26 +4,42 @@
    background-repeat: no-repeat;
    background-position: right bottom;
 
+   @include media-breakpoint-up(lg) {
+     background-size: 35%;
+   }
+
    h1 {
      font-size: 2rem;
+
+     @include media-breakpoint-up(lg) {
+       font-size: 5rem;
+     }
+   }
+
+   @include media-breakpoint-up(lg) {
+     p {
+       font-size: 1.1rem;
+       font-weight: 400;
+     }
    }
  }
 
  .shape {
    position: absolute;
+   width: auto;
  }
 
 .shape-1 {
   bottom: 0;
   left: -60%;
   background-color: rgba($tertiary, .15);
+  height: 150%;
 }
 
 .shape-2 {
   top: 0;
   left: 10%;
   height: 100%;
-  width: auto;
 }
 
 .shape-3 {
@@ -40,7 +56,6 @@
   left: -28%;
   top: 0;
   height: 100%;
-  width: auto;
 }
 
 .shape-6 {
@@ -55,6 +70,11 @@
     background-position: 65% 0;
     min-height: 65vh;
 
+    @include media-breakpoint-up(lg) {
+      background-size: 100%;
+      min-height: 600px;
+    }
+
     h2 {
       color: var(--primary-color);
 
@@ -62,6 +82,20 @@
         display: block;
         color: var(--tertiary-color);
       }
+    }
+  }
+
+  .list-group-item-action {
+    border: none;
+    border-left: 2px solid #CCC;
+    border-radius: 0;
+    opacity: .4;
+
+    &.active {
+      opacity: 1;
+      border-left-color: var(--primary-color);
+      background-color: inherit;
+      color: inherit;
     }
   }
 }

@@ -32,10 +32,7 @@ headerClass: position-lg-fixed home
       {% endfor %}
       <div class="overlay d-none d-md-block"></div>
     </div>
-    <div class="position-absolute bottom-0 w-100 mb-2 d-none d-md-block pb-lg-5">
-      <p class="text-center m-0">Scrollez</p>
-      <p class="text-center fs-1 lh-0 arrow">&#8964;</p>
-    </div>
+    {% include "_includes/scroll.njk" %}
   </div>
 </section>
 <section class="bg-light">

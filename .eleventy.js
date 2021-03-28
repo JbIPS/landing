@@ -10,6 +10,7 @@ const metagen = require('eleventy-plugin-metagen');
 const criticalCss = require('eleventy-critical-css');
 const htmlmin = require('html-minifier');
 const {minify} = require('terser');
+const slugify = require('slugify');
 const pluginInjector = require('@infinity-interactive/eleventy-plugin-injector');
 
 const DEFAULT_DOMAIN = 'localhost:8080';
@@ -67,6 +68,10 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("date", (dateObj, format) => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat(format);
+  });
+
+  eleventyConfig.addFilter("slug", str => {
+    return slugify(str).toLowerCase();
   });
 
   eleventyConfig.addFilter("absolute", url => {

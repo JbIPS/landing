@@ -2,24 +2,38 @@
 layout: layouts/base.njk
 contentClass: plus
 ---
-<section class="mt-3 px-4 vh-100 intro">
+<section class="mt-3 mt-lg-0 px-4 vh-100 intro">
+  <div class="col-lg-10 pt-lg-5 mx-auto position-relative h-100">
   <h1>Ce qui fait <strong class="d-block">notre différence</strong></h1>
-  <p class="font-light mt-3">Nos parcours de formation s'inscrivent dans une démarche d'accompagnement individuel. Cette exigence fait de chaque expérience Cameo un véritable apprentissage personnalisé, une initiation par l'expérience, approuvée par une certification reconnue. Nos parcours sont orientés vers l'action concrète. Ils s'appuient sur des mises en situation pratiques et utiles à chacun - apprenant, start-up et entreprise - au service de leur réussite.</p>
+  <p class="font-light mt-3 col-lg-6">Nos parcours de formation s'inscrivent dans une démarche d'accompagnement individuel. Cette exigence fait de chaque expérience Cameo un véritable apprentissage personnalisé, une initiation par l'expérience, approuvée par une certification reconnue. Nos parcours sont orientés vers l'action concrète. Ils s'appuient sur des mises en situation pratiques et utiles à chacun - apprenant, start-up et entreprise - au service de leur réussite.</p>
+  {% include '_includes/scroll.njk' %}
+  </div>
 </section>
 <section class="bg-light py-5 px-4">
-  {% for plus in pluses %}
-    <div class="overflow-hidden position-relative mt-5">
-    {% image plus.image, plus.title, "327", "", "327" %}
-    {% image plus.shape, 'shape', null, "shape shape-" + loop.index %}
+  <div class="row justify-content-between">
+    <div class="col-lg-7 vh-lg-100 overflow-y-lg-scroll no-scrollbar" data-bs-spy="scroll" data-bs-target="#plus-summary" tabindex="0" data-bs-offset="0">
+    {% for plus in pluses %}
+      <div id="{{ plus.title | slug }}">
+        <div class="overflow-hidden position-relative mt-5">
+        {% image plus.image, plus.title, null, "w-100", "327 690" %}
+        {% image plus.shape, 'shape', null, "shape shape-" + loop.index, "300 null" %}
+        </div>
+        <div class="ms-4 mt-4 ms-lg-5 ps-lg-5 pb-lg-5 mt-lg-5">
+          <h2 class="bullet-point" {#id="{{ plus.title | slug }}"#}>{{ plus.title }}</h2>
+          <div class="ms-3 font-regular col-lg-8">{{ plus.text | markdown | safe }}</div>
+        </div>
+      </div>
+    {% endfor %}
     </div>
-    <div class="ms-4 mt-4">
-      <h2 class="bullet-point">{{ plus.title }}</h2>
-      <div class="ms-3 font-regular">{{ plus.text | markdown | safe }}</div>
+    <div id="plus-summary" class="list-group col-lg-4 ps-lg-5">
+      {% for plus in pluses %}
+        <a class="list-group-item list-group-item-action" href="#{{ plus.title | slug }}">{{ plus.title }}</a>
+      {% endfor %}
     </div>
-  {% endfor %}
+  </div>
 </section>
-<section class="cta d-flex flex-column justify-content-center align-items-start">
-  <div class="col-8 mx-auto">
+<section class="cta d-flex flex-column justify-content-center align-items-center align-items-lg-end">
+  <div class="col-8 col-lg-6">
   <h2>Alors ?<br/>Convaincu•e ? <span>Rentrons dans le vif du sujet !</span></h2>
   <a href="{{ '/contact/' | url }}" class="btn btn-primary rounded-pill px-3 mt-3">Let's go!</a>
   </div>

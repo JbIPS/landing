@@ -1,6 +1,5 @@
 function initPage() {
 
-  console.log('LOADED');
   // Header stick shrink
   let lastScroll = window.pageYOffset;
   const header = document.querySelector('header');
@@ -130,6 +129,33 @@ function initPage() {
   }
   if(type.length > 0) updateFields(type.item(0).value);
   type.forEach((t) => t.addEventListener("input", (e) => updateFields(e.target.value)));
+
+  // Scrollspy
+  const spies = document.querySelectorAll('[data-bs-spy]');
+  spies.forEach(spy => {
+    const target = document.querySelector(spy.getAttribute('data-bs-target'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+
+        for(let i = 0; i < target.children.length; i++) {
+          const child = target.children[i];
+          if(child.classList.contains('active')) {
+            child.classList.remove('active');
+          } else if(child.getAttribute('href').substr(1) === entry.target.id) {
+            child.classList.add('active');
+          }
+        }
+      })
+    }, {
+      root: spy,
+      rootMargin: '0px',
+      threshold: .5
+    });
+    for(let i = 0; i < target.children.length; i++) {
+      observer.observe(document.getElementById(target.children[i].getAttribute('href').substr(1)));
+    }
+  })
 }
 
 if(document.readyState === 'loading') {
@@ -146,7 +172,6 @@ function hideVideo(video, button) {
 let listenerSet = false;
 function playPause(element) {
   const playButton = document.querySelector('.play-button');
-  console.log('Clicking');
   if(element.paused) {
     playButton.style.display = 'none';
     element.style.opacity = 1;
@@ -154,10 +179,8 @@ function playPause(element) {
     // Fullscreen on mobile
     if(window.innerWidth < 992) {
       try {
-        console.log(element);
       if(element.webkitEnterFullscreen)
-        //element.webkitEnterFullscreen();
-        console.log('ios');
+        element.webkitEnterFullscreen();
       else if (element.requestFullscreen)
         element.requestFullscreen();
       else if (element.webkitRequestFullscreen)
@@ -165,25 +188,19 @@ function playPause(element) {
       else if (element.msRequestFullScreen)
         element.msRequestFullScreen();
       } catch(e) {
-        console.log(e);
 
       }
     }
 
     element.play()
     .then(() => {
-      console.log('playing');
     })
     .catch((e) => {
-      console.log('Error while playing');
       console.error(e);
     });
-    console.log('Play called');
     if(!listenerSet) {
-      console.log('setting listener')
       element.addEventListener('ended', () => {
         // Reset video
-        console.log('ended');
         element.load();
         hideVideo(element, playButton);
       });
@@ -191,7 +208,6 @@ function playPause(element) {
     }
   } else {
     hideVideo(element, playButton);
-    console.log('paused');
     element.pause();
 
     if(window.innerWidth < 992) {
