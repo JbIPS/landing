@@ -30,21 +30,21 @@
  }
 
 .shape-1 {
-  bottom: 0;
-  left: -60%;
-  background-color: rgba($tertiary, .15);
-  height: 150%;
+  top: -35%;
+  left: -20%;
+  height: 100%;
+  transform: rotateY(180deg) rotate(-90deg);
 }
 
 .shape-2 {
   top: 0;
-  left: 10%;
+  left: 0;
   height: 100%;
 }
 
 .shape-3 {
-  top: -20%;
-  left: 60%;
+  top: 0;
+  left: 0;
 }
 
 .shape-4 {
@@ -59,8 +59,14 @@
 }
 
 .shape-6 {
-  top: -10%;
-  left: 63%;
+  top: 36%;
+  left: 57%;
+  height: 100%;
+}
+
+#plus-summary {
+  position: sticky;
+  top: 4rem;
 }
 
 .plus {

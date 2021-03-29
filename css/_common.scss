@@ -8,7 +8,6 @@ body {
 main {
   z-index: 10;
   position: relative;
-  overflow-x: hidden;
   pointer-events: none;
 }
 
@@ -21,7 +20,6 @@ main {
 }
 
 section {
-  overflow-x: hidden;
   background-color: var(--primary-color);
   pointer-events: initial;
 

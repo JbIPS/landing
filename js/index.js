@@ -148,7 +148,7 @@ function initPage() {
         }
       })
     }, {
-      root: spy,
+      root: null,
       rootMargin: '0px',
       threshold: .5
     });

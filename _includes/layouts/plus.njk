@@ -10,24 +10,26 @@ contentClass: plus
   </div>
 </section>
 <section class="bg-light py-5 px-4">
-  <div class="row justify-content-between">
-    <div class="col-lg-7 vh-lg-100 overflow-y-lg-scroll no-scrollbar" data-bs-spy="scroll" data-bs-target="#plus-summary" tabindex="0" data-bs-offset="0">
+  <div class="d-flex align-items-start justify-content-between">
+    <div class="col-lg-7" data-bs-spy="scroll" data-bs-target="#plus-summary" tabindex="0" data-bs-offset="0">
     {% for plus in pluses %}
       <div id="{{ plus.title | slug }}">
-        <div class="overflow-hidden position-relative mt-5">
+        <div class="overflow-hidden position-relative{% if not loop.first %} mt-5{% endif %}">
         {% image plus.image, plus.title, null, "w-100", "327 690" %}
-        {% image plus.shape, 'shape', null, "shape shape-" + loop.index, "300 null" %}
+        {% if plus.shape %}
+          {% image plus.shape, 'shape', null, "shape shape-" + loop.index, "300 null" %}
+        {% endif %}
         </div>
         <div class="ms-4 mt-4 ms-lg-5 ps-lg-5 pb-lg-5 mt-lg-5">
-          <h2 class="bullet-point" {#id="{{ plus.title | slug }}"#}>{{ plus.title }}</h2>
+          <h2 class="bullet-point">{{ plus.title }}</h2>
           <div class="ms-3 font-regular col-lg-8">{{ plus.text | markdown | safe }}</div>
         </div>
       </div>
     {% endfor %}
     </div>
-    <div id="plus-summary" class="list-group col-lg-4 ps-lg-5">
+    <div id="plus-summary" class="list-group col-lg-4 ps-lg-5 d-none d-lg-block">
       {% for plus in pluses %}
-        <a class="list-group-item list-group-item-action" href="#{{ plus.title | slug }}">{{ plus.title }}</a>
+        <a class="list-group-item list-group-item-action{% if loop.first %} active{% endif %}" href="#{{ plus.title | slug }}">{{ plus.title }}</a>
       {% endfor %}
     </div>
   </div>
