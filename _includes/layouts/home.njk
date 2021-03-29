@@ -14,7 +14,7 @@ headerClass: position-lg-fixed home
       <h2 class="baseline text-center font-regular">Révéler les talents. Libérer la performance.</h2>
     </div>
     <h2 class="p-4 fs-1 mt-lg-4 m-lg-5">Laissez-nous nous présenter en 3 points</h2>
-    <div class="row panel-row">
+    <div class="d-flex panel-row">
       {% for sum in summary %}
         {% set index = loop.index %}
         {% for i in [1, 2] %}
@@ -65,7 +65,7 @@ headerClass: position-lg-fixed home
   </div>
 </section>
 <section class="bg-light pt-2 pt-lg-5">
-  <div class="row justify-content-end">
+  <div class="d-flex justify-content-end">
     <div class="col-12 col-md-5 p-5 my-5">
       <h2 class="ps-4 indent--1">Notre offre <br/><strong>en quelques mots</strong></h2>
       <p class="font-regular">{{ presentation_offre | markdown | safe }}</p>
@@ -73,7 +73,7 @@ headerClass: position-lg-fixed home
     </div>
     <div class="col-12 col-md-6 svg-bkg d-flex ps-0" style="background-image: url('{{ '/img/yellow_blue/Asset 11.svg' | url }}');">
       <div class="col-9 ps-0 my-auto">
-        {% image 'img/kickoff.jpg', "Notre offre", null, 'w-100', '300 450' %}
+        {% image 'img/ambiance travail IMG_5636.jpg', "Notre offre", null, 'w-100', '300 450' %}
       </div>
     </div>
   </div>
@@ -81,7 +81,7 @@ headerClass: position-lg-fixed home
 {% set testimonial = testimonials | first %}
 {% include 'quote.njk' %}
 <section class="bg-light pt-5">
-  <div class="row">
+  <div class="d-flex flex-wrap">
     <h2 class="text-center px-4 my-5 fs-1 d-lg-none">Comment créons-nous <strong>de la valeur&nbsp;?</strong></h2>
     <div class="col-8 mx-auto mx-lg-0 col-lg-5 svg-bkg ps-0" style="background-image: url('{{ '/img/red_blue/Asset 25.svg' | url }}');">
     </div>
@@ -105,7 +105,7 @@ headerClass: position-lg-fixed home
 {% set testimonial = testimonials | last %}
 {% include 'quote.njk' %}
 <section class="">
-  <div class="row svg-bkg small justify-content-lg-end py-lg-5" style="background-image: url('{{ '/img/red_blue/Asset 7b.svg' | url }}');">
+  <div class="d-flex svg-bkg small justify-content-lg-end py-lg-5" style="background-image: url('{{ '/img/red_blue/Asset 7b.svg' | url }}');">
     <div class="col-8 col-lg-5 ps-4 ms-5 my-auto ps-lg-0 pe-lg-5">
       <h2 class="fs-1">Envie de commencer <strong>l'aventure&nbsp;?</strong></h2>
       <div class="d-none d-lg-block">
@@ -128,7 +128,7 @@ headerClass: position-lg-fixed home
       {#{% endfor %}#}
     {#</div>#}
   {#</div>#}
-  {#<div class="row ps-5 d-none d-lg-block position-relative">#}
+  {#<div class="d-flex ps-5 d-none d-lg-block position-relative">#}
     {#<div class="col-4">#}
       {#{% for post in collections.post %}#}
         {#<a class="post" href="{{ post.url | url }}">#}
