@@ -1,6 +1,11 @@
 footer {
   @include media-breakpoint-up(lg) {
-    background: url('../img/red_blue/Asset 28.png') no-repeat right/contain;
+   background: url('../img/red_blue/Asset 28.png') no-repeat right/contain;
+
+   p {
+     font-size: .6rem;
+     margin-bottom: .3rem;
+   }
   }
 
   input.form-control {

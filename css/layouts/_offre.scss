@@ -153,11 +153,13 @@ h2 {
     background: url('../img/red_blue/Asset 27.png') no-repeat center/cover var(--primary-color);
     color: var(--white);
     font-weight: 400;
-    overflow: hidden;
+    height: calc(100% - 5rem);
+
+    a {
+      color: var(--secondary-color);
+    }
 
     & > div {
-      overflow-y: scroll;
-      position: relative;
 
       @include media-breakpoint-up(lg) {
         mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);

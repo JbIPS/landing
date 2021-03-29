@@ -92,19 +92,19 @@ headerClass: offre
       </div>
     </div>
     <div class="col-6 content">
-      <div data-bs-spy="scroll" data-bs-target="#advantages-titles" data-bs-offset="250" tabindex="0" class="col-6 mx-auto d-flex flex-column h-100 no-scrollbar">
+      <div data-bs-spy="scroll" data-bs-target="#advantages-titles" data-bs-offset="250" tabindex="0" class="col-6 mx-auto d-flex flex-column h-100 no-scrollbar overflow-scroll">
         {% for advantage in advantages %}
         <div class="advantage-body{% if loop.first %} first{% elif loop.last %} last{% endif %}" id="advantage-{{ loop.index }}">{{ advantage.text | markdown | safe }}</div>
         {% endfor %}
       </div>
     </div>
   </div>
-  <div class="content p-5 d-lg-none h-100 no-scrollbar overflow-scroll">
+  <div class="content p-5 d-lg-none no-scrollbar overflow-scroll">
     <div>
       {% for advantage in advantages %}
         <div>
           <h3 class="fs-5">{{ advantage.title }}</h3>
-          <p class="mb-5">{{ advantage.text }}</p>
+          <div class="mb-5">{{ advantage.text | markdown | safe }}</div>
         </div>
       {% endfor %}
     </div>
