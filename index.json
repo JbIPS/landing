@@ -84,18 +84,22 @@
     }
   ],
   "presentation_offre": "Nous **coordonnons des parcours de formation** pour des salariés de grandes entreprises, en les plaçant en **situation active** au sein de start-ups. Ainsi, nous renforçons **l’employabilité des apprenants** et accélérons le **développement des start-ups**.De nouvelles perspectives s’ouvrent, de **nouvelles pratiques** émergent et la transformation s’opère.",
-  "values": [
-    {
-      "title": "Pour les entreprises",
-      "text": "Cameo **renforce la performance** des entreprises en révélant des compétences inexploitées et des potentiels inhibés chez leurs collaborateurs, et **facilite la mobilité interne**."
-    }, {
+  "scrollList": {
+    "title": "Comment créons-nous **de la valeur&nbsp;?**",
+    "image": "img/red_blue/Asset 25.svg",
+    "items": [
+      {
+        "title": "Pour les entreprises",
+        "text": "Cameo **renforce la performance** des entreprises en révélant des compétences inexploitées et des potentiels inhibés chez leurs collaborateurs, et **facilite la mobilité interne**."
+      }, {
       "title": "Pour les start-ups",
       "text": "Cameo **active le développement** des start-ups en apportant des expertises et des **talents confirmés** aux moments clés de sa croissance."
-    }, {
+      }, {
       "title": "Pour les apprenants",
       "text": "Cameo **renforce l’employabilité** des apprenants, en activant leurs compétences sur des **situations concrètes**, leur permettant de révéler tout leur potentiel."
-    }
-  ],
+      }
+    ]
+  },
   "numbers": [
     {
       "number": "50%",

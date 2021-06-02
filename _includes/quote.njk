@@ -1,21 +1,18 @@
-<section class="bg-light py-5">
-  <div class="container pt-5">
-    <div class="row justify-content-center">
-      <div class="col-3">
-        {% image testimonial.image, "Portrait de " + testimonial.name, null, 'mt-4' %}
-        {#<img class="img-fluid mt-4" src="{{ testimonial.image | url }}" alt="Portrait de {{ testimonial.name }}">#}
-      </div>
-      <div class="col-8">
-        <figure>
-          <blockquote class="blockquote">
-            <p class="font-regular fs-lg-2">{{ testimonial.citation }}</p>
-          </blockquote>
-          <figcaption class="blockquote-footer indent--1 pad-2">
-            {{ testimonial.name }} <br/> <span class="font-regular">{{ testimonial.job }}</span>
-          </figcaption>
-        </figure>
-        {#<a class="btn btn-primary rounded-pill" href="/partenaires">Ils nous font confiance</a>#}
-      </div>
+<div class="row justify-content-center">
+  {% if testimonial.image %}
+    <div class="col-3">
+      {% image testimonial.image, "Portrait de " + testimonial.name, null, 'mt-4' %}
     </div>
+  {% endif %}
+  <div class="{{ "col-8" if testimonial.image else "col-10" }}">
+    <figure>
+      <blockquote class="blockquote">
+        <p class="font-regular fs-lg-2">{{ testimonial.citation }}</p>
+      </blockquote>
+      <figcaption class="blockquote-footer indent--1 pad-2">
+        {{ testimonial.name }} <br/> <span class="font-regular">{{ testimonial.job }}</span>
+      </figcaption>
+    </figure>
+    {#<a class="btn btn-primary rounded-pill" href="/partenaires">Ils nous font confiance</a>#}
   </div>
-</section>
+</div>

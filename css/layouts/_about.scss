@@ -1,0 +1,129 @@
+.about {
+
+  .hero {
+    height: calc(100vh - 86px);
+    background: url("../img/red_blue/Asset 6b.png"), url("../img/red_blue/Asset 10b.png"), url(../img/Hitchcock-Shadow.png);
+    background-color: var(--primary-color);
+    background-size: 100%, 100%, 66%;
+    background-repeat: no-repeat;
+    background-position: 45vw 116%, 45vw 0, left bottom;
+    background-blend-mode: color, color-burn, color-burn;
+  }
+
+  .blockquote {
+    p::before {
+      height: 2rem;
+      width: 2rem;
+      margin-right: .2rem;
+    }
+  }
+
+  .blockquote-footer {
+    color: white;
+  }
+
+  .values {
+    background: url('../img/yellow_blue/Asset 27.png') 0% 10% / 20% no-repeat;
+
+    p {
+      text-indent: 2rem;
+      font-weight: normal;
+      font-size: 1.25rem;
+
+      &.bullet-point {
+        text-indent: 0;
+      }
+
+      strong {
+        color: var(--primary-color);
+        font-weight: 500;
+      }
+    }
+
+    .number {
+      font-size: 4rem;
+    }
+
+    .fs-6 {
+      color: var(--primary-color);
+    }
+  }
+
+  .story {
+
+    .step {
+      width: 87vw !important;
+      flex-shrink: 0;
+    }
+  }
+
+  .founder .portrait {
+      @include add-shape("portrait", "../img/yellow_blue/Asset 6.png","../img/red_blue/Asset 20.png");
+
+    &.portrait-1::after {
+      transform: rotateY(.5turn);
+      bottom: 0;
+      right: 0;
+    }
+
+    &.portrait-2::after {
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  .council {
+
+    background-image: url("../img/yellow_blue/Asset 18.png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 206% -17%;
+
+    .step {
+      width: 87vw !important;
+    }
+  }
+
+  .investor {
+    .portrait {
+      @include add-shape("portrait", "../img/yellow_blue/Asset 29.png",
+      "../img/red_blue/Asset 35.png");
+
+      &::after {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .cta {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-image: url("../img/yellow_blue/Asset 28.png");
+    background-size: 230%;
+    background-position: right -210px bottom -24px;
+
+    h2 {
+      color: var(--black);
+
+      strong {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .social {
+
+    flex-direction: row-reverse;
+
+    svg {
+      height: 1.2rem;
+      fill: var(--tertiary-color);
+    }
+  }
+}

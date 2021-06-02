@@ -60,6 +60,14 @@ section {
   background-color: var(--light-blue);
 }
 
+.indent-0 {
+  text-indent: 0;
+}
+
+.indent-3 {
+  text-indent: 3rem;
+}
+
 .indent--1 {
   text-indent: -1em;
 }
@@ -180,15 +188,6 @@ section {
   }
 }
 
-.blockquote p::before {
-  content: '';
-  width: 5rem;
-  display: inline-block;
-  height: 5rem;
-  background: url(../img/quote.svg) no-repeat bottom/contain;
-  margin-right: 1rem;
-}
-
 .blog h3 {
   color: var(--primary-color);
   font-size: 1rem;
@@ -294,5 +293,14 @@ section {
   &:before {
     content: '— ';
     color: var(--tertiary-color);
+    font-size: 2rem;
+    line-height: 1rem;
+    vertical-align: sub;
+  }
+}
+
+.scroll-list {
+  h2 strong {
+    text-indent: 2.5rem;
   }
 }

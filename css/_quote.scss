@@ -1,0 +1,13 @@
+.blockquote p::before {
+  content: '';
+  display: inline-block;
+  margin-right: 1rem;
+  background-color: var(--secondary-color);
+  mask: url(../img/quote.svg) bottom no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+
+.bg-light .blockquote p::before {
+  background-color: var(--primary-color);
+}

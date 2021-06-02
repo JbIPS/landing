@@ -32,7 +32,7 @@ headerClass: position-lg-fixed home
       {% endfor %}
       <div class="overlay d-none d-md-block"></div>
     </div>
-    {% include "_includes/scroll.njk" %}
+    {% include "scroll.njk" %}
   </div>
 </section>
 <section class="bg-light">
@@ -55,7 +55,7 @@ headerClass: position-lg-fixed home
               </div>
             </div>
             <div class="bg-light-blue d-flex">
-              {% image case.image, "Illustration abstraite", null, "w-100 mx-auto", "300 600" %}
+              {% image case.image, "", null, "w-100 mx-auto", "300 600" %}
             </div>
           </li>
         {% endfor %}
@@ -78,32 +78,20 @@ headerClass: position-lg-fixed home
     </div>
   </div>
 </section>
-{% set testimonial = testimonials | first %}
-{% include 'quote.njk' %}
-<section class="bg-light pt-5">
-  <div class="d-flex flex-wrap">
-    <h2 class="text-center px-4 my-5 fs-1 d-lg-none">Comment créons-nous <strong>de la valeur&nbsp;?</strong></h2>
-    <div class="col-8 mx-auto mx-lg-0 col-lg-5 svg-bkg ps-0" style="background-image: url('{{ '/img/red_blue/Asset 25.svg' | url }}');">
-    </div>
-    <div class="col-8 mx-auto col-lg-5 p-5 my-5 font-regular">
-      <h2 class="text-center text-lg-start px-4 px-lg-0 my-5 fs-1 d-none d-lg-block">Comment créons-nous <strong>de la valeur&nbsp;?</strong></h2>
-      {% for value in values %}
-        <h3 class="font-medium">{{ value.title }}</h3>
-        {{ value.text | markdown | safe }}
-      {% endfor %}
-    </div>
+<section class="bg-light py-5">
+  <div class="container pt-5">
+    {% set testimonial = testimonials | first %}
+    {% include 'quote.njk' %}
   </div>
 </section>
-<section class="bg-secondary-color d-flex flex-wrap justify-content-evenly ps-3">
-  {% for number in numbers %}
-    <div class="col-5 col-lg-4 d-lg-flex align-items-lg-center">
-      <p class="number">{{ number.number }}</p>
-      <p class="col-lg-4 ms-2">{{ number.text }}</p>
-    </div>
-  {% endfor %}
+{% include "scroll_list.njk" %}
+{% include "keynum.njk" %}
+<section class="bg-light py-5">
+  <div class="container pt-5">
+    {% set testimonial = testimonials | first %}
+    {% include 'quote.njk' %}
+  </div>
 </section>
-{% set testimonial = testimonials | last %}
-{% include 'quote.njk' %}
 <section class="">
   <div class="d-flex svg-bkg small justify-content-lg-end py-lg-5" style="background-image: url('{{ '/img/red_blue/Asset 7b.svg' | url }}');">
     <div class="col-8 col-lg-5 ps-4 ms-5 my-auto ps-lg-0 pe-lg-5">

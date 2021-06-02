@@ -46,9 +46,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksShortcode("image", (src, alt, sizes, classes, widths) => {
     const options = {
       widths: widths ? widths.split(' ').map(s => parseInt(s, 10)) : [300],
-      formats: ["webp"],
+      formats: ["webp", "svg"],
       outputDir: '_site/img',
-      urlPath: pathPrefix + 'img/'
+      urlPath: pathPrefix + 'img/',
+      //svgShortCircuit: true
     };
 
     Image(src, options);
@@ -57,7 +58,7 @@ module.exports = function(eleventyConfig) {
 
     let imageAttributes = {
       alt,
-      sizes,
+      sizes: options.widths.map((width) => width + 'w'),
       loading: "lazy",
       decoding: "async",
       class: `img-fluid ${classes || ''}`
@@ -152,8 +153,10 @@ module.exports = function(eleventyConfig) {
   };
 
   eleventyConfig.setLibrary("md", markdownLibrary);
-  eleventyConfig.addFilter('markdown', (string) => {
-    return markdownLibrary.render(string);
+  eleventyConfig.addFilter('markdown', (string, strip) => {
+    return strip ?
+      markdownLibrary.renderInline(string)
+      : markdownLibrary.render(string);
   });
 
   // Browsersync Overrides

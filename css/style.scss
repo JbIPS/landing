@@ -31,10 +31,14 @@
 // Custom
 @import "common";
 @import "typography";
+@import "quote";
 
-@import "layouts/_header.scss";
-@import "layouts/_footer.scss";
-@import "layouts/_hero.scss";
-@import "layouts/_contact.scss";
-@import "layouts/_offre.scss";
-@import "layouts/_plus.scss";
+@import "mixins";
+
+@import "layouts/_header";
+@import "layouts/_footer";
+@import "layouts/_hero";
+@import "layouts/_contact";
+@import "layouts/_offre";
+@import "layouts/_plus";
+@import "layouts/_about";

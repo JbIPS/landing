@@ -1,0 +1,8 @@
+<section class="bg-secondary-color d-flex flex-wrap justify-content-evenly ps-3">
+  {% for number in numbers %}
+    <div class="col-5 col-lg-4 d-lg-flex align-items-lg-center">
+      <p class="number">{{ number.number }}</p>
+      <p class="col-lg-4 ms-2">{{ number.text }}</p>
+    </div>
+  {% endfor %}
+</section>

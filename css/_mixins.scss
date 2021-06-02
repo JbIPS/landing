@@ -1,0 +1,18 @@
+@mixin add-shape($prefix, $shapes...) {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @for $i from 0 to length($shapes) {
+    &.#{$prefix}-#{$i+ 1}::after {
+      background-image: url("#{nth($shapes, $i + 1)}");
+    }
+  }
+}

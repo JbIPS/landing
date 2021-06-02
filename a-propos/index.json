@@ -1,0 +1,134 @@
+{
+  "quote": {
+    "name": "Alfred Hitchcock",
+    "citation": "Pour rouler au hasard, il faut être seul. Dès qu'on est deux, on va toujours quelque part."
+  },
+  "scrollList": {
+    "title": "Nous nous **engageons à**",
+    "image": "img/yellow_red/Asset 9b.png",
+    "items": [{
+      "title": "Accompagner",
+      "text": "Faire un cameo, ce n’est pas juste faire une balade en terre inconnue. Nous avons fait le choix de ne pas sacrifier le contact humain au profit d’une plate-forme (même si Stan nous aide bien pour l’administration) et de ne pas céder à la tentation du 100% MOOC distanciel. Chez Cameo, il y a des workshops en présentiel avec des formateurs expérimentés et un responsable de promotion qui assure un suivi continu durant toute la formation. Sortir de sa zone de confort, oui, vous lacher seul dans le grand bain, non."
+    }, {
+      "title": "Faire grandir",
+      "text": "Notre but n’est pas de vous émerveiller, mais d’élargir vos compétences. Toutes les actions de formation mises en place dans le parcours sont tournées vers la reconnaissance de cette progression : notre certification “Définir et mettre en œuvre un projet d'innovation au sein d’une organisation”. En plus de ce certificat reconnu, vous pourrez également garnir votre CV d’une nouvelle expérience, prouvant ainsi votre potentiel pour des métiers qui vous étaient alors fermés."
+    }]
+  },
+  "values_numbers": [{
+      "number": "5%",
+      "text": "des recrutements sont issus de la mobilité interne"
+    },
+    {
+      "number": "2 mois",
+      "text": "pour débarasser les apprenants de leur syndrome de l'imposteur"
+    },
+    {
+      "number": "75%",
+      "text": "des grands groupes jugent la collaboration avec une start-up trop longue"
+  }],
+  "numbers": [
+    {
+      "number": "50%",
+      "text": "de nos apprenants ont réalisé une mobilité interne"
+    },
+    {
+      "number": "200",
+      "text": "start-ups partenaires"
+    },
+    {
+      "number": "45",
+      "text": "ans, c'est la moyenne d'âge de nos apprenants"
+    },
+    {
+      "number": "12M€",
+      "text": "de chiffre d'affaires généré entre start-ups et grands groupes"
+    },
+    {
+      "number": "100%",
+      "text": "des actes administratifs automatisés par notre robot STAN"
+    }
+  ],
+  "story": [
+    {
+      "title": "L'idée",
+      "subtitle": "Tout a commencé par un entretien annuel...",
+      "image": "/img/idee.gif",
+      "text": "Pour Jérémy, c’est encore une année commerciale bien remplie mais monotone. Et quand il demande à son manager de pouvoir découvrir comment les commerciaux des autres secteurs travaillent et qu’on lui répond “Ce n’est pas possible, ça n’existe pas ce genre de chose”, c’est le refus de trop. Dorénavant, il le fera lui-même. Un tour par la DSI pour embarquer Jean-Baptiste, son pendant à la DSI, acolyte de sport et de bar, et les voilà partis pour une grande aventure."
+    },
+    {
+      "title": "Le nom",
+      "subtitle": "Quel est le lien entre Hitchcock et Stan Lee ?",
+      "image": "/img/nom.gif",
+      "text": "Vendredi, 22h, appel de Jérémy : “Tu sais ce que c’est un cameo ?” - “Dans le ciné c’est l’apparition d’une célébrité dans une œuvre originale. Genre comme Hitchcock ou Stan Lee.” - “C’est comme nous : on prend un expert (star) et on l'envoie ponctuellement dans une start-up (œuvre) !”. 2 minutes plus tard, le nom de domaine est réservé et les imaginations s’envolent en rêvant d’une idée qui a maintenant un nom : Cameo."
+    },
+    {
+      "title": "Le décollage",
+      "subtitle": "On a la fusée, maintenant faut le carburant",
+      "image": "/img/decollage.gif",
+      "text": "L’idée se précise, le business model s’affine et le pitch devient clair. Il est temps d’aller convaincre. Premier arrêt, le tout nouveau fond corporate de Malakoff Humanis : MH Innov’. Un premier tour est signé rapidement pour permettre à l’équipe de faire ses preuves. C’est chose faite 6 mois plus tard, enclenchant un deuxième tour d’investissement pour industrialiser le parcours. Aujourd’hui, Cameo est un Organisme de Formation certifié Qualiopi et disposant de sa propre certification professionnelle !"
+    }
+  ],
+  "founders": [
+    {
+      "name": "Jérémy Marlin",
+      "job": "CEO",
+      "twitter": "https://twitter.com/JeremMarlin",
+      "linkedin": "https://www.linkedin.com/in/jeremymarlin/",
+      "image": "img/profile_jeremy.png"
+    },
+    {
+      "name": "Jean-Baptiste Richardet",
+      "job": "CTO",
+      "twitter": "https://twitter.com/JbIPS",
+      "linkedin": "https://www.linkedin.com/in/jbrichardet/",
+      "image": "img/profile_jb.png"
+    }
+  ],
+  "council": [
+    {
+      "name": "Anne-Sophie Droit",
+      "job": "DRH Groupe Almaviva Santé",
+      "linkedin": "https://www.linkedin.com/in/annesophiedroit/",
+      "image": "img/profile_asd.jpg"
+    },
+    {
+      "name": "Thierry Majorel",
+      "job": "Manager Open Innovation BPI group",
+      "twitter": "https://twitter.com/MajorelThierry",
+      "linkedin": "https://www.linkedin.com/in/thierry-majorel-49944335/",
+      "image": "img/profile_tm.jpg"
+    },
+    {
+      "name": "Bertrand Petit",
+      "job": "Président InnoCherche",
+      "twitter": "https://twitter.com/bertrandPETIT",
+      "linkedin": "https://www.linkedin.com/in/bertrand-petit-88457b/",
+      "image": "img/profile_bp.jpg"
+    },
+    {
+      "name": "Nandini Colin",
+      "job": "Senior Advisor Adecco Group",
+      "linkedin": "https://www.linkedin.com/in/nandini-colin/",
+      "image": "img/profile_nc.jpg"
+    },
+    {
+      "name": "Rémi Rousseau",
+      "job": "Consultant Formation Professionnelle",
+      "twitter": "https://twitter.com/reumiapri",
+      "linkedin": "https://www.linkedin.com/in/remi-rousseau/",
+      "image": "img/profile_rr.png"
+    }
+  ],
+  "investors": [
+    {
+      "name": "Audrey Pergaud",
+      "job": "Directrice de programme HRTech",
+      "image": "img/profile_audrey.png"
+    },
+    {
+      "name": "Pascal Anvroin",
+      "job": "Directeur d'investissement",
+      "image": "img/profile_pascal.png"
+    }
+  ]
+}

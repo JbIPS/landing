@@ -1,0 +1,82 @@
+---
+layout: layouts/base.njk
+contentClass: about
+---
+{% from "profile.njk" import profile %}
+<section class="mt-3 px-3 ms-2 hero">
+  <h1>Laissez-nous vous <strong class="d-block fw-normal">raconter Cameo</strong></h1>
+  {% set testimonial = quote %}
+  {% include 'quote.njk' %}
+</section>
+<section class="bg-light py-5 ps-4 pe-3 values">
+  <h2 class="mb-4">Ce en quoi <strong class="d-block">nous croyons</strong></h2>
+  <div class="border-bottom pb-5">
+    <p class="bullet-point">Le monde économique regorge de <strong>talents inexploités</strong> et d'<strong>énergies bridées</strong>.</p>
+    <p>Notre conviction, c'est qu'il est urgent de <strong>libérer les talents</strong> et rompre <strong>les réflexes de censure</strong> des salariés, quels que soient leur formation, leur parcours de carrière our leur âge.</p>
+    <p>Osons <strong>décloisonner des secteurs</strong> qui ne se parlent pas, pour qu'ils partagent leurs meilleures pratiques et conjuguent leurs énergies.</p>
+    <p>Provoquons les <strong>synergies créatrices de valeur</strong> entre grandes entreprises, startups, ETI, acteurs de la formation et de l'emploi, décideurs publics,...</p>
+  </div>
+  <div class="pt-4">
+    {% for num in values_numbers %}
+      <h2 class="number mb-0">{{ num.number }}</h2>
+      <h3 class="fs-6">{{ num.text }}</h3>
+    {% endfor %}
+  </div>
+</section>
+{% include "scroll_list.njk" %}
+{% include "keynum.njk" %}
+<section class="py-5 ps-4 story">
+  <h2 class="indent-3">La petite histoire <strong class="d-block indent-0">de Cameo</strong></h2>
+  <div class="overflow-scroll no-scrollbar">
+    <div class="mt-4 d-flex">
+      {% for step in story %}
+        <div class="step">
+          <h3 class="mb-4 fs-6">{{ loop.index | pad }}   {{ step.title }}</h3>
+          <img src="{{ step.image }}" alt="" class="img-fluid pe-3" loading="lazy" decoding="async">
+          <div class="ps-5 font-light">
+            <h4 class="mt-4">{{ step.subtitle }}</h4>
+            {{ step.text | markdown | safe }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="bg-light py-5 ps-4">
+  <h2>Nos fondateurs</h2>
+  {% for founder in founders %}
+    <div class="my-5 pe-5 me-3 founder">
+      {{ profile(founder, loop) }}
+    </div>
+  {% endfor %}
+</section>
+<section class="bg-light-blue py-5 ps-4 council">
+  <h2>Le comité <strong class="d-inline">scientifique</strong></h2>
+  <div class="overflow-scroll no-scrollbar mb-5">
+    <div class="mt-4 d-flex">
+      {% for counselor in council %}
+        <div class="step pe-5 flex-shrink-0">
+          {{ profile(counselor) }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="bg-light py-5 ps-4">
+  <h2 class="mb-4">Nos investisseurs</h2>
+  <p class="fw-normal pe-5">Lancé en 2018 et doté de 155 m€, MH Innov’ investit en direct ou via ses partenaires VC dans l’écosystème tech européen afin d’accompagner la croissance de start-up ambitieuses pouvant également développer des partenariats gagnant-gagnant avec le Groupe Malakoff Humanis. On retrouve des entreprises innovantes comme Testamento, Squadeasy, Health For People, WeCar@Work et bien d’autres...</p>
+  <img src="{{ '/img/logo-mh.svg' | url }}" alt="Logo de Malakoff Humanis"class="mx-auto d-block my-5">
+  <div class="overflow-hidden">
+    <div class="d-flex">
+      {% for investor in investors %}
+        <div class="investor me-4">
+          {{ profile(investor, loop)}}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="bg-light-blue cta ps-5">
+  <h2 class="ms-3">Les présentations sont faites !<strong>Comment peut-on vous aider ?</strong></h2>
+  <a class="btn btn-primary rounded-pill mt-4 ms-3 px-4" href="{{ '/offre/' | url }}">L'offre Cameo</a>
+</section>

@@ -1,0 +1,23 @@
+{% macro profile(infos, loop) %}
+<div class="d-flex justify-content-between">
+  <h3 class="fs-6 mb-0">{{ infos.name }}</h3>
+  {% if infos.twitter or infos.linkedin %}
+    <div class="d-flex justify-content-between col-3 social">
+      {% if infos.twitter %}
+      <a href="{{ infos.twitter }}">
+        {% include "twitter_logo.svg" %}
+      </a>
+      {% endif %}
+      {% if infos.linkedin %}
+      <a href="{{ infos.linkedin }}">
+        {% include "linkedin_logo.svg" %}
+      </a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+<h4 class="mb-4 fs-6 fw-normal">{{ infos.job }}</h4>
+<div class="portrait{% if loop %} portrait-{{ loop.index}}{% endif %}">
+  {% image infos.image, "Portrait de " + infos.name %}
+</div>
+{% endmacro %}
