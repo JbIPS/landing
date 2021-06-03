@@ -1,4 +1,5 @@
-<div class="row justify-content-center">
+{% macro quote(testimonial, class) %}
+<div class="row justify-content-center{{ " " + class if class}}">
   {% if testimonial.image %}
     <div class="col-3">
       {% image testimonial.image, "Portrait de " + testimonial.name, null, 'mt-4' %}
@@ -16,3 +17,4 @@
     {#<a class="btn btn-primary rounded-pill" href="/partenaires">Ils nous font confiance</a>#}
   </div>
 </div>
+{% endmacro %}

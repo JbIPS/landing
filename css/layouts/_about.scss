@@ -8,6 +8,17 @@
     background-repeat: no-repeat;
     background-position: 45vw 116%, 45vw 0, left bottom;
     background-blend-mode: color, color-burn, color-burn;
+
+    @include media-breakpoint-up(lg) {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-size: 46%, 46%, 26%;
+      background-position: 96% 306%, 96% -100%, 5vw 100%;
+      position: relative;
+    }
   }
 
   .blockquote {
@@ -25,10 +36,28 @@
   .values {
     background: url('../img/yellow_blue/Asset 27.png') 0% 10% / 20% no-repeat;
 
+    @include media-breakpoint-up(lg) {
+      align-items: center;
+      background-size: 10%;
+
+      .numbers {
+        border-left: 1px solid var(--grey);
+      }
+
+      .border-bottom {
+        border: none !important;
+      }
+    }
+
     p {
       text-indent: 2rem;
       font-weight: normal;
       font-size: 1.25rem;
+
+      @include media-breakpoint-up(lg) {
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
 
       &.bullet-point {
         text-indent: 0;
@@ -81,8 +110,17 @@
     background-size: 75%;
     background-position: 206% -17%;
 
+    @include media-breakpoint-up(lg) {
+      background-size: 38%;
+      background-position: 100% -260%;
+    }
+
     .step {
       width: 87vw !important;
+
+      @include media-breakpoint-up(lg) {
+        width: 30vw !important;
+      }
     }
   }
 
@@ -108,6 +146,13 @@
     background-size: 230%;
     background-position: right -210px bottom -24px;
 
+    @include media-breakpoint-up(lg) {
+      min-height: 80vh;
+      background-size: 100%;
+      background-position: left;
+      align-items: end;
+    }
+
     h2 {
       color: var(--black);
 
@@ -120,6 +165,7 @@
   .social {
 
     flex-direction: row-reverse;
+    padding-right: 10%;
 
     svg {
       height: 1.2rem;

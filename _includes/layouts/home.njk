@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 headerClass: position-lg-fixed home
 ---
+{% from "quote.njk" import quote %}
 <section class="hero position-relative">
   <div class="d-none d-lg-block" id="headerPlaceholder"></div>
   <div id="heroContent" class="my-auto w-100 d-flex flex-column justify-content-center">
@@ -80,16 +81,14 @@ headerClass: position-lg-fixed home
 </section>
 <section class="bg-light py-5">
   <div class="container pt-5">
-    {% set testimonial = testimonials | first %}
-    {% include 'quote.njk' %}
+    {{ quote(testimonials[0])}}
   </div>
 </section>
 {% include "scroll_list.njk" %}
 {% include "keynum.njk" %}
 <section class="bg-light py-5">
   <div class="container pt-5">
-    {% set testimonial = testimonials | first %}
-    {% include 'quote.njk' %}
+    {{ quote(testimonials[1])}}
   </div>
 </section>
 <section class="">
