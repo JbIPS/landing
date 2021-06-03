@@ -2,7 +2,7 @@
 
   .hero {
     height: calc(100vh - 86px);
-    background: url("../img/red_blue/Asset 6b.png"), url("../img/red_blue/Asset 10b.png"), url(../img/Hitchcock-Shadow.png);
+    background: url("../img/red_blue/Asset 6b.png"), url("../img/red_blue/Asset 10b.png"), url("../img/Hitchcock.svg");
     background-color: var(--primary-color);
     background-size: 100%, 100%, 66%;
     background-repeat: no-repeat;
@@ -165,7 +165,10 @@
   .social {
 
     flex-direction: row-reverse;
-    padding-right: 10%;
+
+    @include media-breakpoint-up(lg) {
+      padding-right: 10%;
+    }
 
     svg {
       height: 1.2rem;
