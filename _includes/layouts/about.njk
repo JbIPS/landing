@@ -32,25 +32,30 @@ headerClass: offre
 <section class="py-5 ps-4 story">
   <h2 class="indent-3">La petite histoire <strong class="d-block indent-0">de Cameo</strong></h2>
   <div class="overflow-scroll no-scrollbar">
-    <div class="mt-4 d-flex">
+    <ol class="mt-4 d-flex p-0">
       {% for step in story %}
-        <div class="step">
-          <h3 class="mb-4 fs-6">{{ loop.index | pad }}   {{ step.title }}</h3>
-          <img src="{{ step.image }}" alt="" class="img-fluid pe-3" loading="lazy" decoding="async">
-          <div class="ps-5 font-light">
-            <h4 class="mt-4">{{ step.subtitle }}</h4>
-            {{ step.text | markdown | safe }}
-          </div>
-        </div>
+        <li class="step step-{{ loop.index }}">
+            <label for="radio-{{ loop.index }}">
+            <input type="radio" id="radio-{{ loop.index }}" name="story_step" value="{{ step.title }}"{{ " checked " if loop.first }}class="d-none">
+            <h3 class="mb-4 fs-6 d-inline">{{ step.title }}</h3>
+            <div class="step-img mt-3 me-4">
+              <img src="{{ step.image }}" alt="" class="img-fluid" loading="lazy" decoding="async">
+            </div>
+            <div class="ps-5 font-light step-content">
+              <h4 class="mt-4">{{ step.subtitle }}</h4>
+              {{ step.text | markdown | safe }}
+            </div>
+            </label>
+          </li>
       {% endfor %}
-    </div>
+    </ol>
   </div>
 </section>
 <section class="bg-light py-5 d-flex flex-column justify-content-between align-items-center">
   <h2 class="col-10">Nos fondateurs</h2>
-  <div class="col-10 justify-content-between">
+  <div class="col-10 d-flex gap-4 flex-wrap justify-content-between">
     {% for founder in founders %}
-      <div class="col-12 col-lg-5 my-5 m-lg-0 p-lg-0 founder">
+      <div class="col-12 col-lg-5 founder">
         {{ profile(founder, loop) }}
       </div>
     {% endfor %}
@@ -70,24 +75,22 @@ headerClass: offre
 </section>
 <section class="bg-light py-5 d-flex flex-column justify-content-evenly align-items-center">
   <h2 class="mb-4 col-10">Nos investisseurs</h2>
-  <div class="row col-10 justify-content-between">
+  <div class="col-10 d-flex  flex-wrap justify-content-between">
     <p class="fw-normal col-12 col-lg-3 p-0">Lancé en 2018 et doté de 155 m€, MH Innov’ investit en direct ou via ses partenaires VC dans l’écosystème tech européen afin d’accompagner la croissance de start-up ambitieuses pouvant également développer des partenariats gagnant-gagnant avec le Groupe Malakoff Humanis. On retrouve des entreprises innovantes comme Testamento, Squadeasy, Health For People, WeCar@Work et bien d’autres...</p>
     <div class="col-12 col-lg-7 d-flex flex-column align-items-center">
       <img src="{{ '/img/logo-mh.svg' | url }}" alt="Logo de Malakoff Humanis"class="mb-5">
-      <div class="overflow-hidden">
-        <div class="d-flex">
-          {% for investor in investors %}
-            <div class="investor me-4">
-              {{ profile(investor, loop)}}
-            </div>
-          {% endfor %}
-        </div>
+      <div class="d-flex gap-4">
+        {% for investor in investors %}
+          <div class="investor">
+            {{ profile(investor, loop)}}
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
 </section>
 <section class="bg-light-blue cta ps-5">
-  <div class="col-6">
+  <div class="col-10 col-lg-6">
     <h2 class="ms-3">Les présentations sont faites !<strong>Comment peut-on vous aider ?</strong></h2>
     <a class="btn btn-primary rounded-pill mt-4 ms-3 px-4" href="{{ '/offre/' | url }}">L'offre Cameo</a>
   </div>
