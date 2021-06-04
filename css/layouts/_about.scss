@@ -14,8 +14,8 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      background-size: 46%, 46%, 26%;
-      background-position: right 2rem bottom -5rem, right 2rem top -3rem, 5vw bottom;
+      background-size: 66vh, 66vh, 40vh;
+      background-position: right 3vw bottom -7vh, right 3vw top -6vh, 5vw bottom;
       position: relative;
     }
   }
@@ -126,6 +126,7 @@
 
         .step-img {
           position: relative;
+          max-width: 480px;
 
           &::after {
             content: "";
