@@ -155,6 +155,23 @@ function initPage() {
     for(let i = 0; i < target.children.length; i++) {
       observer.observe(document.getElementById(target.children[i].getAttribute('href').substr(1)));
     }
+  });
+
+  // Story scroll
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(!entry.isIntersecting) return;
+
+      document.querySelector(".story li.step.active").classList.remove("active");
+      entry.target.classList.add("active");
+    });
+  }, {
+      root: null,
+      rootMargin: '0px',
+      threshold: .5
+    });
+  document.querySelectorAll(".story li.step").forEach(step => {
+    obs.observe(step);
   })
 }
 

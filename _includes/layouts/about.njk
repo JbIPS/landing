@@ -34,19 +34,16 @@ headerClass: offre
   <div class="overflow-scroll no-scrollbar">
     <ol class="mt-4 d-flex p-0">
       {% for step in story %}
-        <li class="step step-{{ loop.index }}">
-            <label for="radio-{{ loop.index }}">
-            <input type="radio" id="radio-{{ loop.index }}" name="story_step" value="{{ step.title }}"{{ " checked " if loop.first }}class="d-none">
-            <h3 class="mb-4 fs-6 d-inline">{{ step.title }}</h3>
-            <div class="step-img mt-3 me-4">
-              <img src="{{ step.image }}" alt="" class="img-fluid" loading="lazy" decoding="async">
-            </div>
-            <div class="ps-5 font-light step-content">
-              <h4 class="mt-4">{{ step.subtitle }}</h4>
-              {{ step.text | markdown | safe }}
-            </div>
-            </label>
-          </li>
+        <li class="step step-{{ loop.index }}{{ " active" if loop.first }}">
+          <h3 class="mb-4 fs-6 d-inline">{{ step.title }}</h3>
+          <div class="step-img mt-3 me-4">
+            <img src="{{ step.image }}" alt="" class="img-fluid" loading="lazy" decoding="async">
+          </div>
+          <div class="ps-5 font-light step-content">
+            <h4 class="mt-4">{{ step.subtitle }}</h4>
+            {{ step.text | markdown | safe }}
+          </div>
+        </li>
       {% endfor %}
     </ol>
   </div>
