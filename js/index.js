@@ -1,5 +1,4 @@
 function initPage() {
-
   // Header stick shrink
   let lastScroll = window.pageYOffset;
   const header = document.querySelector('header');

@@ -26,7 +26,7 @@ date: Last Modified
   </head>
   <body>
     <header class="w-100{% if headerClass %} {{ headerClass }}{% endif %}">
-      <nav class="navbar navbar-expand-md navbar-dark">
+      <nav class="navbar navbar-expand-md {{ "navbar-light" if light else "navbar-dark"}}">
         <div class="container-fluid">
           <a class="navbar-brand" href="{{ '/' | url }}" aria-label="Retour à la page principale">
             <img class="w-100 logo-light" src="{{ '/img/logo.svg' | url }}" alt="Cameo">
@@ -100,7 +100,6 @@ date: Last Modified
     </footer>
     <!-- Current page: {{ page.url | url }} -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous" async></script>
-    {#<script src="{{ '/js/splide.js' | url }}"></script>#}
-    <script src="{{ '/js/index.js' | url }}" async></script>
+    <script src="{{ '/js/index.min.js' | url }}" async></script>
   </body>
 </html>

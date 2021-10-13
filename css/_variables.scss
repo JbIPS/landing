@@ -5,13 +5,16 @@ $white: #FFFFFF;
 $light: $white;
 $body-color: $white;
 $body-bg: $primary;
+$dark: #1D1D1D;
+
+$font-size-root: 14px;
 
 :root {
   --primary-color: #{$primary};
   --secondary-color: #{$secondary};
   --tertiary-color: #{$tertiary};
   --white: #{$white};
-  --black: #1D1D1D;
+  --black: #{$dark};
   --grey: #EAF5FB;
   --red: #FF5C55;
   --light-blue: #E9F4FA;
@@ -19,3 +22,20 @@ $body-bg: $primary;
 
 $accordion-icon-color: $tertiary;
 $accordion-icon-active-color: $primary;
+
+// Navbar vars
+$navbar-dark-color: $dark;
+$navbar-light-color: $dark;
+
+$navbar-dark-toggler-border-color: transparent;
+$navbar-light-toggler-border-color: $navbar-dark-toggler-border-color;
+
+$navbar-toggler-focus-width: 0;
+
+// Buttons
+$form-check-input-focus-box-shadow: none;
+
+// Pagination
+$pagination-active-color: $primary;
+$pagination-active-bg: transparent;
+$pagination-active-border-color: transparent;

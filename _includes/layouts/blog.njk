@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+headerClass: blog
+light: true
+---
+<section class="bg-light py-3">
+  {#<div class="filter-list ps-3">#}
+      {#<input type="radio" name="filter" class="btn-check" id="all-posts" autocomplete="off" checked>#}
+      {#<label class="btn btn-outline-primary px-0 me-3" for="all-posts">Tous les articles</label>#}
+    {#{% set categories = posts | getCategories %}#}
+    {#{% for category in categories %}#}
+      {#<input type="radio" name="filter" class="btn-check" id="{{ category | slugify }}" autocomplete="off">#}
+      {#<label class="btn btn-outline-primary px-0 me-3" for="{{ category | slugify }}">{{ category }}</label>#}
+    {#{% endfor %}#}
+  {#</div>#}
+  <div class="posts-list px-4 py-5 d-flex flex-wrap">
+    {% for post in collection.post %}
+      {% if loop.index0 % 5 == 0 %}
+        <div class="post col-12 mb-4" data-groups='{{ post.data.tags }}'>
+          {% image post.data.image, "", null, "mb-4 mx-auto", '328' %}
+          <p class="color-primary font-regular">{{ post.data.category }}</p>
+          <h2 class="fs-3 color-black">{{ post.data.title }}</h2>
+          <p class="font-regular">{{ post.data.extract }}</p>
+        </div>
+      {#{% else %}#}
+        {#<div class="post col-6 {{ 'ps-3' if loop.index0 % 2 == 0}}">#}
+            {#{% image post.data.image, "", null, "mb-3 mx-auto", '156' %}#}
+            {#<p class="color-primary font-regular">{{ post.data.category }}</p>#}
+            {#<h2 class="fs-5 color-black">{{ post.data.title }}</h2>#}
+          {#</div>#}
+      {#{% endif %}#}
+    {% endfor %}
+  </div>
+  {#<nav aria-label="Pagination des posts">#}
+    {#<ol class="pagination justify-content-evenly">#}
+      {#<li class=page-item>&lt; Précédente</li>#}
+      {#<div class="numbers d-flex justify-content-evenly col-4">#}
+        {#{%- for pageEntry in pagination.pages %}#}
+          {#<li{% if page.url == pagination.hrefs[ loop.index0 ] %} class="page-item active" aria-current="page"{% else %} class="page-item"{% endif %}><a class="page-link" href="{{ pagination.hrefs[ loop.index0 ] }}">{{ loop.index }}</a></li>#}
+          {#{%- endfor %}#}
+      {#</div>#}
+      {#<li class=page-item>Suivante &gt;</li>#}
+    {#</ol>#}
+  {#</nav>#}
+</section>

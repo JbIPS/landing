@@ -26,6 +26,14 @@
   font-display: swap;
 }
 
+.color-primary {
+  color: var(--primary-color);
+}
+
+.color-black {
+  color: var(--black) !important;
+}
+
 .font-light {
   font-weight: 300;
 }

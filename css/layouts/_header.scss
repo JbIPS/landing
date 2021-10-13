@@ -1,3 +1,5 @@
+//$navbar-dark-toggler-icon-bg: $navbar-light-toggler-icon-bg;
+
 header {
   padding: 15px 10px;
   background: var(--primary-color);
@@ -15,6 +17,17 @@ header {
     position: absolute;
     z-index: 11;
     background: transparent;
+  }
+
+  &.blog {
+    background: var(--white);
+    color: var(--black);
+    .logo-light {
+      display: none;
+    }
+    .logo-dark {
+      display: block;
+    }
   }
 }
 

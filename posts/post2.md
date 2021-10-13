@@ -2,7 +2,7 @@
 tags: post
 title: Titre 2
 category: Ils nous inspirent
-image: img/lab2.webp
+image: img/mesurer.jpg
 ---
 Hello world
 

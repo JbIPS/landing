@@ -1,45 +1,25 @@
 const Path = require('path');
 const { DateTime } = require("luxon");
-const fs = require("fs");
+const fs = require("fs/promises");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const Image = require('@11ty/eleventy-img');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const pluginSass = require('eleventy-plugin-sass');
 const metagen = require('eleventy-plugin-metagen');
 const criticalCss = require('eleventy-critical-css');
 const htmlmin = require('html-minifier');
 const {minify} = require('terser');
-const slugify = require('slugify');
-const pluginInjector = require('@infinity-interactive/eleventy-plugin-injector');
 
 const DEFAULT_DOMAIN = 'localhost:8080';
-
+process.setMaxListeners(0)
 module.exports = function(eleventyConfig) {
   const pathPrefix = process.env.PATH_PREFIX || '/';
 
   eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(pluginSass, {sourcemaps: true});
   eleventyConfig.addPlugin(criticalCss, {
     css: ['_site/css/*.css'],
-    minify: true
   });
   eleventyConfig.addPlugin(metagen);
-  eleventyConfig.addPlugin(pluginInjector, {
-    watch: 'js/*.js',
-    inject: async (instance, options, file) => {
-      try {
-        fs.mkdirSync('_site')
-        fs.mkdirSync('_site/js')
-      } catch(e) {/* console.error(e);*/ }
-      const code = {
-        'index.js': fs.readFileSync('js/index.js', {encoding: 'utf-8'}),
-        'splide.js': fs.readFileSync('js/splide.js', {encoding: 'utf-8'})
-      };
-      const result = await minify(code);
-      fs.writeFileSync('_site/js/index.js', result.code);
-    }
-  });
 
   eleventyConfig.setDataDeepMerge(true);
 
@@ -71,9 +51,9 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat(format);
   });
 
-  eleventyConfig.addFilter("slug", str => {
-    return slugify(str).toLowerCase();
-  });
+  //eleventyConfig.addFilter("slug", str => {
+  //return slugify(str).toLowerCase();
+  //});
 
   eleventyConfig.addFilter("absolute", url => {
     let domain, protocol;
@@ -104,20 +84,25 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('log', (elem) => {
     console.log(elem);
   });
+
   eleventyConfig.addFilter('selectPublished', (elem) => {
     return elem.filter((entry) => !!entry.data?.published);
+  });
+
+  eleventyConfig.addFilter('getCategories', (filters) => {
+    return new Set(filters.map(f => f.data.category));
   });
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("video");
   eleventyConfig.addPassthroughCopy("fonts");
-  //eleventyConfig.addPassthroughCopy("js");
-  eleventyConfig.addPassthroughCopy("css/*.css");
+  eleventyConfig.addPassthroughCopy("js");
+  //eleventyConfig.addPassthroughCopy("css/*.css");
   eleventyConfig.addPassthroughCopy("favicon.svg");
 
   /* Minify HTML */
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if(outputPath.endsWith(".html") ) {
+  eleventyConfig.addTransform("htmlmin", function(content) {
+    if(this.outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
@@ -127,6 +112,19 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
+
+  eleventyConfig.on('afterBuild', async () => {
+    const code = {
+      'index.js': await fs.readFile('js/index.js', {encoding: 'utf-8'}),
+      'splide.js': await fs.readFile('js/splide.js', {encoding: 'utf-8'})
+    };
+    const result = await minify(code);
+    await Promise.all([
+      fs.writeFile('_site/js/index.min.js', result.code),
+      fs.unlink('_site/js/index.js'),
+      fs.unlink('_site/js/splide.js')
+    ])
+  })
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -162,8 +160,8 @@ module.exports = function(eleventyConfig) {
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
-      ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404.html');
+      ready: async function(err, browserSync) {
+        const content_404 = await fs.readFile('_site/404.html');
 
         browserSync.addMiddleware("*", (req, res) => {
           // Provides the 404 content without redirect.
@@ -172,6 +170,7 @@ module.exports = function(eleventyConfig) {
         });
       },
     },
+    files: './_site/css/**/*.css',
     ui: false,
     ghostMode: false
   });
@@ -181,7 +180,7 @@ module.exports = function(eleventyConfig) {
       "md",
       "njk",
       "html",
-      "liquid"
+      "liquid",
     ],
 
     // If your site lives in a different subdirectory, change this.
