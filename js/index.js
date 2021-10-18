@@ -171,7 +171,28 @@ function initPage() {
     });
   document.querySelectorAll(".story li.step").forEach(step => {
     obs.observe(step);
-  })
+  });
+
+  // Blog post list
+  const postsList = document.querySelector('.posts-list');
+  if(postsList) {
+    const grid = new Isotope(postsList, {
+      itemSelector: '.post',
+      layout: 'masonry',
+      masonry: {
+        columnWidth: '.grid-sizer',
+        gutter: '.gutter-sizer'
+      },
+     percentPosition: true
+    })
+    window.filterPosts = function(category) {
+      grid.arrange({
+        filter: function(elem) {
+          return !!! category || elem.getAttribute('data-groups').includes(category)
+        }
+      });
+    }
+  }
 }
 
 if(document.readyState === 'loading') {

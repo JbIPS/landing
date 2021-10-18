@@ -1,7 +1,7 @@
 ---
 tags: post
 title: Titre 3
-category: Ils nous inspirent
+category: Retour d'expérience
 image: img/financer.jpg
 ---
 Hello world

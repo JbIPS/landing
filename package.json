@@ -3,11 +3,10 @@
   "version": "5.0.2",
   "description": "Cameo official website",
   "scripts": {
-    "build": "eleventy & minify:js",
+    "build": "eleventy",
     "start": "eleventy --serve & npm run watch:sass",
     "debug": "DEBUG=* eleventy",
     "purge": "purgecss -css _site/css/style.css --content _site/**/*.html --output _site/css/style.css",
-    "minify:js": "terser _site/js/splide.js _site/js/index.js -c -o _site/js/index.js",
     "watch:sass": "sass -I node_modules css:_site/css --watch"
   },
   "repository": {

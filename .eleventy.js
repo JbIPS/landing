@@ -93,6 +93,10 @@ module.exports = function(eleventyConfig) {
     return new Set(filters.map(f => f.data.category));
   });
 
+  eleventyConfig.addFilter('escapejs', (str) => {
+    return str.replace("'", "\\'")
+  });
+
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("video");
   eleventyConfig.addPassthroughCopy("fonts");
@@ -115,14 +119,18 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.on('afterBuild', async () => {
     const code = {
+      'splide.js': await fs.readFile('js/splide.js', {encoding: 'utf-8'}),
+      'shuffle.min.js': await fs.readFile('js/shuffle.min.js', {encoding: 'utf-8'}),
+      'isotope.js': await fs.readFile('js/isotope.pkgd.min.js', {encoding: 'utf-8'}),
       'index.js': await fs.readFile('js/index.js', {encoding: 'utf-8'}),
-      'splide.js': await fs.readFile('js/splide.js', {encoding: 'utf-8'})
     };
     const result = await minify(code);
     await Promise.all([
       fs.writeFile('_site/js/index.min.js', result.code),
       fs.unlink('_site/js/index.js'),
-      fs.unlink('_site/js/splide.js')
+      fs.unlink('_site/js/splide.js'),
+      fs.unlink('_site/js/shuffle.min.js'),
+      fs.unlink('_site/js/isotope.pkgd.min.js')
     ])
   })
 

@@ -27,6 +27,38 @@
   }
 }
 
+.posts-list {
+
+  .gutter-sizer {
+    width: 1%;
+  }
+
+  .grid-sizer,
+  .post {
+    width: calc(50% - 10px);
+
+    @include media-breakpoint-up(lg) {
+      width: 24%;
+    }
+  }
+
+  .post .extract {
+    display: none;
+  }
+
+  .post:nth-child(5n+1) {
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      width: 49%;
+    }
+
+    .extract {
+      display: block;
+    }
+  }
+}
+
 .pagination {
   .page-link {
     padding: 0;

@@ -4,33 +4,32 @@ headerClass: blog
 light: true
 ---
 <section class="bg-light py-3">
-  {#<div class="filter-list ps-3">#}
-      {#<input type="radio" name="filter" class="btn-check" id="all-posts" autocomplete="off" checked>#}
-      {#<label class="btn btn-outline-primary px-0 me-3" for="all-posts">Tous les articles</label>#}
-    {#{% set categories = posts | getCategories %}#}
-    {#{% for category in categories %}#}
-      {#<input type="radio" name="filter" class="btn-check" id="{{ category | slugify }}" autocomplete="off">#}
-      {#<label class="btn btn-outline-primary px-0 me-3" for="{{ category | slugify }}">{{ category }}</label>#}
-    {#{% endfor %}#}
-  {#</div>#}
-  <div class="posts-list px-4 py-5 d-flex flex-wrap">
-    {% for post in collection.post %}
-      {% if loop.index0 % 5 == 0 %}
-        <div class="post col-12 mb-4" data-groups='{{ post.data.tags }}'>
-          {% image post.data.image, "", null, "mb-4 mx-auto", '328' %}
+  <div class="ps-3 overflow-scroll no-scrollbar nowrap">
+    <div class="filter-list">
+      <input type="radio" name="filter" class="btn-check" id="all-posts" autocomplete="off" checked onclick="filterPosts()">
+      <label class="btn btn-outline-primary px-0 me-3" for="all-posts">Tous les articles</label>
+      {% set categories = collections.post | getCategories %}
+      {%- for category in categories %}
+        <input type="radio" name="filter" class="btn-check" id="{{ category | slugify }}" autocomplete="off" onclick="filterPosts('{{ category | escapejs }}')">
+        <label class="btn btn-outline-primary px-0 me-3" for="{{ category | slugify }}">{{ category }}</label>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="px-4 py-5">
+    <div class="posts-list">
+      {% for post in collections.post %}
+        <div class="post mb-3" data-groups="{{ post.data.category }}">
+          {% image post.data.image, "", null, "mb-4 mx-auto", '328, 588' %}
           <p class="color-primary font-regular">{{ post.data.category }}</p>
           <h2 class="fs-3 color-black">{{ post.data.title }}</h2>
-          <p class="font-regular">{{ post.data.extract }}</p>
+          <p class="extract font-regular">{{ post.data.extract }}</p>
         </div>
-      {#{% else %}#}
-        {#<div class="post col-6 {{ 'ps-3' if loop.index0 % 2 == 0}}">#}
-            {#{% image post.data.image, "", null, "mb-3 mx-auto", '156' %}#}
-            {#<p class="color-primary font-regular">{{ post.data.category }}</p>#}
-            {#<h2 class="fs-5 color-black">{{ post.data.title }}</h2>#}
-          {#</div>#}
-      {#{% endif %}#}
-    {% endfor %}
+      {% endfor %}
+      <div class="grid-sizer"></div>
+      <div class="gutter-sizer"></div>
+    </div>
   </div>
+
   {#<nav aria-label="Pagination des posts">#}
     {#<ol class="pagination justify-content-evenly">#}
       {#<li class=page-item>&lt; Précédente</li>#}
