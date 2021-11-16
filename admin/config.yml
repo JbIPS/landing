@@ -1,0 +1,57 @@
+backend:
+  name: github
+  repo: JbIPS/landing
+  branch: master
+
+publish_mode: editorial_workflow
+
+media_folder: "img"
+
+# npx netlify-cms-proxy-server
+#local_backend: true
+
+locale: fr
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post"}
+      - {label: "Tags", name: "tags", widget: "hidden", default: "post"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Catégorie", name: "category", widget: "select", options: ["Ils nous inspirent", "Le futur est déjà là", "Retours d'expérience"]}
+      - {label: "Bannière", name: "image", widget: "image"}
+      - {label: "Auteur", name: "author", widget: "relation", collection: "authors", search_fields: ["name", "title"], value_field: "name", display_fields: ["name", "title"]}
+      - {label: "Chapô", name: "extract", widget: "text"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: "authors"
+    label: "Autheurs"
+    folder: "authors"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - {label: "Tags", name: "tags", widget: "hidden", default: "author"}
+      - {label: "Nom", name: "name", widget: "string"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Portrait", name: "image", widget: "image"}
+      - {label: "Bio", name: "body", widget: "text"}
+      - label: "Réseaux sociaux"
+        name: "socials"
+        widget: "list"
+        allow_add: false
+        fields:
+          - {label: "Nom", name: "name", widget: "string"}
+          - {label: "URL du profil", name: "url", widget: "string"}
+          - {label: "Icône", name: "icon", widget: "hidden"}
+        default:
+          - name: Twitter
+            url: "https://twitter.com/"
+            icon: "twitter_logo.svg"
+          - name: Linkedin
+            icon: "linkedin_logo.svg"
+            url: "https://www.linkedin.com/in/"
