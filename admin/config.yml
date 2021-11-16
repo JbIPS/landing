@@ -2,6 +2,7 @@ backend:
   name: github
   repo: JbIPS/landing
   branch: master
+  site_domain: cameo.fr
 
 publish_mode: editorial_workflow
 
