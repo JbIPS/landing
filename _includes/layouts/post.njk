@@ -4,40 +4,42 @@ headerClass: blog
 light: true
 ---
 <section class="bg-light post-content">
-  {% image image, '', null, '', '375, 1200' %}
-  <div class='content-container d-flex flex-column align-items-end'>
-    <header class="ms-5 px-4 py-lg-4 mt-3 mb-5">
-      <p class="color-primary font-regular">{{ category }}</p>
-      <h1 class="mb-3">{{ title }}</h1>
-      <address class="font-regular color-black">Par <a rel="author" href="" class="color-primary">{{ author }}</a></address>
-      <div id="shareBox" class="ps-4 p-lg-0 mb-5 m-lg-0 position-lg-fixed">
-        {% set dark = true %}
-        {% include "newsletter.njk" %}
-        {% set socials = metadata.socials %}
-        {% set text = "Partager sur" %}
-        {% set share = true %}
-        {% include "social.njk" %}
-      </div>
-    </header>
-    <article class="px-4 mb-3 d-flex flex-column align-items-end">
-      {{ content | safe }}
-      {% if author %}
-        <address class="d-flex align-items-start mt-5">
-          {% set authorData = collections.author | findProp("name", author) %}
-          {% image authorData.data.image, '', null, 'col-3' %}
-          <div class="col-9 px-4 font-regular small-text">
-            {#<p class="fs-5 mb-0 font-medium">{{ authorData.data.name }}</p>#}
-            {% set socials = authorData.data.socials %}
-            {% set text = authorData.data.name  %}
-            {% set share = false %}
-            {% include "social.njk" %}
-            <p class="fs-6">{{ authorData.data.title}}</p>
-            {{ authorData._templateContent | safe }}
+  <div class="container">
+    {% image image, '', null, '', '375, 1200' %}
+    <div class='content-container d-flex flex-column align-items-end'>
+      <header class="ms-5 px-4 py-lg-4 mt-3 mb-5">
+        <p class="color-primary font-regular">{{ category }}</p>
+        <h1 class="mb-3">{{ title }}</h1>
+        <address class="font-regular color-black">Par <a rel="author" href="" class="color-primary">{{ author }}</a></address>
+        <div id="shareBox" class="ps-4 p-lg-0 mb-5 m-lg-0 position-lg-fixed">
+          <div class="d-none d-lg-block">
+            {% set dark = true %}
+            {% include "newsletter.njk" %}
           </div>
-        </address>
-      {% endif %}
-    </article>
+          {% set socials = metadata.socials %}
+          {% set text = "Partager sur" %}
+          {% set share = true %}
+          {% include "social.njk" %}
+        </div>
+      </header>
+      <article class="px-4 mb-3 d-flex flex-column align-items-end">
+        {{ content | safe }}
+        {% if author %}
+          <address class="d-flex align-items-start mt-5">
+            {% set authorData = collections.author | findProp("name", author) %}
+            {% image authorData.data.image, '', null, 'col-3' %}
+            <div class="col-9 px-4 font-regular small-text">
+              {#<p class="fs-5 mb-0 font-medium">{{ authorData.data.name }}</p>#}
+              {% set socials = authorData.data.socials %}
+              {% set text = authorData.data.name  %}
+              {% set share = false %}
+              {% include "social.njk" %}
+              <p class="fs-6">{{ authorData.data.title}}</p>
+              {{ authorData._templateContent | safe }}
+            </div>
+          </address>
+        {% endif %}
+      </article>
+    </div>
   </div>
 </section>
-
-

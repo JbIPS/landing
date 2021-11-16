@@ -88,17 +88,16 @@
     }
   }
 
-  & > picture {
+  & picture {
     display: block;
     max-width: 1200px;
     margin: 0 auto;
   }
 
   @include media-breakpoint-up(lg) {
-    & > div {
+    .content-container {
       position: relative;
       top: -16rem;
-      background: transparent;
     }
   }
 
@@ -159,6 +158,7 @@
 
     & > img {
       width: 100%;
+      margin: 2rem 0;
 
       @include media-breakpoint-up(lg) {
         width: 70vw;

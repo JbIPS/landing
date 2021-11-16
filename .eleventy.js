@@ -50,9 +50,11 @@ module.exports = function(eleventyConfig) {
       //svgShortCircuit: true
     };
 
-    Image(src, options);
+    const srcPath = Path.join('.', src)
 
-    const metadata = Image.statsSync(src, options);
+    Image(srcPath, options);
+
+    const metadata = Image.statsSync(srcPath, options);
 
     let imageAttributes = {
       alt,
@@ -123,6 +125,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   //eleventyConfig.addPassthroughCopy("css/*.css");
   eleventyConfig.addPassthroughCopy("favicon.svg");
+  eleventyConfig.addPassthroughCopy("admin/config.yml");
 
   /* Minify HTML */
   eleventyConfig.addTransform("htmlmin", function(content) {
