@@ -3,7 +3,7 @@
   "version": "5.0.2",
   "description": "Cameo official website",
   "scripts": {
-    "build": "eleventy && npm run build:sass && npm run purge",
+    "build": "eleventy && npm run build:sass",
     "build:sass": "sass -I node_modules css:_site/css",
     "start": "eleventy --serve & npm run watch:sass",
     "debug": "DEBUG=* eleventy",
