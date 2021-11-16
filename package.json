@@ -3,11 +3,12 @@
   "version": "5.0.2",
   "description": "Cameo official website",
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy && npm run build:sass && npm run purge",
+    "build:sass": "sass -I node_modules css:_site/css",
     "start": "eleventy --serve & npm run watch:sass",
     "debug": "DEBUG=* eleventy",
     "purge": "purgecss -css _site/css/style.css --content _site/**/*.html --output _site/css/style.css",
-    "watch:sass": "sass -I node_modules css:_site/css --watch"
+    "watch:sass": "npm run build:sass -- --watch"
   },
   "repository": {
     "type": "git",
