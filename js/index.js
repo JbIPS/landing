@@ -2,6 +2,7 @@ function initPage() {
   // Header stick shrink
   let lastScroll = window.pageYOffset;
   const header = document.querySelector('header');
+  const shareBox = document.getElementById('shareBox');
   const nav = header.children[0];
   let scheduledAF = false;
   window.addEventListener('scroll', (e) => {
@@ -12,6 +13,14 @@ function initPage() {
     scheduledAF = true;
 
     requestAnimationFrame(() => {
+      // Appearing Share box
+      if(shareBox && sy > 700 && sy < 1800) {
+        shareBox.classList.add('opacity-100');
+      } else if(shareBox) {
+        shareBox.classList.remove('opacity-100');
+      }
+
+      // Shrinking header
       if(sy < lastScroll && sy < 20) {
         header.classList.remove('shrinked', 'slide-up', 'slide-down');
         nav.classList.add('navbar-dark');

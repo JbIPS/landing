@@ -1,6 +1,6 @@
 //$navbar-dark-toggler-icon-bg: $navbar-light-toggler-icon-bg;
 
-header {
+body > header {
   padding: 15px 10px;
   background: var(--primary-color);
   color: var(--white);
@@ -21,7 +21,21 @@ header {
 
   &.blog {
     background: var(--white);
-    color: var(--black);
+
+    .nav-item {
+      .nav-link {
+        color: var(--black);
+      }
+      &.border {
+        border: none !important;
+        background: var(--primary-color);
+
+        .nav-link {
+          color: var(--white);
+        }
+      }
+    }
+
     .logo-light {
       display: none;
     }

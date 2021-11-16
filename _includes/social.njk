@@ -1,0 +1,10 @@
+<div class="my-3 d-flex align-items-center justify-content-between social-bar">
+  <p class="fs-1 d-inline mb-0 social-invite">{{ text }}</p>
+  <div class="d-flex justify-content-between me-4 col-3">
+    {% for social in socials %}
+      {% social social, share, title %}
+        {% include social.icon %}
+      {% endsocial %}
+    {% endfor %}
+  </div>
+</div>

@@ -66,19 +66,10 @@ date: Last Modified
             </h2>
             <h3 class="text-center fs-6">Révéler les talents<br/>Libérer la performance</h3>
           </div>
-          <div class="py-4">
-            <label for="newsletter-email" class="indent--2 pad-2 fs-1 fs-lg-2">Je m'inscris <br/><strong>à la newsletter</strong><p>
-            <input type="email" id="newsletter-email" class="form-control" placeholder="Votre adresse e-mail" name="newsletter-email">
-          </div>
-          <div class="my-3 d-flex align-items-center justify-content-between">
-            <p class="fs-5 d-inline mb-0">Suivez-nous</p>
-            <a class="social" href="https://twitter.com/CameoTalents">
-              {% include "twitter_logo.svg" %}
-            </a>
-            <a class="social" href="https://www.linkedin.com/company/cameoedtech">
-              {% include "linkedin_logo.svg" %}
-            </a>
-          </div>
+          {% include "newsletter.njk" %}
+          {% set text = "Suivez-nous" %}
+          {% set socials = metadata.socials %}
+          {% include "social.njk" %}
         </div>
         <div class="col-6 px-5 d-none d-lg-block">
           <ul class="list-unstyled">

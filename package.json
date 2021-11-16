@@ -36,6 +36,7 @@
     "eleventy-critical-css": "^1.1.0",
     "eleventy-plugin-metagen": "^1.4.8",
     "html-minifier": "^4.0.0",
+    "markdown-it-block-image": "^0.0.3",
     "sass": "^1.42.1",
     "shufflejs": "^5.4.1",
     "slugify": "^1.6.1"

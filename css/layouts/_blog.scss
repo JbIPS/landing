@@ -33,6 +33,11 @@
     width: 1%;
   }
 
+  a.post {
+    text-decoration: none;
+    color: initial;
+  }
+
   .grid-sizer,
   .post {
     width: calc(50% - 10px);
@@ -68,5 +73,123 @@
   .active {
     border-bottom: 1px solid var(--primary-color);
     border-radius: 0;
+  }
+}
+
+.post-content {
+
+  @include media-breakpoint-up(lg) {
+    #shareBox {
+      opacity: 0;
+      top: 50vh;
+      left: 20vw;
+      width: 20vw;
+      transition: opacity .4s ease-out;
+    }
+  }
+
+  & > picture {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @include media-breakpoint-up(lg) {
+    & > div {
+      position: relative;
+      top: -16rem;
+      background: transparent;
+    }
+  }
+
+  .content-container {
+    width: 90%;
+
+    @include media-breakpoint-up(lg) {
+      & > * {
+        width: 50%;
+      }
+    }
+  }
+
+  header {
+    background-color: var(--white);
+  }
+
+  article {
+    z-index: 5;
+
+    & > :last-child {
+      border-bottom: 1px solid var(--grey);
+      padding-bottom: 1rem;
+    }
+
+    & > p, & > h2 {
+      width: 80%;
+
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+      }
+    }
+
+
+    & > p {
+      font-size: 1.15rem;
+      font-weight: normal;
+
+      strong {
+        color: var(--black);
+      }
+    }
+
+    & > h2 {
+      color: var(--black);
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    & > blockquote {
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: normal;
+      //margin-right: 1rem;
+    }
+
+    & > img {
+      width: 100%;
+
+      @include media-breakpoint-up(lg) {
+        width: 70vw;
+      }
+    }
+  }
+
+  address {
+    a {
+      text-decoration: none;
+    }
+
+    .social-bar {
+      margin: 0 !important;
+    }
+
+    .social-invite {
+      font-weight: 500;
+      font-size: $lead-font-size !important;
+      color: var(--black);
+      margin-bottom: 0;
+    }
+  }
+
+
+  .social-invite {
+    color: var(--primary-color);
+    font-size: calc(1.3rem + 0.6vw) !important;
+  }
+
+  .social svg {
+    fill: var(--tertiary-color);
   }
 }

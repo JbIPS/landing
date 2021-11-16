@@ -1,5 +1,17 @@
 {
   "title": "Cameo",
   "url": "https://cameo.fr/",
-  "description": "Cameo, la solution de mobilité RH qui forme vos salariés au cœur des startups"
+  "description": "Cameo, la solution de mobilité RH qui forme vos salariés au cœur des startups",
+  "socials": [{
+    "name": "Twitter",
+    "account": "CameoEdTech",
+    "icon": "twitter_logo.svg",
+    "url": "https://twitter.com/CameoTalents",
+    "post_url": "https://twitter.com/intent/tweet?text=${title}&url=${url}&via=${account}"
+  }, {
+    "name": "LinkedIn",
+    "icon": "linkedin_logo.svg",
+    "url": "https://www.linkedin.com/company/cameoedtech",
+    "post_url": "https://www.linkedin.com/sharing/share-offsite/?url=${url}"
+  }]
 }

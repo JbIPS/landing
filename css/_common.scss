@@ -52,6 +52,35 @@ section {
   }
 }
 
+.newsletter {
+
+  &.newsletter-dark {
+    label {
+      color: var(--primary-color);
+    }
+
+    input.form-control {
+      color: var(--black);
+      border-bottom-color: var(--black);
+
+      &::placeholder {
+        color: var(--black);
+      }
+    }
+  }
+  input.form-control {
+    border: none;
+    border-bottom: 1px solid var(--white);
+    border-radius: 0;
+    color: var(--white);
+
+    &::placeholder {
+      color: var(--grey);
+      opacity: 0.6;
+    }
+  }
+}
+
 .bg-light {
   background-color: var(--white) !important;
 }
@@ -306,5 +335,15 @@ section {
 .scroll-list {
   h2 strong {
     text-indent: 2.5rem;
+  }
+}
+
+.social {
+  display: block;
+  line-height: 1;
+
+  svg {
+    height: 20px;
+    fill: var(--secondary-color);
   }
 }

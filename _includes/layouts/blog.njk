@@ -18,12 +18,12 @@ light: true
   <div class="px-4 py-5">
     <div class="posts-list">
       {% for post in collections.post %}
-        <div class="post mb-3" data-groups="{{ post.data.category }}">
+        <a href="{{ post.url }}" class="post mb-3" data-groups="{{ post.data.category }}">
           {% image post.data.image, "", null, "mb-4 mx-auto", '328, 588' %}
           <p class="color-primary font-regular">{{ post.data.category }}</p>
           <h2 class="fs-3 color-black">{{ post.data.title }}</h2>
           <p class="extract font-regular">{{ post.data.extract }}</p>
-        </div>
+        </a>
       {% endfor %}
       <div class="grid-sizer"></div>
       <div class="gutter-sizer"></div>

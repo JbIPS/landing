@@ -5,6 +5,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const Image = require('@11ty/eleventy-img');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItBlock = require("markdown-it-block-image");
 const metagen = require('eleventy-plugin-metagen');
 const criticalCss = require('eleventy-critical-css');
 const htmlmin = require('html-minifier');
@@ -23,7 +24,24 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setDataDeepMerge(true);
 
-  eleventyConfig.addNunjucksShortcode("image", (src, alt, sizes, classes, widths) => {
+  const makeAbsolute = (url) => {
+    let domain, protocol;
+    if(process.env.DOMAIN) {
+      domain = process.env.DOMAIN;
+      protocol = 'https://';
+    } else {
+      domain = DEFAULT_DOMAIN;
+      protocol = 'http://';
+    }
+    const prefixedUrl = Path.join(pathPrefix, url);
+    return protocol + Path.join(domain, prefixedUrl);
+  }
+
+  eleventyConfig.addCollection('author', function(collectionApi) {
+    return collectionApi.getFilteredByTag('author');
+  });
+
+  eleventyConfig.addShortcode("image", (src, alt, sizes, classes, widths) => {
     const options = {
       widths: widths ? widths.split(' ').map(s => parseInt(s, 10)) : [300],
       formats: ["webp", "svg"],
@@ -47,6 +65,19 @@ module.exports = function(eleventyConfig) {
     return Image.generateHTML(metadata, imageAttributes);
   })
 
+  eleventyConfig.addPairedShortcode("social", function(content, social, share, title) {
+    const url = makeAbsolute(this.page.url);
+    const account = social.account;
+    const sharePayload = eval('`' + social.post_url + '`')
+    return `<a target="_blank" class="social" href="${ share ? sharePayload : social.url }">
+        ${content}
+      </a>`
+  })
+
+  eleventyConfig.addFilter('findProp', (collection, propName, target) => {
+    return collection.find(item => item.data[propName] === target);
+  });
+
   eleventyConfig.addFilter("date", (dateObj, format) => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat(format);
   });
@@ -55,18 +86,7 @@ module.exports = function(eleventyConfig) {
   //return slugify(str).toLowerCase();
   //});
 
-  eleventyConfig.addFilter("absolute", url => {
-    let domain, protocol;
-    if(process.env.DOMAIN) {
-      domain = process.env.DOMAIN;
-      protocol = 'https://';
-    } else {
-      domain = DEFAULT_DOMAIN;
-      protocol = 'http://';
-    }
-    const prefixedUrl = Path.join(pathPrefix, url);
-    return protocol + Path.join(domain, prefixedUrl);
-  })
+  eleventyConfig.addFilter("absolute", makeAbsolute)
 
   eleventyConfig.addFilter("pad", number => {
     return number.toString().padStart(2, '0');
@@ -143,7 +163,7 @@ module.exports = function(eleventyConfig) {
     permalink: false,
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
-  });
+  }).use(markdownItBlock);
   // Remember old renderer, if overridden, or proxy to default renderer
   const defaultRender = markdownLibrary.renderer.rules.link_open || function(tokens, idx, options, env, self) {
     return self.renderToken(tokens, idx, options);
@@ -157,6 +177,14 @@ module.exports = function(eleventyConfig) {
     // pass token to default renderer.
     return defaultRender(tokens, idx, options, env, self);
   };
+
+  markdownLibrary.renderer.rules.image = function (tokens, idx, options, env, slf) {
+    var token = tokens[idx]
+    token.attrs[token.attrIndex('alt')][1] = slf.renderInlineAsText(token.children, options, env)
+    // this is the line of code responsible for an additional 'loading' attribute
+    token.attrSet('loading', 'lazy');
+    return slf.renderToken(tokens, idx, options);
+  }
 
   eleventyConfig.setLibrary("md", markdownLibrary);
   eleventyConfig.addFilter('markdown', (string, strip) => {
