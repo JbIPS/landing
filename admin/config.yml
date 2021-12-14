@@ -2,6 +2,7 @@ backend:
   name: github
   repo: JbIPS/landing
   branch: master
+  # Don't forget to register it on Netlify Domain Management (https://cnly.github.io/2018/04/14/just-3-steps-adding-netlify-cms-to-existing-github-pages-site-within-10-minutes.html)
   site_domain: cameo.fr
 
 publish_mode: editorial_workflow

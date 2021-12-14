@@ -136,6 +136,21 @@ section {
   }
 }
 
+.yellow-arrow-bkg {
+  background-image: url('/img/yellow_blue/Asset 29.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+
+  @include media-breakpoint-up(lg) {
+    background-image: url('/img/yellow_blue/Asset 27.png');
+    background-size: contain;
+    background-position-x: left;
+    background-position-y: center;
+  }
+}
+
 .usecase {
   @include media-breakpoint-up(lg) {
     transition: background .3s ease-out;
