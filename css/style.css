@@ -9467,6 +9467,22 @@ section strong {
   }
 }
 
+.yellow-arrow-bkg {
+  background-image: url("/img/yellow_blue/Asset 29.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+@media (min-width: 992px) {
+  .yellow-arrow-bkg {
+    background-image: url("/img/yellow_blue/Asset 27.png");
+    background-size: contain;
+    background-position-x: left;
+    background-position-y: center;
+  }
+}
+
 @media (min-width: 992px) {
   .usecase {
     transition: background 0.3s ease-out;
