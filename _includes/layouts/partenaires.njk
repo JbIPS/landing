@@ -1,14 +1,14 @@
 ---
 layout: layouts/base.njk
-contentClass: plus
+contentClass: partner
 ---
 <section class="mt-3 mt-lg-0 px-4 vh-100 intro">
-  <div class="col-lg-10 pt-lg-5 mx-auto position-relative h-100">
-  <h1>Rendez vos parcours <strong class="d-block">certifiants et finançables&nbsp;!</strong></h1>
+  <div class="col-lg-10 mx-auto h-100 d-flex flex-column align-items-start justify-content-center">
+    <h1>{{ h1 | markdown(true)  | safe }}</h1>
   <p class="font-light mt-3 col-lg-6">
-    Vous avez créé une formation et souhaitez valoriser les compétences acquises avec une certification reconnue ? Vous désirez proposer un financement avec le CPF de vos participants ? Notre certification permet de sanctionner la montée en compétences dans le domaine de la gestion de projets innovants, à la fois en externe (entrepreneuriat) ou au sein d’une organisation (intrapreneuriat). Si vous reconnaissez votre parcours, alors cette certification est faite pour vous !
+    {{ intro | markdown(true) | safe }}
   </p>
-  <a href="{{ '/contact/' | url }}" class="btn btn-lg btn-secondary rounded-pill mt-5">Let's go!</a>
+  <a href="{{ '/contact/' | url }}" class="btn btn-lg btn-secondary rounded-pill mt-5">{{ intro_button }}</a>
   </div>
 </section>
 <section class="bg-light py-5 px-4 font-regular">
@@ -37,6 +37,14 @@ contentClass: plus
       <li>Analyser l'organisation et la réalisation du travail pour l'améliorer</li>
       <li>Suivre et mesurer l'avancement des objectifs</li>
       <li>Conduire un projet d'innovation au sein d'une organisation</li>
+    </ul>
+    <h2 class="my-5">Ma formation est-elle éligible ?</h2>
+    <p>Pour garantir la qualité de notre certification, les formations de nos partenaires doivent valider plusieurs critères afin de pouvoir utiliser notre certification :</p>
+    <ul>
+      <li>La formation doit contenir une dimension "projet"</li>
+      <li>La formation doit concerné les domaines suivants : Design Thinking, méthodes agiles, intrapreneuriat, blockchain ou marketing digital</li>
+      <li>L'organisme de formation doit être certifié QUALIOPI</li>
+      <li>La formation doit avoir une durée minimale de 35 heures</li>
     </ul>
   </div>
 </section>

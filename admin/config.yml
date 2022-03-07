@@ -57,3 +57,13 @@ collections:
           - name: Linkedin
             icon: "linkedin_logo.svg"
             url: "https://www.linkedin.com/in/"
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Partenaires"
+        name: "partenaires"
+        file: "../partenaires/index.json"
+        fields:
+          - {label: Title, name: h1, widget: text}
+          - {label: Intro, name: intro, widget: text}
+          - {label: Bouton d'intro, name: intro_button, widget: string}
