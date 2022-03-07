@@ -10852,4 +10852,8 @@ h2 strong, .h2 strong {
   fill: var(--tertiary-color);
 }
 
+.partner h1 strong, .partner .h1 strong {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
