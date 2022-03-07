@@ -2,4 +2,36 @@
   h1 strong {
     display: block;
   }
+
+  .content {
+    h2 {
+      @extend .my-5;
+    }
+
+    img {
+      @extend .mx-auto;
+      @extend .d-block;
+      @extend .img-fluid;
+    }
+  }
+
+  .cta {
+    background-image: url('../img/yellow_blue/Asset 26.png');
+    background-size: 270%;
+    background-position: 65% 0;
+    min-height: 65vh;
+
+    @include media-breakpoint-up(lg) {
+      background-size: 100%;
+      min-height: 600px;
+    }
+
+    h2 {
+      color: var(--primary-color);
+
+      strong {
+        color: var(--tertiary-color);
+      }
+    }
+  }
 }
