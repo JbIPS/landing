@@ -596,7 +596,7 @@ progress {
   content: "— ";
 }
 
-.img-fluid {
+.img-fluid, .partner .content img {
   max-width: 100%;
   height: auto;
 }
@@ -4629,7 +4629,7 @@ textarea.form-control-lg {
   display: inline-block !important;
 }
 
-.d-block {
+.d-block, .partner .content img {
   display: block !important;
 }
 
@@ -5171,7 +5171,7 @@ textarea.form-control-lg {
   margin-left: 3rem !important;
 }
 
-.mx-auto {
+.mx-auto, .partner .content img {
   margin-right: auto !important;
   margin-left: auto !important;
 }
@@ -5201,7 +5201,7 @@ textarea.form-control-lg {
   margin-bottom: 1.5rem !important;
 }
 
-.my-5 {
+.my-5, .partner .content h2, .partner .content .h2 {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
 }
@@ -10854,6 +10854,24 @@ h2 strong, .h2 strong {
 
 .partner h1 strong, .partner .h1 strong {
   display: block;
+}
+.partner .cta {
+  background-image: url("../img/yellow_blue/Asset 26.png");
+  background-size: 270%;
+  background-position: 65% 0;
+  min-height: 65vh;
+}
+@media (min-width: 992px) {
+  .partner .cta {
+    background-size: 100%;
+    min-height: 600px;
+  }
+}
+.partner .cta h2, .partner .cta .h2 {
+  color: var(--primary-color);
+}
+.partner .cta h2 strong, .partner .cta .h2 strong {
+  color: var(--tertiary-color);
 }
 
 /*# sourceMappingURL=style.css.map */

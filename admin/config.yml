@@ -1,9 +1,12 @@
 backend:
-  name: github
-  repo: JbIPS/landing
-  branch: master
+  #  name: github
+  #repo: JbIPS/landing
+  #branch: master
   # Don't forget to register it on Netlify Domain Management (https://cnly.github.io/2018/04/14/just-3-steps-adding-netlify-cms-to-existing-github-pages-site-within-10-minutes.html)
+  name: git-gateway
   site_domain: cameo.fr
+
+local_backend: true
 
 publish_mode: editorial_workflow
 
@@ -62,8 +65,15 @@ collections:
     files:
       - label: "Partenaires"
         name: "partenaires"
-        file: "../partenaires/index.json"
+        file: "partenaires/index.json"
         fields:
-          - {label: Title, name: h1, widget: text}
-          - {label: Intro, name: intro, widget: text}
+          - {label: Title, name: h1, widget: markdown}
+          - {label: Intro, name: intro, widget: markdown}
           - {label: Bouton d'intro, name: intro_button, widget: string}
+          - {label: Section 1, name: section_1, widget: markdown}
+          - {label: Section 2, name: section_2, widget: markdown}
+          - {label: Titre section 3, name: section_3_title, widget: markdown}
+          - {label: Habilitation à former, name: habilitation, widget: markdown}
+          - {label: Co-certification, name: cocertification, widget: markdown}
+          - {label: CTA, name: cta, widget: markdown}
+
