@@ -75,5 +75,14 @@ collections:
           - {label: Titre section 3, name: section_3_title, widget: markdown}
           - {label: Habilitation à former, name: habilitation, widget: markdown}
           - {label: Co-certification, name: cocertification, widget: markdown}
+          - {label: Titre partenaires, name: section_3_partners, widget: markdown}
+          - label: Partenaires
+            name: partners
+            widget: list
+            allow_add: true
+            fields:
+              - {label: Nom, name: name, widget: string}
+              - {label: Logo, name: img, widget: image}
+              - {label: Site web, name: url, widget: string}
           - {label: CTA, name: cta, widget: markdown}
 
