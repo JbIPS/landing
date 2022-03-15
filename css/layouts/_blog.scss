@@ -80,34 +80,7 @@
 
   @include media-breakpoint-up(lg) {
     #shareBox {
-      opacity: 0;
-      top: 50vh;
-      left: 20vw;
       width: 20vw;
-      transition: opacity .4s ease-out;
-    }
-  }
-
-  & picture {
-    display: block;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  @include media-breakpoint-up(lg) {
-    .content-container {
-      position: relative;
-      top: -16rem;
-    }
-  }
-
-  .content-container {
-    width: 90%;
-
-    @include media-breakpoint-up(lg) {
-      & > * {
-        width: 50%;
-      }
     }
   }
 
@@ -122,15 +95,6 @@
       border-bottom: 1px solid var(--grey);
       padding-bottom: 1rem;
     }
-
-    & > p, & > h2 {
-      width: 80%;
-
-      @include media-breakpoint-up(lg) {
-        width: 100%;
-      }
-    }
-
 
     & > p {
       font-size: 1.15rem;
@@ -159,6 +123,7 @@
     & > img {
       width: 100%;
       margin: 2rem 0;
+      border-radius: 25px;
 
       @include media-breakpoint-up(lg) {
         width: 70vw;
