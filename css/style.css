@@ -10760,30 +10760,7 @@ h2 strong, .h2 strong {
 
 @media (min-width: 992px) {
   .post-content #shareBox {
-    opacity: 0;
-    top: 50vh;
-    left: 20vw;
     width: 20vw;
-    transition: opacity 0.4s ease-out;
-  }
-}
-.post-content picture {
-  display: block;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-@media (min-width: 992px) {
-  .post-content .content-container {
-    position: relative;
-    top: -16rem;
-  }
-}
-.post-content .content-container {
-  width: 90%;
-}
-@media (min-width: 992px) {
-  .post-content .content-container > * {
-    width: 50%;
   }
 }
 .post-content header {
@@ -10795,14 +10772,6 @@ h2 strong, .h2 strong {
 .post-content article > :last-child {
   border-bottom: 1px solid var(--grey);
   padding-bottom: 1rem;
-}
-.post-content article > p, .post-content article > h2, .post-content article > .h2 {
-  width: 80%;
-}
-@media (min-width: 992px) {
-  .post-content article > p, .post-content article > h2, .post-content article > .h2 {
-    width: 100%;
-  }
 }
 .post-content article > p {
   font-size: 1.15rem;
@@ -10826,6 +10795,7 @@ h2 strong, .h2 strong {
 .post-content article > img {
   width: 100%;
   margin: 2rem 0;
+  border-radius: 25px;
 }
 @media (min-width: 992px) {
   .post-content article > img {
