@@ -88,6 +88,10 @@
     background-color: var(--white);
   }
 
+  img {
+    border-radius: 25px;
+  }
+
   article {
     z-index: 5;
 
@@ -122,8 +126,8 @@
 
     & > img {
       width: 100%;
-      margin: 2rem 0;
-      border-radius: 25px;
+      margin: 2rem auto;
+      display: block;
 
       @include media-breakpoint-up(lg) {
         width: 70vw;
