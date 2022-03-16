@@ -10766,6 +10766,9 @@ h2 strong, .h2 strong {
 .post-content header {
   background-color: var(--white);
 }
+.post-content img {
+  border-radius: 25px;
+}
 .post-content article {
   z-index: 5;
 }
@@ -10794,8 +10797,8 @@ h2 strong, .h2 strong {
 }
 .post-content article > img {
   width: 100%;
-  margin: 2rem 0;
-  border-radius: 25px;
+  margin: 2rem auto;
+  display: block;
 }
 @media (min-width: 992px) {
   .post-content article > img {
