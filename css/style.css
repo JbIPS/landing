@@ -10808,6 +10808,7 @@ h2 strong, .h2 strong {
 .post-content article > iframe {
   margin: 2rem auto;
   display: block;
+  max-width: 100%;
 }
 .post-content address a {
   text-decoration: none;
