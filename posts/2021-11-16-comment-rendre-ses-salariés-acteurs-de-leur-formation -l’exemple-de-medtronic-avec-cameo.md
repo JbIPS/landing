@@ -21,6 +21,8 @@ En 2018, Medtronic a partagé son ambition de devenir un « Agit’acteur de la
 
 Le dispositif était le suivant : 15 candidats retenus, 7 startups d’accueil, 20 jours en immersion. Le programme a suscité une vraie curiosité : 650 collaborateurs sur 800 ont assisté à la présentation ! Nous avons recueilli 33 candidatures, mené 28 entretiens et retenu 15 profils variés (commercial, marketing, manager service client, consultant interne…). Les candidats étaient intéressés par la perspective d’aller s’inspirer à l’extérieur, et d’apprendre des techniques qui n’existent pas dans une grande entreprise.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8ZlGajqOrPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Quel a été le financement de cette formation en entreprise d’un nouveau genre ?
 
 Il y a eu un financement tripartite : 70 % pour Medtronic, 20 % pour la startup d’accueil et 10 % pour le salarié, via son [CPF](/posts/2021-11-16-la-mon%C3%A9tisation-du-cpf%C2%A0-ce-que-vous-et-vos-salari%C3%A9s-allez-y-gagner/). Les salariés ont bien réagi à cette contribution, car elle a été tout de suite annoncée comme une règle du jeu, un signe d’engagement de leur part. Ils ont bien perçu la valeur de la formation, avec deux certifications à la clé, et une occasion unique de développer une nouvelle vision de leur métier. Beaucoup étaient des seniors et ont vu l’opportunité de « sauter dans le train » sans risque.
