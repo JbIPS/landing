@@ -10805,6 +10805,10 @@ h2 strong, .h2 strong {
     width: 70vw;
   }
 }
+.post-content article > iframe {
+  margin: 2rem auto;
+  display: block;
+}
 .post-content address a {
   text-decoration: none;
 }
