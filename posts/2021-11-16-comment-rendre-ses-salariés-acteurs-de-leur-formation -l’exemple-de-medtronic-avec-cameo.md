@@ -21,7 +21,7 @@ En 2018, Medtronic a partagé son ambition de devenir un « Agit’acteur de la
 
 Le dispositif était le suivant : 15 candidats retenus, 7 startups d’accueil, 20 jours en immersion. Le programme a suscité une vraie curiosité : 650 collaborateurs sur 800 ont assisté à la présentation ! Nous avons recueilli 33 candidatures, mené 28 entretiens et retenu 15 profils variés (commercial, marketing, manager service client, consultant interne…). Les candidats étaient intéressés par la perspective d’aller s’inspirer à l’extérieur, et d’apprendre des techniques qui n’existent pas dans une grande entreprise.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8ZlGajqOrPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8ZlGajqOrPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 ## Quel a été le financement de cette formation en entreprise d’un nouveau genre ?
 
