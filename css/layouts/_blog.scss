@@ -133,6 +133,12 @@
         width: 70vw;
       }
     }
+
+    // YouTube videos
+    & > iframe {
+      margin: 2rem auto;
+      display: block;
+    }
   }
 
   address {
