@@ -4,7 +4,7 @@ tags: post
 title: "Comment rendre ses salariés acteurs de leur formation : l’exemple de
   Medtronic avec Cameo"
 category: Retours d'expérience
-image: /img/medtronic.png
+image: /img/sans-titre-3-.png
 author: Jérémy Marlin
 extract: Si la monétisation du CPF constitue un premier pas pour impliquer les
   collaborateurs dans la gestion de leur carrière, encore faut-il réussir à leur
