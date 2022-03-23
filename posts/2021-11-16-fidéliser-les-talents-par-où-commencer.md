@@ -3,7 +3,7 @@ layout: layouts/post
 tags: post
 title: "Fidéliser les talents : par où commencer ?"
 category: Retours d'expérience
-image: /img/sharon-mccutcheon-o2glccyuce8-unsplash.jpg
+image: /img/sans-titre-2-.png
 author: Jérémy Marlin
 extract: Savoir recruter des talents, c’est bien. Mais savoir les garder, c’est
   encore mieux ! Pas toujours simple cependant d’y parvenir, dans un contexte
