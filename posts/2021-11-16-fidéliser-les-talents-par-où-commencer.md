@@ -30,7 +30,7 @@ Si on vous dit « fidélisation », à quels autres mots pensez-vous ? La que
 
 Vous vous demandez comment construire ce type de relation ? Notre expert du talent a la réponse : **en misant sur l’expérience collaborateur** !
 
-*Source : https://eddy.com/11-proven-ways-to-prevent-employee-turnover/*
+*Source de l'image : https://eddy.com/11-proven-ways-to-prevent-employee-turnover/*
 
 ![This must be the place](/img/11-proven-ways-to-prevent-employee-turnover-2x-100-1536x815.jpg.webp)
 
