@@ -126,6 +126,7 @@ module.exports = function(eleventyConfig) {
   //eleventyConfig.addPassthroughCopy("css/*.css");
   eleventyConfig.addPassthroughCopy("favicon.svg");
   eleventyConfig.addPassthroughCopy("admin/config.yml");
+  eleventyConfig.addPassthroughCopy("parchemins");
 
   /* Minify HTML */
   eleventyConfig.addTransform("htmlmin", function(content) {
