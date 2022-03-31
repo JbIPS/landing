@@ -40,6 +40,7 @@
     "eleventy-plugin-metagen": "^1.4.8",
     "html-minifier": "^4.0.0",
     "markdown-it-block-image": "^0.0.3",
+    "markdown-it-image-figures": "^2.0.1",
     "sass": "^1.42.1",
     "shufflejs": "^5.4.1",
     "slugify": "^1.6.1"
