@@ -10791,19 +10791,19 @@ h2 strong, .h2 strong {
 }
 .post-content article > blockquote {
   color: var(--primary-color);
-  font-size: 1.5rem;
   font-style: italic;
   font-weight: normal;
 }
-.post-content article > img {
-  width: 100%;
-  margin: 2rem auto;
-  display: block;
+.post-content article > figure {
+  float: left;
+  margin-right: 2rem;
+  max-width: 40%;
 }
-@media (min-width: 992px) {
-  .post-content article > img {
-    width: 70vw;
-  }
+.post-content article > figure img {
+  width: 100%;
+}
+.post-content article > figure figcaption {
+  text-align: center;
 }
 .post-content article > iframe {
   margin: 2rem auto;
