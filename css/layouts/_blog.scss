@@ -120,6 +120,7 @@
       color: var(--primary-color);
       font-style: italic;
       font-weight: normal;
+      font-size: 1.1rem;
     }
 
     & > figure {
@@ -145,6 +146,9 @@
   }
 
   address {
+
+    clear: both;
+
     a {
       text-decoration: none;
     }
