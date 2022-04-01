@@ -10793,6 +10793,7 @@ h2 strong, .h2 strong {
   color: var(--primary-color);
   font-style: italic;
   font-weight: normal;
+  font-size: 1.1rem;
 }
 .post-content article > figure {
   float: left;
@@ -10809,6 +10810,9 @@ h2 strong, .h2 strong {
   margin: 2rem auto;
   display: block;
   max-width: 100%;
+}
+.post-content address {
+  clear: both;
 }
 .post-content address a {
   text-decoration: none;
