@@ -29,11 +29,11 @@ Il y a eu un financement tripartite : 70 % pour Medtronic, 20 % pour la startup
 
 ## En quoi vos salariés sont-ils devenus acteurs de leur formation ?
 
+![](/img/dsc01977.jpg)
+
 Mettre la main à la poche avec son CPF, c’est se mobiliser pour son développement. Les saisons précédentes, l’entreprise payait tout et l’engagement n’était pas le même !
 
 L’immersion n’est pas terminée, mais les retours des managers sont hyper positifs. J’entends des choses sur les collaborateurs concernés comme « il est transformé ! », ou « il est encore plus force de proposition ! ». Les salariés évoquent quant à eux « un nouveau souffle », et apprécient de développer des soft skills (agilité, rapidité ou encore créativité). L’un deux a même dit que c’était l’expérience la plus enrichissante de sa vie professionnelle !
-
-![Pouces en l'air](/img/dsc01977.jpg)
 
 ## Un mot sur Cameo pour finir ?
 
