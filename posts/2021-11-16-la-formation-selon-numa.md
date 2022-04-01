@@ -3,7 +3,7 @@ layout: layouts/post
 tags: post
 title: La formation selon Numa
 category: Ils nous inspirent
-image: /img/absolutvision-82tpeld0_e4-unsplash.jpg
+image: /img/immersion-professionnelle.png
 author: Jean-Baptiste Richardet
 extract: "Les formations en salle sur une journée, c’est fini ! Mais alors, par
   quoi les remplacer ? Roman Navalpotro, Custumer Success Director au sein de
@@ -12,6 +12,8 @@ extract: "Les formations en salle sur une journée, c’est fini ! Mais alors, 
 Les formations en salle sur une journée, c’est fini ! Mais alors, par quoi les remplacer ? Roman Navalpotro, Custumer Success Director au sein de [Numa](https://numa.co), a sa petite idée sur la question ! Découvrez la vision de cet organisme de formation pas comme les autres, dont la mission consiste à accompagner les leaders et leurs équipes dans le développement de compétences essentielles pour naviguer dans le changement et s’y construire une carrière excitante.
 
 ## Numa, c’est quoi ?
+
+![NUMA, incubateur de start-ups](/img/numa.jpg "Source : https://www.latribune.fr/technos-medias/innovation-et-start-up/20140826trib7bc723239/voyage-au-coeur-du-numa-incubateur-geant-de-start-up.html")
 
 Numa est un acteur de la formation qui a eu plusieurs vies ! Après un début d’activité dans le secteur de la tech dans les années 2000, l’ouverture d’un lieu dédié aux cultures tech en 2008 (La Cantine), puis la création d’un incubateur de startups en 2011 (Le Camping), Numa s’est de fil en aiguille transformé en organisme de formation. Sa spécialité ? Les formations qui s’adressent aux fonctions encadrantes, construites autour de cinq grandes compétences : créer un produit innovant, développement personnel et leadership, management, connaissance de l’économie digitale et connaissance des métiers digitaux.
 
@@ -33,13 +35,13 @@ Ceci-étant, exit « la formation en salle à la papa ». En présentiel comme
 
 ## Des formats plus courts, mais plus impactants
 
+![Nudge](/img/361_431_f2.jpeg "Source : https://www.science.org/doi/10.1126/science.aau9241")
+
 Face à la tendance du nudge, Roman Navalpotro reste sceptique : *« Nous ne croyons pas du tout à cette idée d’apprendre sans s’en rendre compte. Le processus d’apprentissage est long, et il y a quelque chose de pénible dans le fait de désapprendre pour apprendre de nouvelles habitudes. Cela remet en cause plein de choses chez l’apprenant ! Pour cette raison, on part plutôt du principe qu’il faut rendre le processus d’apprentissage enthousiasmant et excitant. »*
 
 En pratique, Numa ne propose donc pas de formations sur plusieurs jours, à la fois pour respecter le rythme des apprenants, mais aussi pour s’adapter aux contraintes des entreprises : *« Aujourd’hui, on ne fait plus deux jours de formation en salle avec 40 personnes, parce que ça veut dire que pendant deux jours, il y a 40 personnes qui n’opèrent plus de business et que l’entreprise perd des points de chiffre d’affaires. Quand vous bloquez ces mêmes personnes plutôt 1h30 par ci par là, l’impact est moindre sur les opérations. En revanche, avec les formats courts, on est sur des séquences plus longues : 1 mois, 2 mois, voire potentiellement 6, parce que le processus d’apprentissage, lui, est long. »*
 
 Ce rythme est précisément celui adopté par Numa, et retenu pour la formation théorique dispensée dans le cadre d’un cameo. L’apprenant alterne ainsi des phases d’immersion en entreprise avec de courts moments de formation étalés dans la durée, ce qui présente des *avantages aussi bien pour le salarié que pour la startup d’accueil.* (lien vers l’article interviews croisées Medtronic/Invivox)
-
-![Begin](/img/danielle-macinnes-iulgi9pwetu-unsplash.jpg)
 
 ## Vive l’immersion !
 
