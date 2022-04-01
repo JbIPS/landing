@@ -19,6 +19,8 @@ Numa est un acteur de la formation qui a eu plusieurs vies ! Après un début d
 
 Vous vous dites que cette offre répond aux nouveaux enjeux de la formation professionnelle en permettant le développement des soft skills ? Oui…et non ! 
 
+
+
 > *« Chez Numa*, préciseRoman*, on préfère parler de compétences indémodables et dire aux entreprises que c’est en les maîtrisant que leurs salariés ne seront pas obsolètes ».*
 
 Voilà une approche qui permet aux entreprises de s’adapter à l’évolution du travail, en offrant à leurs collaborateurs la possibilité de s’approprier des méthodes de travail pour gagner en agilité et en efficacité en toutes circonstances.
