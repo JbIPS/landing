@@ -13,13 +13,11 @@ Les formations en salle sur une journée, c’est fini ! Mais alors, par quoi l
 
 ## Numa, c’est quoi ?
 
-![NUMA, incubateur de start-ups](/img/numa.jpg "Source : https://www.latribune.fr/technos-medias/innovation-et-start-up/20140826trib7bc723239/voyage-au-coeur-du-numa-incubateur-geant-de-start-up.html")
+![NUMA, incubateur de start-ups](/img/numa.jpg "Source : Voyage au coeur du Numa, incubateur \"géant\" de start-up")
 
 Numa est un acteur de la formation qui a eu plusieurs vies ! Après un début d’activité dans le secteur de la tech dans les années 2000, l’ouverture d’un lieu dédié aux cultures tech en 2008 (La Cantine), puis la création d’un incubateur de startups en 2011 (Le Camping), Numa s’est de fil en aiguille transformé en organisme de formation. Sa spécialité ? Les formations qui s’adressent aux fonctions encadrantes, construites autour de cinq grandes compétences : créer un produit innovant, développement personnel et leadership, management, connaissance de l’économie digitale et connaissance des métiers digitaux.
 
 Vous vous dites que cette offre répond aux nouveaux enjeux de la formation professionnelle en permettant le développement des soft skills ? Oui…et non ! 
-
-
 
 > *« Chez Numa*, préciseRoman*, on préfère parler de compétences indémodables et dire aux entreprises que c’est en les maîtrisant que leurs salariés ne seront pas obsolètes ».*
 
