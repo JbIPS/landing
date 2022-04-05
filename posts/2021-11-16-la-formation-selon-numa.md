@@ -3,7 +3,7 @@ layout: layouts/post
 tags: post
 title: La formation selon Numa
 category: Ils nous inspirent
-image: /img/sans-titre-3-.png
+image: /img/numa-navalpotro.png
 author: Jean-Baptiste Richardet
 extract: "Les formations en salle sur une journée, c’est fini ! Mais alors, par
   quoi les remplacer ? Roman Navalpotro, Custumer Success Director au sein de
