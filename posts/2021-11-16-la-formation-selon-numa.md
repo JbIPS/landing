@@ -35,7 +35,7 @@ Ceci-étant, exit « la formation en salle à la papa ». En présentiel comme
 
 ## Des formats plus courts, mais plus impactants
 
-![Nudge](/img/361_431_f2.jpeg "Source : https://www.science.org/doi/10.1126/science.aau9241")
+![Nudge](/img/361_431_f2.jpeg "Source : [Nudge, not sludge](https://www.science.org/doi/10.1126/science.aau9241)")
 
 Face à la tendance du nudge, Roman Navalpotro reste sceptique : *« Nous ne croyons pas du tout à cette idée d’apprendre sans s’en rendre compte. Le processus d’apprentissage est long, et il y a quelque chose de pénible dans le fait de désapprendre pour apprendre de nouvelles habitudes. Cela remet en cause plein de choses chez l’apprenant ! Pour cette raison, on part plutôt du principe qu’il faut rendre le processus d’apprentissage enthousiasmant et excitant. »*
 
