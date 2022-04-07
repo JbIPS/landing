@@ -3,7 +3,7 @@ layout: layouts/post
 tags: post
 title: "L’intérêt du dispositif cameo : regards croisés salarié/startup"
 category: Retours d'expérience
-image: /img/christina-wocintechchat-com-vpcgtekereq-unsplash.jpg
+image: /img/medtronic-invivox.png
 author: Jean-Baptiste Richardet
 extract: "Faire le choix d’un cameo, pour un grand groupe comme pour la start-up
   qui accueille le salarié, c’est avant tout penser la formation autrement. Les
