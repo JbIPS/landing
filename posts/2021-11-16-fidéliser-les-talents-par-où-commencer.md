@@ -33,6 +33,8 @@ Vous vous demandez comment construire ce type de relation ? Notre expert du tal
 ![This must be the place](/img/11-proven-ways-to-prevent-employee-turnover-2x-100-1536x815.jpg.webp "Source : [11 Proven Ways to Prevent Employee Turnover](https://eddy.com/11-proven-ways-to-prevent-employee-turnover/)")
 
 > « Le premier levier de motivation pour un collaborateur, c’est l’expérience qu’il vit en entreprise. Au lieu de penser la trajectoire de sa carrière à sa place, en l’inscrivant dans des formations avec un tronc commun par exemple, il convient de répondre à ses besoins immédiats. Un talent peut ne pas avoir envie de faire un MBA, mais vouloir faire évoluer rapidement son poste vers davantage de digital par exemple. Pour cela, on peut imaginer une formation au design thinking, peut-être même tout en restant sur le poste. Ce type d’expériences devient un facteur de motivation permanente pour le collaborateur. Il se sent nourri, sans cesse en mouvement ».
+>
+>
 
 ## Design de l’expérience collaborateur et animation du collectif
 
