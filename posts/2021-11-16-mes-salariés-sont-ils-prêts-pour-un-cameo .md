@@ -3,7 +3,7 @@ layout: layouts/post
 tags: post
 title: Mes salariés sont-ils prêts pour un cameo ?
 category: Le futur est déjà là
-image: /img/alexander-andrews-x62f1wqhuli-unsplash.jpg
+image: /img/unnamed.png
 author: Jean-Baptiste Richardet
 extract: "C’est décidé, vous allez proposer à vos salariés une immersion en
   start-up ! Si le dispositif cameo répond à 100 % à votre objectif de
