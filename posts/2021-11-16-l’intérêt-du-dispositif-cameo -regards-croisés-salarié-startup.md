@@ -29,6 +29,8 @@ Au-delà de ça, nous avons été attirés par la possibilité de collaborer ave
 
 ## Qu’avez-vous appris dans le cadre de ce cameo ?
 
+![Digitalisation](/img/6132911bef74f671f6a5d8d5_teletravail-et-digitalisation.jpeg "Source : [Digitalisation & Télétravail : le nouveau défi des entreprises](https://go.sellsy.com/blog/digitalisation-teletravail-le-nouveau-defi-des-entreprises)")
+
 **Charlotte :** La crise du Covid est venue bouleverser ce qui était prévu. J’ai cependant débuté la formation avec Numa et trouve que la méthode du business model canvas est vraiment intéressante. Elle permet de poser les problèmes, de définir comment les résoudre et quoi apporter. Ce n’était pas quelque chose que nous faisions chez Medtronics ou du moins pas de cette façon structurée.
 
 S’agissant de la relation avec Invivox, la crise nous a donné l’occasion de débuter un partenariat commercial. Cela m’a permis d’assister à la digitalisation de cette startup à la vitesse de l’éclair : elle a dû tout stopper du jour au lendemain en digitalisant l’ensemble de ses formations. Chez Medtronics, nous avons besoin de faire la même chose donc voir une telle capacité d’adaptation, c’est inspirant ! Cela va certainement nous permettre d’accélérer la transformation, de pousser les limites de nos process et de forcer les choses à aller plus vite.
@@ -42,6 +44,8 @@ Nous avons aussi pu passer une journée en workshop avec des personnes en charge
 **Charlotte :** Je partage mon expérience avec mon manager et mes collègues, qui sont très attentifs à mes retours. Et jusqu’à maintenant, je diffusais le branding de la marque Medtronic (que je n’ai pas pensé) en top down. La méthode que j’ai apprise change les choses, en me permettant de mieux développer la marque en interne, avec justement moins de top down.
 
 **Patxi** : Aujourd’hui, on ne parle plus de formation mais de blended. Chez nous, tout est très pratique et la formation n’est pas un évènement ponctuel. On doit être dans un continuum de formation et c’est ce qu’on développe avec Medtronics. Il y a une vraie complémentarité : nous, on accélère sur nos expertises et notre développement, on se légitimise dans notre écosystème, et dans le même temps, grâce à nous, Medtronics accélère sur des transformations nécessaires. On est gagnant/gagnant !
+
+![Immersion professionnelle](/img/istock-1072060600-1024x709.jpg "Source : [IT Social](https://itsocial.fr/enjeux-it/enjeux-metiers/marketing/ameliorer-lexperience-client-partager-linformation-indispensable/)")
 
 Dans l’approche, j’ai aussi apprécié le fait qu’on se « choisisse » mutuellement, et ce côté « immersion » qui est la clé d’un bon apprentissage. Medtronics a également réussi à « bien vendre » le projet en interne et à créer de l’enthousiasme. Ce choix de l’immersion et du long terme est le bon. A la fin, on aura tous grandi ! Suggestion : un lien vers (peut-être un lien vers l’article « comment rendre ses salariés acteurs…avec l’interview de la DRH ? ici ou ailleurs ?)
 
