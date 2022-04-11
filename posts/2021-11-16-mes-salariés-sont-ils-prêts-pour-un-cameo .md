@@ -19,7 +19,7 @@ La réponse est oui…et non ! Les collaborateurs prêts à s’inspirer des pr
 
 Et pour ce qui est du métier et de l’expérience ? Contrairement à une idée reçue, les startups n’ont pas d’yeux que pour les développeurs et les digital natives ! Elles accueillent à bras ouverts des profils seniors, capables de leur apporter une expertise dont elles ne disposent pas (commercial, RH, marketing, direction financière…). Conclusion : vous pouvez certes vous tourner vers un profil « junior » dont le haut potentiel constituera une aide précieuse pour un CEO de start-up, mais pensez surtout aux collaborateurs qui ont déjà une belle carrière derrière eux. L’expérience d’un senior peut en effet être un atout de taille pour une start-up qui veut se structurer ou éviter des erreurs. Et un détour par la case start-up peut, à l’inverse, rebooster la carrière d’un collaborateur senior, en modernisant sa vision du métier et ses pratiques.
 
-![Détecter des compétences ](/img/talents.png "Source : [Faire des immersions professionnelles](https://upya.fr/notre-methodologie-de-reconversion-professionnelle/etape-2-definir-et-valider-son-projet/etape-2-3-faire-une-immersion/)")
+![Détecter des compétences ](/img/talents.png "Source : [Faire des immersions professionnelles](/img/talents.png)
 
 ## Comment choisir le bon candidat pour un cameo ?
 
