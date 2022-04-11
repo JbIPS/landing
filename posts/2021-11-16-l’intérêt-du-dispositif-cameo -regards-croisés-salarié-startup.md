@@ -45,7 +45,7 @@ Nous avons aussi pu passer une journée en workshop avec des personnes en charge
 
 **Patxi** : Aujourd’hui, on ne parle plus de formation mais de blended. Chez nous, tout est très pratique et la formation n’est pas un évènement ponctuel. On doit être dans un continuum de formation et c’est ce qu’on développe avec Medtronics. Il y a une vraie complémentarité : nous, on accélère sur nos expertises et notre développement, on se légitimise dans notre écosystème, et dans le même temps, grâce à nous, Medtronics accélère sur des transformations nécessaires. On est gagnant/gagnant !
 
-![Immersion professionnelle](/img/istock-1072060600-1024x709.jpg "Source : [IT Social](https://itsocial.fr/enjeux-it/enjeux-metiers/marketing/ameliorer-lexperience-client-partager-linformation-indispensable/)")
+![Immersion professionnelle](/img/istock-1072060600-1024x709.jpg "Source : [Partager l’information est indispensable](https://itsocial.fr/enjeux-it/enjeux-metiers/marketing/ameliorer-lexperience-client-partager-linformation-indispensable/)")
 
 Dans l’approche, j’ai aussi apprécié le fait qu’on se « choisisse » mutuellement, et ce côté « immersion » qui est la clé d’un bon apprentissage. Medtronics a également réussi à « bien vendre » le projet en interne et à créer de l’enthousiasme. Ce choix de l’immersion et du long terme est le bon. A la fin, on aura tous grandi ! Suggestion : un lien vers (peut-être un lien vers l’article « comment rendre ses salariés acteurs…avec l’interview de la DRH ? ici ou ailleurs ?)
 
