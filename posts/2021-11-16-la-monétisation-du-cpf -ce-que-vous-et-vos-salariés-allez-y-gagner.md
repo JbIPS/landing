@@ -3,7 +3,7 @@ layout: layouts/post
 tags: post
 title: "La monétisation du CPF : ce que vous et vos salariés allez y gagner"
 category: Le futur est déjà là
-image: /img/mathieu-stern-1zo4o3z0uja-unsplash.jpg
+image: /img/cpf-1280x720.png
 author: Jérémy Marlin
 extract: Depuis la réforme de la formation professionnelle, le compte personnel
   de formation n’est plus crédité en heures, mais en euros. Cela change la donne
@@ -15,6 +15,8 @@ Depuis la réforme de la formation professionnelle, le compte personnel de forma
 ## Le CPF monétisé : la liberté retrouvée pour vos salariés !
 
 Les salariés disposent d’un droit à la formation depuis longtemps, mais étaient-ils vraiment libres de l’utiliser ? Les résultats du DIF, créé en 2004, démontrent que non ! En 2012, seuls 8 % des salariés des très grandes entreprises (et 1,8 % pour les petites entreprises) y avaient eu accès. La première version du CPF, créée en 2015, n’a quant à elle pas vraiment amélioré les choses, avec des formalités administratives encore trop complexes.
+
+![La monétisation](/img/comment-monetiser-blog.png "Source : [Comment monétiser un blog](https://kinsta.com/fr/blog/comment-monetiser-un-blog/)")
 
 La monétisation du CPF vient tout changer, en mettant fin à la mainmise des employeurs sur la formation. Désormais, le salarié a les cartes en main ! Il consulte facilement ses droits sur le site [moncompteformation.gouv.fr](https://www.moncompteformation.gouv.fr/), puis les utilise comme bon lui semble.
 
