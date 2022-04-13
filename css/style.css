@@ -9670,8 +9670,8 @@ section strong {
 }
 
 .social {
-  display: block;
   line-height: 1;
+  margin-left: 1rem;
 }
 .social svg {
   height: 20px;
