@@ -24,12 +24,6 @@ light: true
             {% include "social.njk" %}
             <p class="fs-6">{{ authorData.data.title}}</p>
             {{ authorData._templateContent | safe }}
-            <div id="shareBox" class="ps-4 p-lg-0 mb-5">
-              {% set socials = metadata.socials %}
-              {% set text = "Partager sur" %}
-              {% set share = true %}
-              {% include "social.njk" %}
-            </div>
           </div>
         </address>
       {% endif %}
