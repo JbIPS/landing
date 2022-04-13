@@ -18,7 +18,6 @@ light: true
           {% set authorData = collections.author | findProp("name", author) %}
           {% image authorData.data.image, '', null, 'col-3' %}
           <div class="col-9 px-4 font-regular small-text">
-            {#<p class="fs-5 mb-0 font-medium">{{ authorData.data.name }}</p>#}
             {% set socials = authorData.data.socials %}
             {% set text = authorData.data.name  %}
             {% set share = false %}
@@ -26,10 +25,6 @@ light: true
             <p class="fs-6">{{ authorData.data.title}}</p>
             {{ authorData._templateContent | safe }}
             <div id="shareBox" class="ps-4 p-lg-0 mb-5">
-              <div class="d-none d-lg-block">
-                {% set dark = true %}
-                {% include "newsletter.njk" %}
-              </div>
               {% set socials = metadata.socials %}
               {% set text = "Partager sur" %}
               {% set share = true %}

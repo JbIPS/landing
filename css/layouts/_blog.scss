@@ -78,12 +78,6 @@
 
 .post-content {
 
-  @include media-breakpoint-up(lg) {
-    #shareBox {
-      width: 20vw;
-    }
-  }
-
   header {
     background-color: var(--white);
   }
