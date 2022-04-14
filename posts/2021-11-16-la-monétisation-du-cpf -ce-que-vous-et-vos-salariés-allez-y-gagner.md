@@ -3,7 +3,7 @@ layout: layouts/post
 tags: post
 title: "La monétisation du CPF : ce que vous et vos salariés allez y gagner"
 category: Le futur est déjà là
-image: /img/cpf-monétisation.png
+image: /img/monétisation-cpf.png
 author: Jérémy Marlin
 extract: Depuis la réforme de la formation professionnelle, le compte personnel
   de formation n’est plus crédité en heures, mais en euros. Cela change la donne
