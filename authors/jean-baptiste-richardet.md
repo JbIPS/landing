@@ -2,7 +2,7 @@
 tags: author
 name: Jean-Baptiste Richardet
 title: CTO
-image: img/profile_jb.png
+image: /img/profile-pic-1-.png
 socials:
   - name: Twitter
     url: https://twitter.com/JbIPS
