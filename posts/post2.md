@@ -3,7 +3,7 @@ layout: layouts/post
 tags: post
 title: Quel avenir pour le mécénat de compétences ?
 category: Le futur est déjà là
-image: img/mecenat.jpg
+image: /img/mécénat.png
 author: Jérémy Marlin
 extract: En 2020, de nombreux changements viennent bouleverser le monde de la
   formation professionnelle. Après l’annonce en août dernier d’une réforme de la
@@ -18,6 +18,8 @@ En 2020, de nombreux changements viennent bouleverser le monde de la formation p
 Prévu dans le Code Général des Impôts, le mécénat consiste pour l’entreprise à faire des dons, en échange desquels elle bénéficie d’une réduction d’impôts. Le mécanisme fonctionne au profit de structures limitativement énumérées, parmi lesquelles les associations, les fondations, les établissements d’enseignement supérieur ou artistique à but non lucratif, ou encore des sociétés ou organismes agréés. Le don prend soit la forme d’un versement d’argent, soit celle d’une mise à disposition par l’entreprise des compétences de ses salariés. Dans le cadre d’un mécénat de compétences, le collaborateur travaille pour la structure bénéficiaire, sans incidence sur le lien de subordination avec l’employeur. Ce prêt de main d’œuvre fait l’objet d’une valorisation, laquelle sert ensuite de base pour la réduction d’impôt. En pratique, sont pris en compte l’ensemble des coûts salariaux (salaire + charges).
 
 ## L’intérêt financier du mécénat de compétences
+
+![Chiffre d'affaires](/img/blog-headers-18.jpg "Source : [Financial plan](https://articles.bplans.com/the-key-elements-of-the-financial-plan/)")
 
 Selon le baromètre du mécénat d’entreprise Admical pour 2018, 82 000 entreprises auraient été mécènes en 2017, pour un total de 2 milliards d’euros. L’association note par ailleurs une progression du mécénat de compétences : 20 % des mécènes y ont eu recours en 2017 contre 11 % en 2015.
 Et cette tendance devrait se poursuivre !
