@@ -4,7 +4,7 @@ tags: post
 title: "«Travailler en 2020 : du sens, sinon rien ! » Rencontre avec Anne-Sophie
   Godon"
 category: Ils nous inspirent
-image: /img/urn-aaid-sc-us-7238dd7e-a8d3-44a2-b926-9d124e54a2a9-revision-0.webp
+image: /img/malakoff-sophie-godon.png
 author: Jérémy Marlin
 extract: Vous vous intéressez aux mutations du monde du travail ? Alors le forum
   « NewWork, le travail du futur », qui se tiendra les 7 et 8 septembre
@@ -36,7 +36,7 @@ En observant les critères de satisfaction des salariés, Anne-Sophie Godon-Rens
 
 Les collaborateurs doivent donc pouvoir vérifier quotidiennement leur alignement avec la raison d’être de l’entreprise, tout en ayant la possibilité de se développer personnellement et professionnellement. Comme le dit la directrice de l’Innovation, *« on trouve du sens au travail quand on est la bonne personne, à la bonne place* ».
 
-![](/img/brooke-cagle-whwybmtn3_0-unsplash.jpg)
+![Management bienveillant](/img/csm_cycle_management_bienveillantv2_685dc9a97f.png "Source : [Cycle Management Bienveillant](https://www.ccifs.ch/evenements/a-venir/e/event/cycle-management-bienveillant-1-la-transformation-par-le-dirigeant.html)")
 
 ## Comment amorcer la transformation du travail et donner plus de sens ?
 
