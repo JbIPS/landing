@@ -3,7 +3,7 @@ layout: layouts/post
 tags: post
 title: Que recherche les talents en 2020 ?
 category: Retours d'expérience
-image: img/saeed-mhmdi-azbzunpu1ag-unsplash.jpg
+image: /img/recherche-talents-2020.png
 author: Jérémy Marlin
 extract: La fidélisation des talents est devenue essentielle pour rendre
   l’activité de l’entreprise pérenne. Vous en êtes déjà convaincu.e et souhaitez
@@ -29,7 +29,7 @@ Le hic ? Ces profils, tous métiers confondus, ont depuis quelques années la b
 
 [](<>)Comment *fidéliser les salariés* en répondant à leur quête de *sens au travail* ? Certainement en s’inspirant de la tendance des entreprises à mission, et des exemples récemment donnés par Danone ou la MAIF entre autres. (lien vers l’article « X conseils pour fidéliser les clients + lien vers l’article sur le salon Produrable/le sens au travail).
 
-![](/img/ian-schneider-tammbr4okv4-unsplash.jpg)
+![Avantages pour les salariés](/img/asc_couverture-1.png "Source : [Activités Sociales et Culturelles](https://www.reflexe-cse.fr/asc-cse/)")
 
 Désormais, il ne s’agit plus seulement de mettre des valeurs en avant, mais d’aller un cran plus loin. *« Quelle est la stratégie de l’entreprise ? Quels sont ses engagements ? Ce sont des questions à se poser* », explique le CEO de Cameo.
 
