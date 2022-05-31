@@ -13,7 +13,7 @@ extract: "Pourquoi les organismes de formation en blockchain mettent de plus en
 ---
 ## A propos d’Alyra
 
-Alyra, est la première école française de blockchain fondée en 2018. Le secret de succès d’Alyra se situe dans leur approche dans leur processus de formation : l’utilisation des éléments de dernières tendances technologiques leur permet d’être une référence sur le marché français. 
+[Alyra](https://alyra.fr/), est la première école française de blockchain fondée en 2018. Le secret de succès d’Alyra se situe dans leur approche dans leur processus de formation : l’utilisation des éléments de dernières tendances technologiques leur permet d’être une référence sur le marché français. 
 
 Le produit principal d’Alyra, ce sont ses 3 formations d’une durée de 12 semaines qui proposent des cours du soir et l’accès à une plateforme de formation. Ces formations permettent de se spécialiser en développement blockchain, consulting, gestion dans le sens large de blockchain et la finance centralisée. Tout est en distanciel avec des plateformes en ligne. Au cours des formations, des apprenants réalisent plusieurs projets en équipe de manière dynamique et reçoivent un feedback de la part de vrais experts.
 
