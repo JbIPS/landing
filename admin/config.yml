@@ -63,9 +63,9 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Partenaires"
-        name: "partenaires"
-        file: "partenaires/index.json"
+      - label: "Certification"
+        name: "certification"
+        file: "certification/index.json"
         fields:
           - {label: Title, name: h1, widget: markdown}
           - {label: Intro, name: intro, widget: markdown}
