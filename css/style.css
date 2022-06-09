@@ -10832,6 +10832,9 @@ h2 strong, .h2 strong {
 .partner h1 strong, .partner .h1 strong {
   display: block;
 }
+.partner p.font-light a {
+  color: var(--secondary-color);
+}
 .partner .cta {
   background-image: url("../img/yellow_blue/Asset 26.png");
   background-size: 270%;
