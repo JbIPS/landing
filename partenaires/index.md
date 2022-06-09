@@ -1,9 +1,9 @@
 ---
-layout: layouts/certification.njk
-title: Certification
+layout: layouts/partenaires.njk
+title: partenaires
 published: true
 eleventyNavigation:
-  key: Certification
+  key: Partenaires
   order: 4
 sitemapPriority: 0.8
 ---

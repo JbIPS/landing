@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+contentClass: partner
+---
+<section class="mt-3 mt-lg-0 px-4 vh-100 intro">
+  <div class="col-lg-10 mx-auto h-100 d-flex flex-column align-items-start justify-content-center">
+    <h1>{{ h1 | markdown(true)  | safe }}</h1>
+  <p class="font-light mt-3 col-lg-6">
+    {{ intro | markdown(true) | safe }}
+  </p>
+  <a href="{{ '/contact/' | url }}" class="btn btn-lg btn-secondary rounded-pill mt-5">{{ intro_button }}</a>
+  </div>
+</section>
+<section class="bg-light py-5 px-4 font-regular d-flex flex-column align-items-center">
+  <div class="container py-5 content">
+    {{ section_1 | markdown | safe }}
+  </div>
+  <a href="{{ 'https://certifpro.francecompetences.fr/webapp/services/enregistrementDroit/documentDownload/20684/179321' | url }}" class="btn btn-primary rounded-pill mx-auto">Télécharger le référentiel</a>
+</section>
+<section class="cta d-flex flex-column justify-content-center align-items-center align-items-lg-end">
+  <div class="col-8 col-lg-6">
+    <h2>{{ cta | markdown(true) | safe }}</h2>
+    <a href="{{ '/contact/' | url }}" class="btn btn-primary rounded-pill px-3 mt-3">Let's go!</a>
+  </div>
+</section>

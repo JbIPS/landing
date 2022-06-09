@@ -1,0 +1,29 @@
+{
+  "intro_button": "Let's go!",
+  "h1": "Rendez vos parcours **certifiants et finançables !**",
+  "partners": [
+    {
+      "name": "Alyra",
+      "img": "/img/без-імені.png",
+      "url": "https://alyra.fr"
+    },
+    {
+      "name": "Voltee",
+      "img": "/img/bleu-foncé.png",
+      "url": "https://voltee.fr"
+    },
+    {
+      "name": "26 Academy",
+      "url": "https://www.26academy.com",
+      "img": "/img/logo_26academy.png"
+    }
+  ],
+  "intro": "Vous avez créé une formation et souhaitez valoriser les compétences acquises avec une certification reconnue ? Vous désirez proposer un financement avec le CPF de vos participants ? Notre certification permet de sanctionner la montée en compétences dans le domaine de la gestion de projets innovants, à la fois en externe (entrepreneuriat) ou au sein d’une organisation (intrapreneuriat). Si vous reconnaissez votre parcours, alors cette certification est faite pour vous !",
+  "cocertification": "### La co-certification\n\nCameo vous autorise à attribuer sa certification. Vous êtes donc autonome sur la formation et la certification.\n\n![](/img/agreement.jpg)",
+  "cta": "Vous êtes intéressé•e par notre certification ? **Contactez notre direction pédagogique**",
+  "section_3_partners": "Ils utilisent notre certification",
+  "section_3_title": "Comment utiliser la certification Cameo ?",
+  "section_1": "## Ma formation est-elle éligible ?\n\nPour garantir la qualité de notre certification, les formations de nos partenaires doivent valider plusieurs critères afin de pouvoir utiliser notre certification :\n\n* La formation doit contenir une dimension \"projet\"\n* L'organisme de formation doit être certifié QUALIOPI\n* La formation doit avoir une durée minimale de 30 heures",
+  "section_2": "## Comment obtenir la certification Cameo\n        \nL’acquisition des compétences visées par la certification est sanctionnée par une soutenance de 30 minutes devant un jury composé d’un représentant de la certification et d’une à deux personnes extérieures et expertes des sujets de transformation.\n\nDurant ce jury, les candidats devront effectuer un pitch de quelques minutes sur un projet, appuyé par un support de présentation adapté. Le contenu du pitch devra présenter des éléments de structuration de leur projet, notamment sous la forme d’un Business Model Canva, ainsi qu’un historique de l’évolution du projet, de la recherche de problématique à l’expérimentation d’une solution.\n\nS’en suivra un moment d’échange avec le jury pour bien comprendre les spécificités du projet et les réponses apportées par le candidat.\n\nLes candidats seront évalués sur la qualité de leur pitch (élocution, prestance, dynamisme), la qualité de leur support (clarté et pertinence des informations) ainsi que sur les détails apportés par leur Business Model Canva et leurs correspondances avec la réalité du marché. Pour valider la certification, les participants devront obtenir la moyenne, soit 10 sur 20.",
+  "habilitation": "### L'habilitation à former\n\nVous restez maître de votre formation et Cameo s’occupe de la certification en organisant le jury et la partie administrative.\n\n![](/img/stamp.jpg)"
+}
