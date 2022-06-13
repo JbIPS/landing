@@ -2,7 +2,7 @@
 tags: author
 name: Liubov Bilokon
 title: Chargée de mission auprès du CEO
-image: /img/sans-titre-2-.png
+image: /img/liubov-profile-pic.png
 socials:
   - name: Twitter
     url: https://twitter.com/LiubovBilokon
