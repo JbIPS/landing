@@ -25,7 +25,7 @@ Le domaine de blockchain existe depuis longtemps, mais pas le système de « sma
 
 En répondant à cette question, Daniel affirme qu’à son avis ***« La chefferie de projet ne devrait pas être un métier, c’est une compétence, un complément de tous les autres métiers.»*** 
 
-![](/img/devenir-chef-de-projet-1280x640.png "Source : [Tout savoir pour devenir chef de projet](https://chef-de-projet.fr/chef-de-projet/)")
+![](/img/gestion-de-projet-article-alyra.png "Source : [Tout savoir pouvoir devenir](https://chef-de-projet.fr/chef-de-projet/)")
 
 Le domaine du digital n’en fait pas l'exception : la gestion de projet en blockchain n’est pas du tout simple, il ne suffit pas de connaître juste la méthodologie. Dans ce secteur technologique, il est impossible de gérer correctement des projets sans avoir des connaissances solides dans сe domaine. Alyra devient un pionnier des formations de la blockchain en France  : ***« on va donner des compétences de chefferie de projet aux gens qui ont déjà des connaissances, la compréhension technique de manière à pouvoir gérer des projets de manière cohérente. »***  La gestion de projet en blockchain demande l’aptitude de mener une stratégie, de gérer l'intelligence collective et la capacité mutagène d’un projet ce qui nécessite une grande compétence d’agilité. A nos jours ce sont donc des compétences absolument indispensables pour des acteurs de domaines où le travail de l’équipe est nécessaire.
 
