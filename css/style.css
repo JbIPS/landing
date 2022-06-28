@@ -10321,6 +10321,10 @@ h2 strong, .h2 strong {
   }
 }
 
+.accordion-body figure {
+  align-self: center;
+}
+
 .accordion-button {
   color: var(--black);
 }
@@ -10833,6 +10837,9 @@ h2 strong, .h2 strong {
   display: block;
 }
 .partner p.font-light a {
+  color: var(--secondary-color);
+}
+.partner .yellow-arrow-bkg a {
   color: var(--secondary-color);
 }
 .partner .cta {
