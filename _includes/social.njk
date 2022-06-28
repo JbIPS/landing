@@ -1,6 +1,6 @@
 <div class="my-3 d-flex align-items-center social-bar">
   <p class="fs-1 d-inline mb-0 social-invite">{{ text }}</p>
-  <div class="me-4 col-3">
+  <div class="d-flex">
     {% for social in socials %}
       {% social social, share, title %}
         {% include social.icon %}

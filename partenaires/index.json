@@ -1,6 +1,6 @@
 {
   "intro_button": "Let's go!",
-  "h1": "Rendez vos parcours **certifiants et finançables !**",
+  "h1": "Devenez organisme partenaire et rendez vos parcours **certifiants et finançables !**",
   "partners": [
     {
       "name": "Alyra",
@@ -16,14 +16,16 @@
       "name": "26 Academy",
       "url": "https://www.26academy.com",
       "img": "/img/logo_26academy.png"
+    },
+    {
+      "name": "Kagilum",
+      "url": "https://www.kagilum.com/",
+      "img": "/img/logo-kagilum.png"
     }
   ],
-  "intro": "Vous avez créé une formation et souhaitez valoriser les compétences acquises avec une certification reconnue ? Vous désirez proposer un financement avec le CPF de vos participants ? Notre certification permet de sanctionner la montée en compétences dans le domaine de la gestion de projets innovants, à la fois en externe (entrepreneuriat) ou au sein d’une organisation (intrapreneuriat). Si vous reconnaissez votre parcours, alors cette certification est faite pour vous !",
-  "cocertification": "### La co-certification\n\nCameo vous autorise à attribuer sa certification. Vous êtes donc autonome sur la formation et la certification.\n\n![](/img/agreement.jpg)",
-  "cta": "Vous êtes intéressé•e par notre certification ? **Contactez notre direction pédagogique**",
+  "intro": "Vous souhaitez valoriser les compétences acquises avec une certification reconnue ? Vous souhaitez une meilleure prise en charge de vos formations ?\n\nNotre certification permet de sanctionner l'acquisition de méthodes et techniques en gestion de projets innovants. Si vous reconnaissez votre parcours, si vous souhaitez préparer les futurs certifiés à ces compétences transverses, alors cette certification est faite pour vous !",
+  "cta": "Vous êtes intéressé•e par notre certification ? **Contactez notre direction pédagogique**",
   "section_3_partners": "Ils utilisent notre certification",
-  "section_3_title": "Comment utiliser la certification Cameo ?",
-  "section_1": "## Ma formation est-elle éligible ?\n\nPour garantir la qualité de notre certification, les formations de nos partenaires doivent valider plusieurs critères afin de pouvoir utiliser notre certification :\n\n* La formation doit contenir une dimension \"projet\"\n* L'organisme de formation doit être certifié QUALIOPI\n* La formation doit avoir une durée minimale de 30 heures",
-  "section_2": "## Comment obtenir la certification Cameo\n        \nL’acquisition des compétences visées par la certification est sanctionnée par une soutenance de 30 minutes devant un jury composé d’un représentant de la certification et d’une à deux personnes extérieures et expertes des sujets de transformation.\n\nDurant ce jury, les candidats devront effectuer un pitch de quelques minutes sur un projet, appuyé par un support de présentation adapté. Le contenu du pitch devra présenter des éléments de structuration de leur projet, notamment sous la forme d’un Business Model Canva, ainsi qu’un historique de l’évolution du projet, de la recherche de problématique à l’expérimentation d’une solution.\n\nS’en suivra un moment d’échange avec le jury pour bien comprendre les spécificités du projet et les réponses apportées par le candidat.\n\nLes candidats seront évalués sur la qualité de leur pitch (élocution, prestance, dynamisme), la qualité de leur support (clarté et pertinence des informations) ainsi que sur les détails apportés par leur Business Model Canva et leurs correspondances avec la réalité du marché. Pour valider la certification, les participants devront obtenir la moyenne, soit 10 sur 20.",
-  "habilitation": "### L'habilitation à former\n\nVous restez maître de votre formation et Cameo s’occupe de la certification en organisant le jury et la partie administrative.\n\n![](/img/stamp.jpg)"
+  "section_1": "## Qu'est ce que devenir organisme de formation partenaire ?\n\nDans le cadre du déploiement de notre certification, CAMEO en tant qu’organisme certificateur, permet à des organismes de formation certifiés Qualiopi sur le périmètre des actions de formation, d’être habilités pour dispenser des parcours de formation préparant à l’obtention de la certification et/ou pour organiser les épreuves d’évaluation afférentes aux formations dispensées.\n\nEn tant qu’organisme partenaire, vous bénéficierez d’une meilleure prise en charge de vos formations préparant à la certification  (CPF, OPCO, Pôle Emploi…) tout en crédibilisant votre offre.",
+  "section_2": "## Comment nouer une convention de partenariat avec CAMEO ?\n\nSi vous souhaitez devenir notre partenaire, nous vous invitons à renseigner le [formulaire de candidature en ligne](https://cameo.fr/contact/)\n\nAfin de nous assurer de la qualité de la mise en œuvre de notre certification, un certain nombre d’informations et de critères seront examinés.\n\nEn cas de sélection, nous vous contacterons et mettrons alors en place une convention de partenariat. Une fois la convention signée, nous informerons France compétences de l’existence de cette habilitation afin de mettre à jour [la fiche de la certification enregistrée au Répertoire spécifique](https://www.francecompetences.fr/recherche/rs/5326/)."
 }

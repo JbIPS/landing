@@ -1,6 +1,6 @@
 ---
 layout: layouts/partenaires.njk
-title: partenaires
+title: Nos partenaires
 published: true
 eleventyNavigation:
   key: Partenaires

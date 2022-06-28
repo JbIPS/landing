@@ -122,7 +122,7 @@ headerClass: offre
           </button>
         </h3>
         <div id="faq-body-{{ loop.index }}" class="accordion-collapse collapse" aria-labelledby="faq-header-{{ loop.index }}" data-bs-parent="#faq">
-          <div class="accordion-body">
+          <div class="accordion-body d-flex flex-column">
             {{ question.text | markdown | safe }}
           </div>
         </div>

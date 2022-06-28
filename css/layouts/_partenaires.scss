@@ -7,6 +7,10 @@
     color: var(--secondary-color);
   }
 
+  .yellow-arrow-bkg a {
+    color: var(--secondary-color);
+  }
+
   .content {
     h2 {
       @extend .my-5;

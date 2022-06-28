@@ -13,38 +13,20 @@ contentClass: partner
 </section>
 <section class="bg-light py-5 px-4 font-regular">
   <div class="container py-5 content">
-    {{ section_2 | markdown | safe }}
+    {{ section_1 | markdown | safe }}
   </div>
 </section>
 <section class="py-5 px-4 yellow-arrow-bkg">
   <div class="container py-5">
     <div class="row justify-content-end">
       <div class="col-lg-9 content">
-        {{ section_1 | markdown | safe }}
+        {{ section_2 | markdown | safe }}
       </div>
     </div>
   </div>
 </section>
 <section class="bg-light py-5 px-4">
   <div class="container py-5">
-    <h2 class="">{{ section_3_title | markdown(true) | safe }}</h2>
-    <div class="container mb-5">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-12 col-lg-5 py-4">
-          <div class="p-3 content">
-            {{ habilitation | markdown | safe }}
-          </div>
-        </div>
-        <div class="col-12 col-lg-2">
-          <p class="fs-1 text-center pt-5 color-primary">Ou</p>
-        </div>
-        <div class="col-12 col-lg-5 py-4">
-          <div class="p-3 content">
-            {{ cocertification | markdown | safe }}
-          </div>
-        </div>
-      </div>
-    </div>
     <h2>{{ section_3_partners | markdown(true) | safe }}</h2>
     <div class="container pt-5">
       <div class="row align-items-center">
