@@ -15,7 +15,7 @@ contentClass: partner
   <div class="container py-5 content">
     {{ section_1 | markdown | safe }}
   </div>
-  <a href="{{ 'https://certifpro.francecompetences.fr/webapp/services/enregistrementDroit/documentDownload/20684/179321' | url }}" class="btn btn-primary rounded-pill mx-auto">Télécharger le référentiel</a>
+  <a href="{{ downloadUrl | url }}" class="btn btn-primary rounded-pill mx-auto">{{ downloadTitle }}</a>
 </section>
 <section class="cta d-flex flex-column justify-content-center align-items-center align-items-lg-end">
   <div class="col-8 col-lg-6">
