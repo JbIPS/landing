@@ -15,16 +15,19 @@
     }]
   },
   "values_numbers": [{
-      "number": "5%",
-      "text": "des recrutements sont issus de la mobilité interne"
-    },
-    {
-      "number": "2 mois",
-      "text": "pour débarasser les apprenants de leur syndrome de l'imposteur"
-    },
-    {
-      "number": "75%",
-      "text": "des grands groupes jugent la collaboration avec une start-up trop longue"
+    "number": "5%",
+    "text": "des recrutements sont issus de la mobilité interne"
+  },
+  {
+    "number": "2 mois",
+    "text": "pour débarasser les apprenants de leur syndrome de l'imposteur"
+  },
+  {
+    "number": "75%",
+    "text": "des grands groupes jugent la collaboration avec une start-up trop longue"
+  }, {
+    "number": "9,2/10",
+    "text": "c'est notre taux de recommandation moyen (consolidé depuis le 01/01/2021)"
   }],
   "numbers": [
     {
