@@ -174,10 +174,6 @@ module.exports = function(eleventyConfig) {
       lazy: true,
       async: true,
     });
-  const src = 'text with ![](img.png "Nin/e")\n\n![](fig.png "NItle")\n\nanother paragraph';
-  const res = markdownLibrary.render(src);
-
-  console.log(res);
   // Remember old renderer, if overridden, or proxy to default renderer
   const defaultRender = markdownLibrary.renderer.rules.link_open || function(tokens, idx, options, env, self) {
     return self.renderToken(tokens, idx, options);
