@@ -8,10 +8,10 @@ date: Last Modified
     <meta name="description" content="{{ description or metadata.description }}">
     {% metagen
     title=title or metadata.title,
-    desc=description or metadata.description,
+    desc=extract or description or metadata.description,
     url=page.url | absolute,
-    img="/img/banner.png" | absolute,
-    img_alt="Logo Cameo",
+    img=image | absolute or "/img/banner.png" | absolute,
+    img_alt=title or "Logo Cameo",
     twitterHandle="@CameoTalents",
     name="Cameo"
     %}
