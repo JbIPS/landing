@@ -34,7 +34,7 @@
     "terser": "^5.9.0"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^0.10.0",
+    "@11ty/eleventy-img": "^2.0.1",
     "@infinity-interactive/eleventy-plugin-injector": "^0.0.9",
     "eleventy-critical-css": "^1.1.0",
     "eleventy-plugin-metagen": "^1.4.8",
