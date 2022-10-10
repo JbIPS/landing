@@ -17,10 +17,10 @@ light: true
   </div>
   <div class="px-4 py-5">
     <div class="posts-list">
-      {% for post in collections.post %}
+      {% for post in collections.post | reverse %}
         <a href="{{ post.url }}" class="post mb-3" data-groups="{{ post.data.category }}">
           {% image post.data.image, "", null, "mb-4 mx-auto", '328, 588' %}
-          <p class="color-primary font-regular">{{ post.data.category }}</p>
+          <p class="color-primary font-regular">{{ post.data.category }} - {{ post.data.page.date | date('dd/MM/yyyy') }}</p>
           <h2 class="fs-3 color-black">{{ post.data.title }}</h2>
           <p class="extract font-regular">{{ post.data.extract }}</p>
         </a>
