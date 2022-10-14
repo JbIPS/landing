@@ -12,7 +12,12 @@
     img=(image or "/img/banner.png") | absolute,
     img_alt=title or "Logo Cameo",
     twitterHandle="@CameoTalents",
-    name="Cameo"
+    name="Cameo",
+    locale="fr_FR",
+    type=type or "website",
+    custom=[
+      ["meta", "", {property: "article:published_time", content: page.date.toISOString()}]
+    ] if type === "article"
     %}
     <meta property="og:locale" content="fr_FR">
 
