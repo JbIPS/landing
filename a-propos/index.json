@@ -121,17 +121,5 @@
       "linkedin": "https://www.linkedin.com/in/remi-rousseau/",
       "image": "img/profile_rr.png"
     }
-  ],
-  "investors": [
-    {
-      "name": "Audrey Pergaud",
-      "job": "Directrice de programme HRTech",
-      "image": "img/profile_audrey.png"
-    },
-    {
-      "name": "Pascal Anvroin",
-      "job": "Directeur d'investissement",
-      "image": "img/profile_pascal.png"
-    }
   ]
 }
