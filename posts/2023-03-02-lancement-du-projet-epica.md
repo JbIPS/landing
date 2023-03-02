@@ -3,7 +3,7 @@ layout: layouts/post
 tags: post
 title: Lancement du projet  EPICA
 category: Le futur est déjà là
-image: /img/epica.png
+image: /img/epica-1-.png
 author: Liubov Bilokon
 extract: Cameo a déjà réalisé un grand nombre de projets, notamment dans
   l'éducation. Aujourd’hui nous sommes fiers de vous annoncer le lancement d’un
