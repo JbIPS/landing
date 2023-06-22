@@ -1,7 +1,7 @@
 ---
 layout: layouts/partenaires.njk
 title: Nos partenaires
-published: true
+published: false
 eleventyNavigation:
   key: Partenaires
   order: 4
